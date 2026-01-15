@@ -1,88 +1,146 @@
-# Awesome Agentic Memory [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Context Engineering [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of resources for building AI agents with persistent memory and personalization capabilities.
+> A curated list of tools, techniques, and resources for teaching AI agents to understand your personal context.
+
+Context Engineering is the practice of customizing AI assistants (Claude, ChatGPT, Cursor, etc.) to understand your individual preferences, workflows, and requirements. This goes beyond prompt engineering—it's about creating persistent, personalized AI experiences that adapt to **you**.
 
 ## Contents
 
-- [Frameworks & Libraries](#frameworks--libraries)
-- [Vector Databases](#vector-databases)
-- [Memory Systems](#memory-systems)
-- [Research Papers](#research-papers)
-- [Tools & Platforms](#tools--platforms)
-- [Tutorials & Guides](#tutorials--guides)
+- [Platform-Specific Customization](#platform-specific-customization)
+  - [Claude](#claude)
+  - [Cursor](#cursor)
+  - [ChatGPT](#chatgpt)
+  - [VS Code Copilot](#vs-code-copilot)
+- [Model Context Protocol (MCP)](#model-context-protocol-mcp)
+- [Context Management Techniques](#context-management-techniques)
+- [Memory & Persistence](#memory--persistence)
+- [Research & Articles](#research--articles)
+- [Tools & Frameworks](#tools--frameworks)
 - [Contributing](#contributing)
 
-## Frameworks & Libraries
+## Platform-Specific Customization
 
-### Memory Management
+### Claude
 
-- [Mem0](https://github.com/mem0ai/mem0) - Memory layer for personalized AI agents.
-- [LangChain Memory](https://github.com/langchain-ai/langchain) - Memory modules for conversational AI.
-- [LlamaIndex Memory](https://github.com/run-llama/llama_index) - Data framework with memory capabilities.
+**Official Resources**
+- [Claude Projects](https://www.anthropic.com/news/projects) - Organize work with persistent context and custom instructions
+- [Understanding Claude's Personalization Features](https://support.claude.com/en/articles/10185728-understanding-claude-s-personalization-features) - Official guide to custom instructions and styles
+- [Creating and Managing Projects](https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects) - How to set up project-specific context
 
-### Agent Frameworks
+**Community Resources**
+- [Claude Projects Tutorial](https://www.youtube.com/watch?v=GJ5jTgcbRHA) - Getting started with Projects in Claude.ai
+- [Effective Context Management in Claude Projects](https://www.reddit.com/r/ClaudeAI/comments/1gze5b9/how_do_you_effectively_manage_context_in_claudes/) - Community discussion on context strategies
 
-- [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) - Autonomous GPT-4 agent with memory.
-- [BabyAGI](https://github.com/yoheinakajima/babyagi) - Task-driven autonomous agent.
-- [AgentGPT](https://github.com/reworkd/AgentGPT) - Browser-based autonomous AI agents.
+### Cursor
 
-## Vector Databases
+**Official Resources**
+- [Cursor Rules Documentation](https://rolloutit.net/how-to-create-ai-rules-for-cursor-ai/) - Complete guide to `.cursorrules` files
+- [AI Rules for Cursor](https://forum.cursor.com/t/ai-rules-how-to-actually-force-inclusion-of-specific-files-in-context/69761) - Force-include specific files in context
 
-- [Pinecone](https://www.pinecone.io/) - Managed vector database for ML applications.
-- [Weaviate](https://github.com/weaviate/weaviate) - Open-source vector search engine.
-- [Qdrant](https://github.com/qdrant/qdrant) - Vector similarity search engine.
-- [Milvus](https://github.com/milvus-io/milvus) - Cloud-native vector database.
-- [Chroma](https://github.com/chroma-core/chroma) - AI-native open-source embedding database.
+**Community Resources**
+- [Cursor Rules Folder Tutorial](https://www.youtube.com/watch?v=KzkXJiXGUGw) - Video guide to customizing AI behavior
+- [Cursor Customization 가이드](https://tech.neordinary.co.kr/cursor-customization) - Korean guide to Cursor customization (KR)
 
-## Memory Systems
+### ChatGPT
 
-### Long-term Memory
+**Official Resources**
+- [ChatGPT Custom Instructions Guide](https://customgpt.ai/chatgpt-custom-instructions-template/) - Comprehensive template guide
+- [Custom Instructions for Beginners](https://www.reddit.com/r/ChatGPTPro/comments/1cevlah/guide_for_beginners_custom_instructions_and/) - Reddit guide comparing custom instructions vs. memory
 
-- [MemGPT](https://github.com/cpacker/MemGPT) - Teaching LLMs memory management.
-- [Zep](https://github.com/getzep/zep) - Long-term memory store for LLM applications.
+**Community Resources**
+- [90% of Users Ignore This Feature](https://simple.ai/p/how-to-use-chatgpt-custom-instructions) - Deep dive into custom instructions
+- [Custom Instructions Tutorial](https://www.youtube.com/watch?v=example) - Video walkthrough
 
-### Graph Memory
+### VS Code Copilot
 
-- [Neo4j](https://github.com/neo4j/neo4j) - Graph database for connected data.
-- [MemoryGraph](https://arxiv.org/abs/2308.11719) - Graph-based memory structures.
+**Official Resources**
+- [Custom Agents in VS Code](https://code.visualstudio.com/docs/copilot/customization/custom-agents) - Configure AI personas for different development roles
 
-## Research Papers
+## Model Context Protocol (MCP)
 
-### Foundational Papers
+MCP is an open protocol by Anthropic that standardizes how LLMs connect to external data sources and tools.
 
-- [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560)
-- [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442)
-- [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)
+**Official Resources**
+- [Model Context Protocol Docs](https://modelcontextprotocol.io) - Official MCP documentation
+- [Introducing MCP](https://www.anthropic.com/news/model-context-protocol) - Anthropic's announcement
+- [MCP Explained - Vercel](https://vercel.com/blog/model-context-protocol-mcp-explained) - FAQ and technical overview
 
-### Memory Architectures
+**MCP Servers**
+- [Official MCP Servers](https://github.com/modelcontextprotocol/servers) - Reference implementations
+- [Awesome MCP Servers](https://mcpservers.org) - Curated collection of MCP servers
 
-- [Memory Networks](https://arxiv.org/abs/1410.3916)
-- [Neural Turing Machines](https://arxiv.org/abs/1410.5401)
-- [Differentiable Neural Computer](https://www.nature.com/articles/nature20101)
+**Available Servers**
+- **Filesystem** - Secure file operations with access controls
+- **Git** - Read, search, and manipulate Git repositories
+- **Memory** - Knowledge graph-based persistent memory
+- **Time** - Time and timezone conversion
+- **Sequential Thinking** - Dynamic problem-solving through thought sequences
 
-## Tools & Platforms
+## Context Management Techniques
 
-### Development Tools
+### Anthropic's Best Practices
 
-- [LangSmith](https://www.langchain.com/langsmith) - Platform for building production LLM applications.
-- [Weights & Biases](https://wandb.ai/) - ML experiment tracking and model management.
+- [Effective Context Engineering for AI Agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) - Official engineering blog from Anthropic
+  - Progressive disclosure strategies
+  - Compaction and summarization
+  - Structured note-taking (agentic memory)
+  - Multi-agent architectures
 
-### Evaluation & Monitoring
+### Academic & Industry Research
 
-- [Arize AI](https://arize.com/) - ML observability platform.
-- [WhyLabs](https://whylabs.ai/) - AI monitoring and observability.
+- [Prompt Engineering vs. Context Engineering](https://www.linkedin.com/pulse/context-all-you-need-importance-prompt-engineering-amir-amin-ph-d--0nc1c) - Evolution from prompts to context
+- [Context is All You Need](https://www.linkedin.com/pulse/prompt-engineering-vs-context-ibrahem-amer-inzdf) - LinkedIn article on context importance
+- [Awesome Context Engineering](https://github.com/Meirtz/Awesome-Context-Engineering) - Comprehensive survey of context engineering resources
 
-## Tutorials & Guides
+## Memory & Persistence
 
-### Getting Started
+### Memory Systems
 
-- [Building AI Agents with Memory](https://www.example.com) - Comprehensive guide to agent memory.
-- [Vector Databases 101](https://www.example.com) - Introduction to vector databases.
+- [Memory in Agents](https://www.philschmid.de/memory-in-agents) - Engineering long-term memory for AI agents
+- [Agent Memory by Letta](https://www.letta.com/blog/agent-memory) - Techniques for building agents that learn
+- [State Management with Long-Term Memory](https://cookbook.openai.com/examples/agents_sdk/context_personalization) - OpenAI Cookbook example
 
-### Advanced Topics
+### Memory Frameworks
 
-- [Implementing Graph-based Memory](https://www.example.com) - Advanced memory architectures.
-- [Scaling Agent Memory Systems](https://www.example.com) - Production considerations.
+- [MemGPT](https://github.com/cpacker/MemGPT) - Operating system approach to LLM memory management
+- [Zep](https://github.com/getzep/zep) - Long-term memory store for LLM applications
+- [LangChain Memory](https://docs.langchain.com/oss/python/langchain/short-term-memory) - Customizing agent memory with LangChain
+
+### Memory Types
+
+- **Semantic Memory** - Facts and concepts ("user prefers Python")
+- **Episodic Memory** - Past events and experiences
+- **Procedural Memory** - Internalized rules and instructions
+
+## Research & Articles
+
+### Context Engineering
+
+- [Best Practices for In-Context Learning](https://www.reddit.com/r/LLMDevs/comments/1g8uio9/prompt_engineering_best_practices_for_incontext/) - Reddit discussion on ICL techniques
+- [Building an AI Agent with Personal Context](https://www.reddit.com/r/LLMDevs/comments/1j6q49b/building_an_ai_agent_with_a_bank_of_personal/) - Case study on context interviews
+
+### AI Personalization Research
+
+- [Context Aware Agents](https://customgpt.ai/introducing-context-aware-agents/) - Self-aware AI with deep user understanding
+- [AI Agents that Adapt to User Preferences](https://www.arsturn.com/blog/creating-an-ai-agent-that-adapts-to-user-preferences-over-time) - Adaptive personalization techniques
+
+## Tools & Frameworks
+
+### Development Frameworks
+
+- [LangChain](https://github.com/langchain-ai/langchain) - Framework for context-aware AI applications
+- [LlamaIndex](https://github.com/run-llama/llama_index) - Data framework for LLM applications
+
+### Context Tools
+
+- [Pinecone](https://www.pinecone.io/) - Vector database for semantic search and memory
+- [Weaviate](https://github.com/weaviate/weaviate) - Open-source vector search engine
+- [Chroma](https://github.com/chroma-core/chroma) - AI-native embedding database
+
+### Monitoring & Evaluation
+
+- [Weights & Biases](https://wandb.ai/) - LLM monitoring and guardrails
+- [LangSmith](https://www.langchain.com/langsmith) - Platform for production LLM apps
 
 ## Contributing
 
