@@ -1,12 +1,12 @@
-# Contributing to Awesome Agentic Memory
+# Contributing to Awesome Context Engineering
 
-Thank you for your interest in contributing to this awesome list! Your contributions help make this resource more valuable for everyone building AI agents with persistent memory.
+Thank you for your interest in contributing to this awesome list! Your contributions help make this resource more valuable for everyone customizing their AI assistants with personal context.
 
 ## How to Contribute
 
 ### Adding a Resource
 
-1. **Check if the resource is relevant**: Ensure your submission relates to AI agent memory, personalization, or related technologies.
+1. **Check if the resource is relevant**: Ensure your submission relates to context engineering, AI customization, personal context management, or related technologies.
 
 2. **Check for duplicates**: Search the list to make sure the resource isn't already included.
 
@@ -20,7 +20,7 @@ Thank you for your interest in contributing to this awesome list! Your contribut
 5. **Quality standards**: Resources should be:
    - Actively maintained (for repositories)
    - Well-documented
-   - Relevant to the awesome list theme
+   - Relevant to context engineering and AI customization
    - Accessible (not behind paywalls for core content)
 
 ### Pull Request Guidelines
@@ -31,7 +31,7 @@ Thank you for your interest in contributing to this awesome list! Your contribut
 
 3. **Description**: In your PR description, briefly explain:
    - What the resource is
-   - Why it's valuable
+   - Why it's valuable for context engineering
    - How you tested/used it (if applicable)
 
 4. **Maintain alphabetical order**: Keep entries alphabetized within each section.
@@ -42,19 +42,19 @@ Thank you for your interest in contributing to this awesome list! Your contribut
 
 Resources should be:
 - **High quality**: Well-maintained, documented, and useful
-- **Relevant**: Directly related to agent memory, personalization, or enabling technologies
+- **Relevant**: Directly related to context engineering, AI customization, or enabling technologies
 - **Accessible**: Free to use or has a meaningful free tier
 - **Active**: Recently updated (within the last 2 years for projects)
 
 ### Sections
 
 Current sections include:
-- **Frameworks & Libraries**: Development tools for agent memory
-- **Vector Databases**: Storage solutions for embeddings
-- **Memory Systems**: Long-term and graph-based memory implementations
-- **Research Papers**: Academic papers on memory architectures
-- **Tools & Platforms**: Development and monitoring tools
-- **Tutorials & Guides**: Learning resources
+- **Platform-Specific Customization**: Claude, Cursor, ChatGPT, VS Code Copilot customization guides
+- **Model Context Protocol (MCP)**: MCP servers and implementations
+- **Context Management Techniques**: Best practices and strategies
+- **Memory & Persistence**: Long-term memory systems and frameworks
+- **Research & Articles**: Academic papers and industry articles
+- **Tools & Frameworks**: Development tools for context-aware AI
 
 Feel free to suggest new sections if your resource doesn't fit existing categories.
 
