@@ -1,519 +1,401 @@
-# Awesome Context Engineering [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> **How to make your AI agents truly understand you?**
 
-This guide walks you through **Context Engineering**—the practice of giving AI assistants the information they need to understand who you are, how you work, and what you need. From simple platform settings to building your own personal memory system.
+<div align="center">
+
+# Awesome Context Engineering
+
+[![Context Engineering Banner](assets/context-engineering-banner.png)](https://membase.so/?utm_source=github&utm_medium=awesome-context-engineering)
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
+[![Follow on X](https://img.shields.io/badge/Follow%20on%20X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/mem_base)
+[![Follow on LinkedIn](https://img.shields.io/badge/Follow%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/aristotechnologies)
+[![Join Discord](https://img.shields.io/badge/Join%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/vRp5Zh3HGu)
+
+</div>
+
+> A curated list of resources for making AI agents **truly understand you** through **Context Engineering**.
 
 ---
 
-## The Problem
+## What is Context Engineering?
 
-AI assistants are incredibly powerful, but they start every conversation knowing nothing about you:
+**Context Engineering** is the practice of systematically providing AI with information about yourself—your preferences, documents, history, and workflows—to transform a generic AI assistant into one that truly understands you.
 
-- They don't know your coding style or preferred frameworks
-- They don't remember what you discussed yesterday
-- They can't access your notes, documents, or data
-- They treat you the same as everyone else
+### The Problem
 
-**The result?** You repeat yourself constantly, get generic responses, and never feel like the AI truly "gets" you.
+Every time you start a conversation with AI, it knows nothing about you:
+- It doesn't know your coding style or tech stack
+- It doesn't remember what you discussed yesterday
+- It can't access your notes, documents, or data
+- It treats you the same as millions of other users
 
-## The Solution: Context Engineering
+### The Solution
 
-**Context Engineering** is the practice of systematically providing AI with information about you, your work, and your preferences. It's how you transform a generic assistant into a personalized one that understands your context.
+Context Engineering solves this by injecting **your personal context** into AI interactions:
 
 ```
-Generic AI ──────────────────────────────────────────> Personalized AI
-            + Your preferences
-            + Your documents
-            + Your conversation history
-            + Your connected apps
-            + Your persistent memory
+Your Context (what makes AI understand YOU)
+├── Instructions: "I prefer TypeScript, be concise"
+├── Background: Your role, expertise, current projects
+├── Documents: Your notes, files, code
+├── Memory: Facts AI learned about you over time
+└── Connected Apps: Your Notion, Slack, email, calendar
 ```
 
-This guide covers everything from basic platform settings to building full personal memory systems.
+### Key Resources
+
+- [Effective Context Engineering for AI Agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) - Anthropic's engineering blog
+- [Context Engineering in Agents: Memory Patterns](https://medium.com/agenticais/context-engineering-in-agent-982cb4d36293) - Memory patterns guide
+- [Building Personal Context](https://www.reddit.com/r/ClaudeAI/comments/1j6q49b/building_an_ai_agent_with_a_bank_of_personal/) - Reddit discussion
 
 ---
 
 ## Contents
 
-1. [Understanding Your Context](#understanding-your-context)
-2. [Level 1: Platform Settings](#level-1-platform-settings)
-3. [Level 2: Adding Your Data](#level-2-adding-your-data)
-4. [Level 3: Memory Systems](#level-3-memory-systems)
-5. [Level 4: Full Personal AI Stack](#level-4-full-personal-ai-stack)
-6. [Detailed Guides](#detailed-guides)
-7. [Resources](#resources)
-
----
-
-## Understanding Your Context
-
-Before customizing AI, understand what "context" you can provide.
-
-### Types of Context
-
-| Type | What It Is | Examples |
-|------|------------|----------|
-| **Instructions** | Rules and preferences | "Always use TypeScript", "Be concise" |
-| **Background** | Who you are | Role, expertise, company, projects |
-| **Documents** | Your files and data | PDFs, notes, spreadsheets, code |
-| **Conversation History** | Past interactions | Previous chats, decisions made |
-| **External Apps** | Connected services | Notion pages, Slack messages, emails |
-| **Memory** | Learned facts | Preferences discovered over time |
-
-### Detailed Guides by Context Type
-
-| Context Type | Guide |
-|--------------|-------|
-| External Files (PDF, XLSX, etc.) | [📄 Guide](docs/context-types/external-files.md) |
-| Conversation & Session History | [💬 Guide](docs/context-types/session-history.md) |
-| External Apps (Notion, Slack, etc.) | [🔗 Guide](docs/context-types/external-apps.md) |
-| Knowledge Bases & Vector DBs | [🧠 Guide](docs/context-types/knowledge-bases.md) |
-| Personal Data & Preferences | [👤 Guide](docs/context-types/personal-data.md) |
+- [Level 1: Platform Settings](#level-1-platform-settings)
+- [Level 2: Connecting Your Data](#level-2-connecting-your-data)
+- [Level 3: Personal Memory](#level-3-personal-memory)
+- [Level 4: Personal AI Stack](#level-4-personal-ai-stack)
+- [All-in-One Solution](#all-in-one-solution)
+- [Papers](#-papers)
+- [Resources](#resources)
 
 ---
 
 ## Level 1: Platform Settings
 
-**Difficulty: Easy | Time: 5 minutes | No technical skills required**
+> Basic personalization using built-in features. Takes 5 minutes.
 
-Start by using built-in personalization features in AI platforms.
+### ChatGPT
 
-### What You Can Do
+**Documentation:**
+- [Custom Instructions Guide](https://help.openai.com/en/articles/8096356-custom-instructions-for-chatgpt) - Official guide
+- [Memory Feature FAQ](https://help.openai.com/en/articles/8590148-memory-faq) - How ChatGPT remembers you
+- [Custom GPTs](https://help.openai.com/en/articles/8554397-creating-a-gpt) - Build personalized GPT
 
-| Platform | Feature | What It Does |
-|----------|---------|--------------|
-| **ChatGPT** | Custom Instructions | Tell ChatGPT about yourself and how to respond |
-| **ChatGPT** | Memory | ChatGPT learns and remembers facts about you |
-| **Claude** | Custom Instructions | Set default behavior and preferences |
-| **Claude** | Projects | Upload files and set project-specific context |
-| **Gemini** | Saved Info | Tell Gemini facts to remember |
-| **Gemini** | Extensions | Connect to Gmail, Drive, Calendar |
-| **Cursor** | Rules | Set coding preferences and project context |
-| **Copilot** | Instructions | Guide code suggestions |
+**Examples & Templates:**
+| Resource | Description |
+|----------|-------------|
+| [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) | 1000+ prompt templates |
+| [ChatGPT Custom Instructions Examples](https://github.com/spdustin/ChatGPT-AutoExpert) | AutoExpert system for better responses |
+| [Mr. Ranedeer AI Tutor](https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor) | Personalized learning GPT |
 
-### Quick Setup Examples
+### Claude
 
-**ChatGPT Custom Instructions:**
-```
-About me:
-- Senior software engineer, 8 years experience
-- Primary languages: Python, TypeScript
-- Working at a fintech startup
+**Documentation:**
+- [Claude Projects](https://support.anthropic.com/en/articles/9519177-how-can-i-create-and-manage-projects) - Project-based context
+- [Custom Instructions](https://support.claude.com/en/articles/10185728-understanding-claude-s-personalization-features) - Personalization features
+- [Claude Prompt Library](https://docs.anthropic.com/en/prompt-library/library) - Official prompt examples
 
-How to respond:
-- Be concise, skip basic explanations
-- Always include code examples
-- Consider security implications
-```
+**Examples & Templates:**
+| Resource | Description |
+|----------|-------------|
+| [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook) | Official examples and recipes |
+| [Claude Engineer](https://github.com/Doriandarko/claude-engineer) | Engineering assistant setup |
 
-**Claude Project Instructions:**
-```
-You're helping me with a Next.js e-commerce project.
-- Framework: Next.js 14 with App Router
-- Database: PostgreSQL with Prisma
-- Styling: Tailwind CSS
+### Cursor
 
-Always suggest TypeScript solutions with proper types.
-```
+**Documentation:**
+- [Rules for AI](https://docs.cursor.com/context/rules-for-ai) - Official documentation
+- [Context Guide](https://docs.cursor.com/context/) - Understanding cursor context
 
-**Cursor Rules (`.cursor/rules`):**
-```
-- Use TypeScript with strict mode
-- Prefer functional components
-- Follow project structure in /src
-- Include error handling in all functions
-```
+**Examples & Templates:**
+| Resource | Description |
+|----------|-------------|
+| [cursor.directory](https://cursor.directory/) | 1000+ community cursor rules |
+| [Awesome CursorRules](https://github.com/PatrickJS/awesome-cursorrules) | Curated rules collection |
+| [Cursor Rules by Pontus](https://github.com/pontusab/cursor.directory) | Source for cursor.directory |
+| [Cursor Rules Collection](https://github.com/sanjeed5/awesome-cursor-rules) | Another curated collection |
 
-### Platform Guides
+### GitHub Copilot
 
-| Platform | Guide |
-|----------|-------|
-| ChatGPT | [📖 Full Guide](docs/platforms/chatgpt.md) |
-| Claude | [📖 Full Guide](docs/platforms/claude.md) |
-| Gemini | [📖 Full Guide](docs/platforms/gemini.md) |
-| Cursor | [📖 Full Guide](docs/platforms/cursor.md) |
-| GitHub Copilot | [📖 Full Guide](docs/platforms/copilot.md) |
+**Documentation:**
+- [Copilot Customization](https://docs.github.com/en/copilot/customizing-copilot) - Official docs
+- [Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot) - Adding instructions
+
+**Examples:**
+| Resource | Description |
+|----------|-------------|
+| [Copilot Instructions Examples](https://github.com/github/copilot-instructions-examples) | Official examples (if available) |
+
+### Gemini
+
+**Documentation:**
+- [Gemini Extensions](https://support.google.com/gemini/answer/13695044) - Connect Google services
+- [Gems (Custom Gemini)](https://support.google.com/gemini/answer/14575153) - Create personalized Gemini
 
 ---
 
-## Level 2: Adding Your Data
+## Level 2: Connecting Your Data
 
-**Difficulty: Medium | Time: 30 min - 2 hours | Some technical knowledge helpful**
+> Give AI access to your files, notes, and apps.
 
-Go beyond basic settings by connecting AI to your actual data.
+### Model Context Protocol (MCP)
 
-### Option A: Upload Files Directly
+**Documentation:**
+- [MCP Documentation](https://modelcontextprotocol.io/) - Official docs
+- [MCP Announcement](https://www.anthropic.com/news/model-context-protocol) - Anthropic's blog
 
-Most platforms support file uploads:
+**Server Collections:**
+| Resource | Description |
+|----------|-------------|
+| [Official MCP Servers](https://github.com/modelcontextprotocol/servers) | Reference implementations |
+| [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers) | Community servers list (800+) |
+| [MCP Hub](https://github.com/nicobailey/mcp-hub) | Another server collection |
 
-| Platform | Method | Limits |
-|----------|--------|--------|
-| **Claude Projects** | Upload to project | ~200K tokens |
-| **ChatGPT** | Upload in chat or GPTs | Per-conversation |
-| **Gemini** | Google Drive integration | Via extensions |
-| **Cursor** | Add to workspace | Indexed automatically |
+**Popular MCP Servers for Personal Use:**
 
-**Best for:** Project documentation, reference materials, style guides
+| Server | What It Connects | Link |
+|--------|------------------|------|
+| Filesystem | Your local files | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) |
+| Obsidian | Your Obsidian vault | [GitHub](https://github.com/smithery-ai/mcp-obsidian) |
+| Obsidian Memory MCP | Memory as markdown in Obsidian | [GitHub](https://github.com/yunaga224/obsidian-memory-mcp) |
+| Obsidian Palace | Enhanced Obsidian integration | [obsidianpalace.dev](https://obsidianpalace.dev/) |
+| Notion | Your Notion pages | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/notion) |
+| Google Drive | Your Drive files | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive) |
+| Memory | Personal knowledge graph | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) |
 
-### Option B: Model Context Protocol (MCP)
+**Setup Examples:**
+| Resource | Description |
+|----------|-------------|
+| [MCP Quickstart](https://modelcontextprotocol.io/quickstart) | Official setup guide |
+| [Claude Desktop MCP Config](https://modelcontextprotocol.io/quickstart/user) | Configuration for Claude Desktop |
 
-MCP connects AI assistants to your local files and apps.
+### Browser Extensions
 
-**Setup for Claude Desktop:**
-
-Create config file at `~/Library/Application Support/Claude/claude_desktop_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "my-documents": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", 
-               "/Users/you/Documents"]
-    },
-    "my-notes": {
-      "command": "npx",
-      "args": ["-y", "mcp-obsidian", 
-               "/Users/you/ObsidianVault"]
-    },
-    "notion": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-notion"],
-      "env": {
-        "NOTION_API_KEY": "your-key"
-      }
-    }
-  }
-}
-```
-
-**Available MCP Servers:**
-
-| Server | Connects To | Install |
-|--------|-------------|---------|
-| Filesystem | Local files | `@modelcontextprotocol/server-filesystem` |
-| Obsidian | Obsidian vaults | `mcp-obsidian` |
-| Notion | Notion pages | `@modelcontextprotocol/server-notion` |
-| Google Drive | Drive files | `@modelcontextprotocol/server-gdrive` |
-| Slack | Slack messages | `@modelcontextprotocol/server-slack` |
-| GitHub | Repositories | `@modelcontextprotocol/server-github` |
-| Memory | Persistent memory | `@modelcontextprotocol/server-memory` |
-
-**Resources:**
-- [MCP Documentation](https://modelcontextprotocol.io/)
-- [Official MCP Servers](https://github.com/modelcontextprotocol/servers)
-- [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers)
-
-### Option C: Browser Extensions
-
-Add AI context from any webpage:
-
-| Extension | Features | Link |
-|-----------|----------|------|
-| **Sider** | AI sidebar, page context | [sider.ai](https://sider.ai/) |
+| Extension | Description | Link |
+|-----------|-------------|------|
+| **Sider** | AI sidebar with page context | [sider.ai](https://sider.ai/) |
 | **Monica** | Browser AI with memory | [monica.im](https://monica.im/) |
-| **Merlin** | ChatGPT on any site | [getmerlin.in](https://getmerlin.in/) |
+| **Merlin** | ChatGPT on any webpage | [getmerlin.in](https://getmerlin.in/) |
+| **MaxAI** | Multi-model browser AI | [maxai.me](https://www.maxai.me/) |
+
+### Automation
+
+| Tool | Type | Description | Link |
+|------|------|-------------|------|
+| **Zapier** | Cloud | Connect AI to 6000+ apps | [zapier.com](https://zapier.com/) |
+| **n8n** | Self-hosted | Open-source workflow automation | [GitHub](https://github.com/n8n-io/n8n) |
+| **Activepieces** | Self-hosted | Open-source Zapier alternative | [GitHub](https://github.com/activepieces/activepieces) |
 
 ---
 
-## Level 3: Memory Systems
+## Level 3: Personal Memory
 
-**Difficulty: Medium-Hard | Time: 1-4 hours | Technical knowledge required**
+> AI that remembers you across conversations.
 
-Build systems that remember and learn about you over time.
+### Built-in Memory Features
 
-### Understanding Memory Types
+| Platform | Feature | Link |
+|----------|---------|------|
+| **ChatGPT** | Memory (auto-learns) | [FAQ](https://help.openai.com/en/articles/8590148-memory-faq) |
+| **Claude** | Projects (persistent context) | [Guide](https://support.anthropic.com/en/articles/9519177) |
+| **Gemini** | Saved Info | [Help](https://support.google.com/gemini) |
 
-```
-Memory Systems
-├── Short-term (within conversation)
-│   └── What we just discussed
-├── Long-term (across conversations)
-│   ├── Facts: "User prefers Python"
-│   ├── Episodes: "We built X last week"
-│   └── Preferences: Learned over time
-└── Knowledge Base (searchable documents)
-    └── Your notes, docs, files
-```
+### Personal Memory Services
 
-### Option A: Cloud Memory Services
+| Service | Description | Link |
+|---------|-------------|------|
+| **Rewind** | Records everything on Mac, AI-searchable | [rewind.ai](https://www.rewind.ai/) |
+| **Supermemory** | Memory from bookmarks, tweets, articles | [GitHub](https://github.com/supermemoryai/supermemory) |
+| **Pieces** | Long-term memory across dev tools | [pieces.app](https://pieces.app/) |
+| **Personal AI** | AI that learns your knowledge | [personal.ai](https://personal.ai/) |
+| **Granola** | AI notepad for meetings | [granola.ai](https://www.granola.ai/) |
+| **Memspan** | File-first personal memory, portable | [memspan.ai](https://memspan.ai/) |
 
-Use managed services for easy setup.
+### Self-Hosted Personal Memory
 
-| Service | What It Does | Best For | Link |
-|---------|--------------|----------|------|
-| **ChatGPT Memory** | Auto-learns from chats | ChatGPT users | Built-in |
-| **Claude Projects** | Project-based context | Claude users | Built-in |
-| **Rewind** | Records & searches everything | Power users | [rewind.ai](https://www.rewind.ai/) |
-| **Khoj Cloud** | Personal AI assistant | All-in-one solution | [khoj.dev](https://khoj.dev/) |
-| **Notion AI** | AI over your Notion | Notion users | [notion.so](https://notion.so/) |
-| **Mem** | AI-powered notes | Note-takers | [mem.ai](https://mem.ai/) |
+| Project | Description | Link |
+|---------|-------------|------|
+| **Jean Memory** | Remote personal memory for Claude | [Reddit](https://www.reddit.com/r/ClaudeAI/comments/1l17qf6) |
+| **Sem-Mem** | Local semantic memory system | [Reddit](https://www.reddit.com/r/AIMemory/comments/1pg5fro) |
+| **MemLayer** | Persistent memory for local LLMs | [Reddit](https://www.reddit.com/r/LocalLLaMA/comments/1ozbzpx) |
+| **Basic Memory** | Personal knowledge graph system | [docs.basicmemory.com](https://docs.basicmemory.com/how-to/personal-knowledge) |
+| **OpenMemory** | Rich memory with natural decay | [GitHub](https://github.com/CaviraOSS/OpenMemory) |
+| **Memori** | SQL-native personal memory | [GitHub](https://github.com/GibsonAI/memori) |
+| **rag-user-memories** | Extract & store personal facts | [GitHub](https://github.com/skorotkiewicz/rag-user-memories) |
 
-### Option B: Self-Hosted Memory
+### Knowledge Management with AI
 
-Run your own memory system for privacy and control.
-
-**Personal AI Assistants:**
-
-| Tool | Description | Setup | Link |
-|------|-------------|-------|------|
-| **Open WebUI** | ChatGPT-like UI with memory | Docker | [GitHub](https://github.com/open-webui/open-webui) |
-| **Khoj** | AI connected to your notes | Docker/pip | [GitHub](https://github.com/khoj-ai/khoj) |
-| **AnythingLLM** | Chat with documents | Docker/Desktop | [GitHub](https://github.com/Mintplex-Labs/anything-llm) |
-| **PrivateGPT** | Fully private document chat | Local | [GitHub](https://github.com/imartinez/privateGPT) |
-
-**Quick Start with Open WebUI:**
-
-```bash
-# Start with Docker (connects to Ollama)
-docker run -d -p 3000:8080 \
-  --add-host=host.docker.internal:host-gateway \
-  -v open-webui:/app/backend/data \
-  -e OLLAMA_BASE_URL=http://host.docker.internal:11434 \
-  --name open-webui \
-  ghcr.io/open-webui/open-webui:main
-```
-
-Features: Persistent memory, document RAG, multiple models, user management
-
-### Option C: Build Your Own Knowledge Base
-
-Create a searchable database of your documents.
-
-**Vector Database Options:**
-
-| Database | Type | Best For | Link |
-|----------|------|----------|------|
-| **Chroma** | Self-hosted | Local development | [GitHub](https://github.com/chroma-core/chroma) |
-| **LanceDB** | Embedded | Desktop apps | [GitHub](https://github.com/lancedb/lancedb) |
-| **Qdrant** | Self-hosted | Production | [GitHub](https://github.com/qdrant/qdrant) |
-| **Pinecone** | Cloud | Managed service | [pinecone.io](https://pinecone.io/) |
-| **Supabase Vector** | Cloud | Postgres users | [supabase.com](https://supabase.com/) |
-
-**Simple Knowledge Base Setup:**
-
-```python
-# pip install chromadb langchain langchain-community
-
-from langchain_community.document_loaders import DirectoryLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import OllamaEmbeddings
-
-# 1. Load your documents
-loader = DirectoryLoader("~/Documents/Notes", glob="**/*.md")
-docs = loader.load()
-
-# 2. Split into searchable chunks
-splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
-chunks = splitter.split_documents(docs)
-
-# 3. Create searchable database
-embeddings = OllamaEmbeddings(model="nomic-embed-text")
-vectorstore = Chroma.from_documents(
-    chunks, embeddings, 
-    persist_directory="~/.my-knowledge-base"
-)
-
-# 4. Search your knowledge
-results = vectorstore.similarity_search("What did I write about Python?")
-```
+| Tool | Description | Link |
+|------|-------------|------|
+| **Notion AI** | AI over your Notion workspace | [notion.so](https://notion.so/) |
+| **Mem** | AI-powered notes | [mem.ai](https://mem.ai/) |
+| **Reflect** | AI-native note-taking | [reflect.app](https://reflect.app/) |
+| **Obsidian + AI** | Local notes with AI plugins | [obsidian.md](https://obsidian.md/) |
+| **Reor** | Local PKM with vector search | [GitHub](https://github.com/reorproject/reor) |
+| **Memos** | Self-hosted, privacy-first notes | [GitHub](https://github.com/usememos/memos) |
 
 ---
 
-## Level 4: Full Personal AI Stack
+## Level 4: Personal AI Stack
 
-**Difficulty: Hard | Time: 1 day+ | Strong technical skills required**
+> Self-hosted AI systems you fully control.
 
-Build a complete personal AI system with full control.
+### Personal AI Assistants
 
-### Architecture Overview
+| Project | Description | Link |
+|---------|-------------|------|
+| **Open WebUI** | ChatGPT-like UI with memory & RAG | [GitHub](https://github.com/open-webui/open-webui) |
+| **Khoj** | Personal AI for your notes/docs | [GitHub](https://github.com/khoj-ai/khoj) |
+| **AnythingLLM** | All-in-one document AI | [GitHub](https://github.com/Mintplex-Labs/anything-llm) |
+| **Quivr** | Second brain with AI | [GitHub](https://github.com/QuivrHQ/quivr) |
+| **PrivateGPT** | Fully private document chat | [GitHub](https://github.com/imartinez/privateGPT) |
+| **Danswer** | AI search over your data | [GitHub](https://github.com/danswer-ai/danswer) |
+| **Perplexica** | Personal AI search engine | [GitHub](https://github.com/ItzCrazyKns/Perplexica) |
+| **Second Me** | AI self with hierarchical memory | [GitHub](https://github.com/mindverse/Second-Me) |
+| **STING** | Privacy-first desktop AI | [stingassistant.com](https://stingassistant.com/) |
+| **Tiiny AI** | Local DB from your files | [tiinyai.com](https://tiinyai.com/) |
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Your Personal AI Stack                    │
-├─────────────────────────────────────────────────────────────┤
-│  Interface Layer                                             │
-│  ├── Open WebUI / LibreChat (Chat interface)                │
-│  └── Browser extensions (Sider, Monica)                     │
-├─────────────────────────────────────────────────────────────┤
-│  LLM Layer                                                   │
-│  ├── Cloud: OpenAI, Anthropic, Google                       │
-│  └── Local: Ollama, LM Studio, vLLM                         │
-├─────────────────────────────────────────────────────────────┤
-│  Memory & Knowledge Layer                                    │
-│  ├── Vector DB: Chroma, Qdrant, Pinecone                    │
-│  ├── Document processing: Unstructured, LlamaParse          │
-│  └── Memory: MCP Memory server, custom solutions            │
-├─────────────────────────────────────────────────────────────┤
-│  Data Sources                                                │
-│  ├── Local: Files, Obsidian, code                           │
-│  ├── Cloud: Notion, Google Drive, GitHub                    │
-│  └── Communication: Slack, Email                            │
-├─────────────────────────────────────────────────────────────┤
-│  Sync & Update Layer                                         │
-│  ├── Scheduled sync: cron, n8n, Zapier                      │
-│  └── Real-time: webhooks, file watchers                     │
-└─────────────────────────────────────────────────────────────┘
-```
+**Setup Examples:**
+| Resource | Description |
+|----------|-------------|
+| [Open WebUI Docker Setup](https://docs.openwebui.com/getting-started/) | Official Docker guide |
+| [Khoj Self-Hosting](https://docs.khoj.dev/get-started/setup/) | Self-hosting documentation |
 
-### Complete Docker Setup
+### Local LLM Solutions
 
-```yaml
-# docker-compose.yml - Full personal AI stack
-version: '3.8'
+| Tool | Description | Link |
+|------|-------------|------|
+| **Ollama** | Run LLMs locally | [ollama.com](https://ollama.com/) |
+| **LM Studio** | Desktop LLM app | [lmstudio.ai](https://lmstudio.ai/) |
+| **Jan** | Offline AI assistant | [jan.ai](https://jan.ai/) |
+| **GPT4All** | Local LLM ecosystem | [gpt4all.io](https://gpt4all.io/) |
+| **Llamafile** | Single-file LLM distribution | [GitHub](https://github.com/Mozilla-Ocho/llamafile) |
 
-services:
-  # Local LLM
-  ollama:
-    image: ollama/ollama
-    volumes:
-      - ollama_data:/root/.ollama
-    ports:
-      - "11434:11434"
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - capabilities: [gpu]
+### Personal Knowledge Base (Vector DBs for Personal Use)
 
-  # Chat interface with memory
-  open-webui:
-    image: ghcr.io/open-webui/open-webui:main
-    ports:
-      - "3000:8080"
-    volumes:
-      - open_webui_data:/app/backend/data
-    environment:
-      - OLLAMA_BASE_URL=http://ollama:11434
-    depends_on:
-      - ollama
+| Tool | Description | Link |
+|------|-------------|------|
+| **Chroma** | Easy to start, great for personal use | [GitHub](https://github.com/chroma-core/chroma) |
+| **LanceDB** | Embedded, no server needed | [GitHub](https://github.com/lancedb/lancedb) |
 
-  # Vector database
-  chroma:
-    image: chromadb/chroma
-    ports:
-      - "8000:8000"
-    volumes:
-      - chroma_data:/chroma/chroma
+**Tutorials:**
+- [LangChain RAG Tutorial](https://python.langchain.com/docs/tutorials/rag/) - Build personal RAG
+- [LlamaIndex Getting Started](https://docs.llamaindex.ai/en/stable/getting_started/concepts/) - Document AI concepts
 
-  # Workflow automation
-  n8n:
-    image: n8nio/n8n
-    ports:
-      - "5678:5678"
-    volumes:
-      - n8n_data:/home/node/.n8n
-    environment:
-      - GENERIC_TIMEZONE=Asia/Seoul
+### Document Processing
 
-volumes:
-  ollama_data:
-  open_webui_data:
-  chroma_data:
-  n8n_data:
-```
-
-### Sync & Update Strategies
-
-**How to keep your AI's knowledge current:**
-
-| Strategy | Method | Best For |
-|----------|--------|----------|
-| **Manual** | Re-upload files | Occasional updates |
-| **Scheduled** | Cron job / n8n workflow | Daily/weekly sync |
-| **Real-time** | File watcher / Webhooks | Frequently changing data |
-| **On-demand** | MCP servers | Live data access |
-
-**Example: Sync Obsidian notes daily**
-
-```python
-# sync_notes.py - Run daily via cron
-import os
-from pathlib import Path
-from langchain_community.document_loaders import ObsidianLoader
-from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import OllamaEmbeddings
-
-VAULT_PATH = Path.home() / "ObsidianVault"
-DB_PATH = Path.home() / ".ai-knowledge"
-
-def sync():
-    # Load notes
-    loader = ObsidianLoader(str(VAULT_PATH))
-    docs = loader.load()
-    
-    # Update vector store
-    embeddings = OllamaEmbeddings(model="nomic-embed-text")
-    vectorstore = Chroma(
-        persist_directory=str(DB_PATH),
-        embedding_function=embeddings
-    )
-    
-    # Clear and rebuild (simple strategy)
-    vectorstore.delete_collection()
-    vectorstore = Chroma.from_documents(
-        docs, embeddings, persist_directory=str(DB_PATH)
-    )
-    print(f"Synced {len(docs)} notes")
-
-if __name__ == "__main__":
-    sync()
-```
-
-### Privacy Considerations
-
-| Concern | Cloud Solution | Self-Hosted Solution |
-|---------|---------------|---------------------|
-| Data leaves device | Use trusted providers | All data stays local |
-| Who sees your data | Provider's privacy policy | Only you |
-| Data retention | Provider controls | You control |
-| Cost | Subscription | Hardware + electricity |
-| Model quality | GPT-4, Claude 3.5 | Llama 3.2, Mistral |
+| Tool | Description | Link |
+|------|-------------|------|
+| **DocMind AI** | Offline document analysis with GraphRAG | [GitHub](https://github.com/BjornMelin/docmind-ai-llm) |
+| **Marker** | PDF to Markdown | [GitHub](https://github.com/VikParuchuri/marker) |
+| **Unstructured** | Multi-format processing | [GitHub](https://github.com/Unstructured-IO/unstructured) |
 
 ---
 
-## Detailed Guides
+## All-in-One Solution
 
-### By Context Type
-- [External Files (PDF, docs, spreadsheets)](docs/context-types/external-files.md)
-- [Session & Conversation History](docs/context-types/session-history.md)
-- [External Apps (Notion, Slack, etc.)](docs/context-types/external-apps.md)
-- [Knowledge Bases & Vector Storage](docs/context-types/knowledge-bases.md)
-- [Personal Data & Preferences](docs/context-types/personal-data.md)
+Building your own personalization stack is powerful but complex. If you want everything above in one solution:
 
-### By Platform
-- [ChatGPT Personalization](docs/platforms/chatgpt.md)
-- [Claude Personalization](docs/platforms/claude.md)
-- [Gemini Personalization](docs/platforms/gemini.md)
-- [Cursor Personalization](docs/platforms/cursor.md)
-- [GitHub Copilot Personalization](docs/platforms/copilot.md)
+### [Membase](https://membase.so/?utm_source=github&utm_medium=awesome-context-engineering) - Universal Memory for your Agnets
 
-### Advanced Topics
-- [Building Personal AI Systems](docs/personalization-beyond-platforms.md)
-- [All Services & Tools Directory](docs/services.md)
+A personal memory layer that gives you:
+
+- **Cross-agent sync**: Discuss plans with ChatGPT, then jump into Claude Code to build them without re-explaining context. Your memory follows you across all agents.
+
+- **External context awareness**: Automatically pulls context from your calendar, Notion, Slack, and emails. Your AI knows what's happening in your life without you explicitly saying it.
+
+- **Token efficient**: Instead of dumping everything into every session, Membase uses hybrid retrieval to inject only the relevant context for each request.
+
+[Join the waitlist →](https://membase.so/)
 
 ---
 
 ## Resources
 
-### Official Documentation
-- [Anthropic: Context Engineering for Agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
-- [Model Context Protocol](https://modelcontextprotocol.io/)
-- [OpenAI: Context Personalization](https://cookbook.openai.com/examples/agents_sdk/context_personalization)
+### Papers
 
-### Community
-- [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers)
-- [cursor.directory](https://cursor.directory/)
+**Foundational**
+- [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560) - Virtual context management with tiered memory
+- [Retrieval-Augmented Generation for Knowledge-Intensive NLP](https://arxiv.org/abs/2005.11401) - The original RAG paper
+
+**Context Engineering**
+- [Google's Context Engineering Whitepaper](https://www.kaggle.com/whitepaper-context-engineering-sessions-and-memory) - Official Google whitepaper on sessions and memory
+- [Context Engineering 2.0](https://huggingface.co/papers/2510.26493) - Historical & conceptual grounding of context engineering
+- [Agentic Context Engineering (ACE)](https://arxiv.org/abs/2510.04618) - Evolving contexts for self-improving LLMs
+- [Everything is Context](https://arxiv.org/abs/2512.05470) - File system abstraction for context engineering
+- [Chain of Agents](https://research.google/blog/chain-of-agents-large-language-models-collaborating-on-long-context-tasks/) - Google's framework for long-context collaboration
+- [The Complexity Trap](https://arxiv.org/abs/2508.21433) - Simple observation masking vs LLM summarization for context management
+
+**Personal Memory & Personalization**
+- [USER-LLM](https://research.google/pubs/user-llm-efficient-llm-contextualization-with-user-embedding/) - Google's user embedding for LLM personalization
+- [O-Mem: Omni Memory System](https://arxiv.org/abs/2511.13593) - Hierarchical memory for personalized agents
+- [CUPID](https://arxiv.org/abs/2508.01674) - Evaluating personalized alignment from interactions
+- [ComMer](https://arxiv.org/abs/2501.03276) - Compressing user data for personalization
+
+**Memory Systems**
+- [Memory in AI Agents: Taxonomies & Directions](https://www.emergentmind.com/papers/2512.13564) - Systematic memory classification
+- [A-MEM: Agentic Memory](https://arxiv.org/abs/2502.12110) - Dynamic memory organization with Zettelkasten-style linking
+- [HiMeS](https://arxiv.org/abs/2601.06152) - Hierarchical short + long-term memory
+- [Second Me](https://arxiv.org/abs/2503.08102) - AI self with hierarchical memory
+- [Evo-Memory](https://arxiv.org/abs/2511.20857) - Google's benchmarking of LLM agent test-time learning with self-evolving memory
+
+**Agent Systems & Orchestration**
+- [Multi-Agent Collaboration via Evolving Orchestration](https://arxiv.org/abs/2505.19591) - Evolving multi-agent collaboration patterns
+- [CodeAct: Executable Code Actions Elicit Better LLM Agents](https://arxiv.org/abs/2402.01030) - Code-based agent actions
+
+**Evaluation & Benchmarks**
+- [LOCCO](https://aclanthology.org/2025.findings-acl.1014/) - Evaluating long-term memory of LLMs
+- [MemoryAgentBench](https://arxiv.gg/abs/2507.05257) - Benchmarking memory via multi-turn interactions
+
+### Articles & Blogs
+
+- [Context Engineering for AI Agents](https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus) - Manus's lessons from building AI agents
+- [Context Rot](https://research.trychroma.com/context-rot) - Chroma's research on context degradation
+- [Memory in AI Agents](https://www.philschmid.de/memory-in-agents) - Engineering long-term memory
+- [Agent Memory by Letta](https://www.letta.com/blog/agent-memory) - Comprehensive memory guide
+- [Recursive Language Models](https://alexzhang13.github.io/blog/2025/rlm/) - New paradigm for LLM architecture
+
+### Related Awesome Lists
+
+- [Awesome LLM](https://github.com/Hannibal046/Awesome-LLM) - LLM resources
+- [Awesome LLM Apps](https://github.com/Shubhamsaboo/awesome-llm-apps) - LLM applications
+- [Awesome AI Agents](https://github.com/e2b-dev/awesome-ai-agents) - AI agents list
+- [Awesome Local AI](https://github.com/janhq/awesome-local-ai) - Local AI resources
+
+### Community Resources
+
 - [r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/)
 - [r/ChatGPT](https://www.reddit.com/r/ChatGPT/)
+- [r/LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/)
+- [r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/)
+- [Cursor Forum](https://forum.cursor.com/)
 
 ---
 
 ## Contributing
 
-Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md).
+Contributions welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md).
+
+**Looking for:**
+- Real examples and templates people have created
+- Personal memory projects and services
+- MCP servers and integrations
+- Setup guides and tutorials
+
+---
+
+### Join the Community
+
+- [Join our Discord](https://discord.com/invite/vRp5Zh3HGu) - Chat with other developers personalizing agents
+- [Follow on Twitter](https://x.com/mem_base) - Stay updated on new updates and features
+- Questions? support@aristo.so
+
+---
+
+<p align="center">
+  <b>Join 1,300+ developers personalizing agents</b>
+</p>
+
+<p align="center">
+  <a href="https://membase.so/?utm_source=github&utm_medium=awesome-context-engineering">
+    <img src="https://img.shields.io/badge/Join Waitlist-4F46E5?style=for-the-badge"/>
+  </a>
+</p>
 
 ---
 
@@ -522,7 +404,3 @@ Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md).
 Apache License 2.0 - see [LICENSE](LICENSE).
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
----
-
-**Star this repo if it helps you build a better AI experience!** ⭐
