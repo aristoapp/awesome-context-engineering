@@ -56,11 +56,27 @@ Your Context (what makes AI understand YOU)
 ## Contents
 
 - [Level 1: Platform Settings](#level-1-platform-settings)
+  - [ChatGPT](#chatgpt)
+  - [Claude](#claude)
+  - [Cursor](#cursor)
+  - [GitHub Copilot](#github-copilot)
+  - [Gemini](#gemini)
 - [Level 2: Connecting Your Data](#level-2-connecting-your-data)
+  - [Model Context Protocol (MCP)](#model-context-protocol-mcp)
+  - [Browser Extensions](#browser-extensions)
+  - [Automation](#automation)
 - [Level 3: Personal Memory](#level-3-personal-memory)
+  - [Built-in Memory Features](#built-in-memory-features)
+  - [Personal Memory Services](#personal-memory-services)
+  - [Self-Hosted Personal Memory](#self-hosted-personal-memory)
+  - [Knowledge Management with AI](#knowledge-management-with-ai)
 - [Level 4: Personal AI Stack](#level-4-personal-ai-stack)
+  - [Personal AI Assistants](#personal-ai-assistants)
+  - [Local LLM Solutions](#local-llm-solutions)
+  - [Personal Knowledge Base](#personal-knowledge-base)
+  - [Document Processing](#document-processing)
 - [All-in-One Solution](#all-in-one-solution)
-- [Papers](#-papers)
+- [Papers](#papers)
 - [Resources](#resources)
 
 ---
@@ -70,60 +86,33 @@ Your Context (what makes AI understand YOU)
 > Basic personalization using built-in features. Takes 5 minutes.
 
 ### ChatGPT
-
-**Documentation:**
-- [Custom Instructions Guide](https://help.openai.com/en/articles/8096356-custom-instructions-for-chatgpt) - Official guide
+- [Custom Instructions Guide](https://help.openai.com/en/articles/8096356-custom-instructions-for-chatgpt) - Official guide for personalization
 - [Memory Feature FAQ](https://help.openai.com/en/articles/8590148-memory-faq) - How ChatGPT remembers you
 - [Custom GPTs](https://help.openai.com/en/articles/8554397-creating-a-gpt) - Build personalized GPT
-
-**Examples & Templates:**
-| Resource | Description |
-|----------|-------------|
-| [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) | 1000+ prompt templates |
-| [ChatGPT Custom Instructions Examples](https://github.com/spdustin/ChatGPT-AutoExpert) | AutoExpert system for better responses |
-| [Mr. Ranedeer AI Tutor](https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor) | Personalized learning GPT |
+- [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) - 1000+ prompt templates
+- [ChatGPT AutoExpert](https://github.com/spdustin/ChatGPT-AutoExpert) - Custom instructions for better responses
+- [Mr. Ranedeer AI Tutor](https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor) - Personalized learning GPT
 
 ### Claude
-
-**Documentation:**
 - [Claude Projects](https://support.anthropic.com/en/articles/9519177-how-can-i-create-and-manage-projects) - Project-based context
 - [Custom Instructions](https://support.claude.com/en/articles/10185728-understanding-claude-s-personalization-features) - Personalization features
 - [Claude Prompt Library](https://docs.anthropic.com/en/prompt-library/library) - Official prompt examples
-
-**Examples & Templates:**
-| Resource | Description |
-|----------|-------------|
-| [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook) | Official examples and recipes |
-| [Claude Engineer](https://github.com/Doriandarko/claude-engineer) | Engineering assistant setup |
+- [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook) - Official examples and recipes
+- [Claude Engineer](https://github.com/Doriandarko/claude-engineer) - Engineering assistant setup
 
 ### Cursor
-
-**Documentation:**
 - [Rules for AI](https://docs.cursor.com/context/rules-for-ai) - Official documentation
 - [Context Guide](https://docs.cursor.com/context/) - Understanding cursor context
-
-**Examples & Templates:**
-| Resource | Description |
-|----------|-------------|
-| [cursor.directory](https://cursor.directory/) | 1000+ community cursor rules |
-| [Awesome CursorRules](https://github.com/PatrickJS/awesome-cursorrules) | Curated rules collection |
-| [Cursor Rules by Pontus](https://github.com/pontusab/cursor.directory) | Source for cursor.directory |
-| [Cursor Rules Collection](https://github.com/sanjeed5/awesome-cursor-rules) | Another curated collection |
+- [cursor.directory](https://cursor.directory/) - 1000+ community cursor rules
+- [Awesome CursorRules](https://github.com/PatrickJS/awesome-cursorrules) - Curated rules collection
+- [Cursor Rules by Pontus](https://github.com/pontusab/cursor.directory) - Source for cursor.directory
+- [Cursor Rules Collection](https://github.com/sanjeed5/awesome-cursor-rules) - Another curated collection
 
 ### GitHub Copilot
-
-**Documentation:**
 - [Copilot Customization](https://docs.github.com/en/copilot/customizing-copilot) - Official docs
 - [Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot) - Adding instructions
 
-**Examples:**
-| Resource | Description |
-|----------|-------------|
-| [Copilot Instructions Examples](https://github.com/github/copilot-instructions-examples) | Official examples (if available) |
-
 ### Gemini
-
-**Documentation:**
 - [Gemini Extensions](https://support.google.com/gemini/answer/13695044) - Connect Google services
 - [Gems (Custom Gemini)](https://support.google.com/gemini/answer/14575153) - Create personalized Gemini
 
@@ -134,52 +123,33 @@ Your Context (what makes AI understand YOU)
 > Give AI access to your files, notes, and apps.
 
 ### Model Context Protocol (MCP)
-
-**Documentation:**
 - [MCP Documentation](https://modelcontextprotocol.io/) - Official docs
 - [MCP Announcement](https://www.anthropic.com/news/model-context-protocol) - Anthropic's blog
+- [Official MCP Servers](https://github.com/modelcontextprotocol/servers) - Reference implementations
+- [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers) - Community servers list (800+)
+- [MCP Hub](https://github.com/nicobailey/mcp-hub) - Another server collection
+- [MCP Quickstart](https://modelcontextprotocol.io/quickstart) - Official setup guide
+- [Claude Desktop MCP Config](https://modelcontextprotocol.io/quickstart/user) - Configuration for Claude Desktop
 
-**Server Collections:**
-| Resource | Description |
-|----------|-------------|
-| [Official MCP Servers](https://github.com/modelcontextprotocol/servers) | Reference implementations |
-| [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers) | Community servers list (800+) |
-| [MCP Hub](https://github.com/nicobailey/mcp-hub) | Another server collection |
-
-**Popular MCP Servers for Personal Use:**
-
-| Server | What It Connects | Link |
-|--------|------------------|------|
-| Filesystem | Your local files | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) |
-| Obsidian | Your Obsidian vault | [GitHub](https://github.com/smithery-ai/mcp-obsidian) |
-| Obsidian Memory MCP | Memory as markdown in Obsidian | [GitHub](https://github.com/yunaga224/obsidian-memory-mcp) |
-| Obsidian Palace | Enhanced Obsidian integration | [obsidianpalace.dev](https://obsidianpalace.dev/) |
-| Notion | Your Notion pages | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/notion) |
-| Google Drive | Your Drive files | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive) |
-| Memory | Personal knowledge graph | [GitHub](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) |
-
-**Setup Examples:**
-| Resource | Description |
-|----------|-------------|
-| [MCP Quickstart](https://modelcontextprotocol.io/quickstart) | Official setup guide |
-| [Claude Desktop MCP Config](https://modelcontextprotocol.io/quickstart/user) | Configuration for Claude Desktop |
+**Popular MCP Servers:**
+- [Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) - Connect your local files
+- [Obsidian](https://github.com/smithery-ai/mcp-obsidian) - Your Obsidian vault
+- [Obsidian Memory MCP](https://github.com/yunaga224/obsidian-memory-mcp) - Memory as markdown in Obsidian
+- [Obsidian Palace](https://obsidianpalace.dev/) - Enhanced Obsidian integration
+- [Notion](https://github.com/modelcontextprotocol/servers/tree/main/src/notion) - Your Notion pages
+- [Google Drive](https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive) - Your Drive files
+- [Memory](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) - Personal knowledge graph
 
 ### Browser Extensions
-
-| Extension | Description | Link |
-|-----------|-------------|------|
-| **Sider** | AI sidebar with page context | [sider.ai](https://sider.ai/) |
-| **Monica** | Browser AI with memory | [monica.im](https://monica.im/) |
-| **Merlin** | ChatGPT on any webpage | [getmerlin.in](https://getmerlin.in/) |
-| **MaxAI** | Multi-model browser AI | [maxai.me](https://www.maxai.me/) |
+- [Sider](https://sider.ai/) - AI sidebar with page context
+- [Monica](https://monica.im/) - Browser AI with memory
+- [Merlin](https://getmerlin.in/) - ChatGPT on any webpage
+- [MaxAI](https://www.maxai.me/) - Multi-model browser AI
 
 ### Automation
-
-| Tool | Type | Description | Link |
-|------|------|-------------|------|
-| **Zapier** | Cloud | Connect AI to 6000+ apps | [zapier.com](https://zapier.com/) |
-| **n8n** | Self-hosted | Open-source workflow automation | [GitHub](https://github.com/n8n-io/n8n) |
-| **Activepieces** | Self-hosted | Open-source Zapier alternative | [GitHub](https://github.com/activepieces/activepieces) |
+- [Zapier](https://zapier.com/) - Connect AI to 6000+ apps (Cloud)
+- [n8n](https://github.com/n8n-io/n8n) - Open-source workflow automation (Self-hosted)
+- [Activepieces](https://github.com/activepieces/activepieces) - Open-source Zapier alternative (Self-hosted)
 
 ---
 
@@ -188,46 +158,34 @@ Your Context (what makes AI understand YOU)
 > AI that remembers you across conversations.
 
 ### Built-in Memory Features
-
-| Platform | Feature | Link |
-|----------|---------|------|
-| **ChatGPT** | Memory (auto-learns) | [FAQ](https://help.openai.com/en/articles/8590148-memory-faq) |
-| **Claude** | Projects (persistent context) | [Guide](https://support.anthropic.com/en/articles/9519177) |
-| **Gemini** | Saved Info | [Help](https://support.google.com/gemini) |
+- [ChatGPT Memory](https://help.openai.com/en/articles/8590148-memory-faq) - Auto-learns from conversations
+- [Claude Projects](https://support.anthropic.com/en/articles/9519177) - Persistent context per project
+- [Gemini Saved Info](https://support.google.com/gemini) - Save information for Gemini
 
 ### Personal Memory Services
-
-| Service | Description | Link |
-|---------|-------------|------|
-| **Rewind** | Records everything on Mac, AI-searchable | [rewind.ai](https://www.rewind.ai/) |
-| **Supermemory** | Memory from bookmarks, tweets, articles | [GitHub](https://github.com/supermemoryai/supermemory) |
-| **Pieces** | Long-term memory across dev tools | [pieces.app](https://pieces.app/) |
-| **Personal AI** | AI that learns your knowledge | [personal.ai](https://personal.ai/) |
-| **Granola** | AI notepad for meetings | [granola.ai](https://www.granola.ai/) |
-| **Memspan** | File-first personal memory, portable | [memspan.ai](https://memspan.ai/) |
+- [Rewind](https://www.rewind.ai/) - Records everything on Mac, AI-searchable
+- [Supermemory](https://github.com/supermemoryai/supermemory) - Memory from bookmarks, tweets, articles
+- [Pieces](https://pieces.app/) - Long-term memory across dev tools
+- [Personal AI](https://personal.ai/) - AI that learns your knowledge
+- [Granola](https://www.granola.ai/) - AI notepad for meetings
+- [Memspan](https://memspan.ai/) - File-first personal memory, portable
 
 ### Self-Hosted Personal Memory
-
-| Project | Description | Link |
-|---------|-------------|------|
-| **Jean Memory** | Remote personal memory for Claude | [Reddit](https://www.reddit.com/r/ClaudeAI/comments/1l17qf6) |
-| **Sem-Mem** | Local semantic memory system | [Reddit](https://www.reddit.com/r/AIMemory/comments/1pg5fro) |
-| **MemLayer** | Persistent memory for local LLMs | [Reddit](https://www.reddit.com/r/LocalLLaMA/comments/1ozbzpx) |
-| **Basic Memory** | Personal knowledge graph system | [docs.basicmemory.com](https://docs.basicmemory.com/how-to/personal-knowledge) |
-| **OpenMemory** | Rich memory with natural decay | [GitHub](https://github.com/CaviraOSS/OpenMemory) |
-| **Memori** | SQL-native personal memory | [GitHub](https://github.com/GibsonAI/memori) |
-| **rag-user-memories** | Extract & store personal facts | [GitHub](https://github.com/skorotkiewicz/rag-user-memories) |
+- [Jean Memory](https://www.reddit.com/r/ClaudeAI/comments/1l17qf6) - Remote personal memory for Claude
+- [Sem-Mem](https://www.reddit.com/r/AIMemory/comments/1pg5fro) - Local semantic memory system
+- [MemLayer](https://www.reddit.com/r/LocalLLaMA/comments/1ozbzpx) - Persistent memory for local LLMs
+- [Basic Memory](https://docs.basicmemory.com/how-to/personal-knowledge) - Personal knowledge graph system
+- [OpenMemory](https://github.com/CaviraOSS/OpenMemory) - Rich memory with natural decay
+- [Memori](https://github.com/GibsonAI/memori) - SQL-native personal memory
+- [rag-user-memories](https://github.com/skorotkiewicz/rag-user-memories) - Extract & store personal facts
 
 ### Knowledge Management with AI
-
-| Tool | Description | Link |
-|------|-------------|------|
-| **Notion AI** | AI over your Notion workspace | [notion.so](https://notion.so/) |
-| **Mem** | AI-powered notes | [mem.ai](https://mem.ai/) |
-| **Reflect** | AI-native note-taking | [reflect.app](https://reflect.app/) |
-| **Obsidian + AI** | Local notes with AI plugins | [obsidian.md](https://obsidian.md/) |
-| **Reor** | Local PKM with vector search | [GitHub](https://github.com/reorproject/reor) |
-| **Memos** | Self-hosted, privacy-first notes | [GitHub](https://github.com/usememos/memos) |
+- [Notion AI](https://notion.so/) - AI over your Notion workspace
+- [Mem](https://mem.ai/) - AI-powered notes
+- [Reflect](https://reflect.app/) - AI-native note-taking
+- [Obsidian + AI](https://obsidian.md/) - Local notes with AI plugins
+- [Reor](https://github.com/reorproject/reor) - Local PKM with vector search
+- [Memos](https://github.com/usememos/memos) - Self-hosted, privacy-first notes
 
 ---
 
@@ -236,54 +194,36 @@ Your Context (what makes AI understand YOU)
 > Self-hosted AI systems you fully control.
 
 ### Personal AI Assistants
-
-| Project | Description | Link |
-|---------|-------------|------|
-| **Open WebUI** | ChatGPT-like UI with memory & RAG | [GitHub](https://github.com/open-webui/open-webui) |
-| **Khoj** | Personal AI for your notes/docs | [GitHub](https://github.com/khoj-ai/khoj) |
-| **AnythingLLM** | All-in-one document AI | [GitHub](https://github.com/Mintplex-Labs/anything-llm) |
-| **Quivr** | Second brain with AI | [GitHub](https://github.com/QuivrHQ/quivr) |
-| **PrivateGPT** | Fully private document chat | [GitHub](https://github.com/imartinez/privateGPT) |
-| **Danswer** | AI search over your data | [GitHub](https://github.com/danswer-ai/danswer) |
-| **Perplexica** | Personal AI search engine | [GitHub](https://github.com/ItzCrazyKns/Perplexica) |
-| **Second Me** | AI self with hierarchical memory | [GitHub](https://github.com/mindverse/Second-Me) |
-| **STING** | Privacy-first desktop AI | [stingassistant.com](https://stingassistant.com/) |
-| **Tiiny AI** | Local DB from your files | [tiinyai.com](https://tiinyai.com/) |
-
-**Setup Examples:**
-| Resource | Description |
-|----------|-------------|
-| [Open WebUI Docker Setup](https://docs.openwebui.com/getting-started/) | Official Docker guide |
-| [Khoj Self-Hosting](https://docs.khoj.dev/get-started/setup/) | Self-hosting documentation |
+- [Open WebUI](https://github.com/open-webui/open-webui) - ChatGPT-like UI with memory & RAG
+- [Khoj](https://github.com/khoj-ai/khoj) - Personal AI for your notes/docs
+- [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) - All-in-one document AI
+- [Quivr](https://github.com/QuivrHQ/quivr) - Second brain with AI
+- [PrivateGPT](https://github.com/imartinez/privateGPT) - Fully private document chat
+- [Danswer](https://github.com/danswer-ai/danswer) - AI search over your data
+- [Perplexica](https://github.com/ItzCrazyKns/Perplexica) - Personal AI search engine
+- [Second Me](https://github.com/mindverse/Second-Me) - AI self with hierarchical memory
+- [STING](https://stingassistant.com/) - Privacy-first desktop AI
+- [Tiiny AI](https://tiinyai.com/) - Local DB from your files
+- [Open WebUI Docker Setup](https://docs.openwebui.com/getting-started/) - Official setup guide
+- [Khoj Self-Hosting](https://docs.khoj.dev/get-started/setup/) - Self-hosting documentation
 
 ### Local LLM Solutions
+- [Ollama](https://ollama.com/) - Run LLMs locally
+- [LM Studio](https://lmstudio.ai/) - Desktop LLM app
+- [Jan](https://jan.ai/) - Offline AI assistant
+- [GPT4All](https://gpt4all.io/) - Local LLM ecosystem
+- [Llamafile](https://github.com/Mozilla-Ocho/llamafile) - Single-file LLM distribution
 
-| Tool | Description | Link |
-|------|-------------|------|
-| **Ollama** | Run LLMs locally | [ollama.com](https://ollama.com/) |
-| **LM Studio** | Desktop LLM app | [lmstudio.ai](https://lmstudio.ai/) |
-| **Jan** | Offline AI assistant | [jan.ai](https://jan.ai/) |
-| **GPT4All** | Local LLM ecosystem | [gpt4all.io](https://gpt4all.io/) |
-| **Llamafile** | Single-file LLM distribution | [GitHub](https://github.com/Mozilla-Ocho/llamafile) |
-
-### Personal Knowledge Base (Vector DBs for Personal Use)
-
-| Tool | Description | Link |
-|------|-------------|------|
-| **Chroma** | Easy to start, great for personal use | [GitHub](https://github.com/chroma-core/chroma) |
-| **LanceDB** | Embedded, no server needed | [GitHub](https://github.com/lancedb/lancedb) |
-
-**Tutorials:**
+### Personal Knowledge Base
+- [Chroma](https://github.com/chroma-core/chroma) - Easy to start vector database
+- [LanceDB](https://github.com/lancedb/lancedb) - Embedded, no server needed
 - [LangChain RAG Tutorial](https://python.langchain.com/docs/tutorials/rag/) - Build personal RAG
 - [LlamaIndex Getting Started](https://docs.llamaindex.ai/en/stable/getting_started/concepts/) - Document AI concepts
 
 ### Document Processing
-
-| Tool | Description | Link |
-|------|-------------|------|
-| **DocMind AI** | Offline document analysis with GraphRAG | [GitHub](https://github.com/BjornMelin/docmind-ai-llm) |
-| **Marker** | PDF to Markdown | [GitHub](https://github.com/VikParuchuri/marker) |
-| **Unstructured** | Multi-format processing | [GitHub](https://github.com/Unstructured-IO/unstructured) |
+- [DocMind AI](https://github.com/BjornMelin/docmind-ai-llm) - Offline document analysis with GraphRAG
+- [Marker](https://github.com/VikParuchuri/marker) - PDF to Markdown
+- [Unstructured](https://github.com/Unstructured-IO/unstructured) - Multi-format processing
 
 ---
 
