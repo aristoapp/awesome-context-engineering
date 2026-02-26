@@ -139,6 +139,7 @@ Your Context (what makes AI understand YOU)
 - [Notion](https://github.com/modelcontextprotocol/servers/tree/main/src/notion) - Your Notion pages
 - [Google Drive](https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive) - Your Drive files
 - [Memory](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) - Personal knowledge graph
+- [Context Harness](https://github.com/parallax-labs/context-harness) - Local-first context ingestion and retrieval for AI tools. Ingest files, Git, S3, and Lua scripts into SQLite; expose via MCP server for Cursor and Claude.
 
 ### Browser Extensions
 - [Sider](https://sider.ai/) - AI sidebar with page context
