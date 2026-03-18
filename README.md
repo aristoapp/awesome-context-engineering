@@ -178,6 +178,7 @@ Your Context (what makes AI understand YOU)
 - [OpenMemory](https://github.com/CaviraOSS/OpenMemory) - Rich memory with natural decay
 - [Memori](https://github.com/GibsonAI/memori) - SQL-native personal memory
 - [rag-user-memories](https://github.com/skorotkiewicz/rag-user-memories) - Extract & store personal facts
+- [SuperLocalMemory V3](https://github.com/qualixar/superlocalmemory) -- Local-first AI agent memory with mathematical foundations. 74.8% on LoCoMo (zero cloud). Fisher-Rao retrieval, sheaf cohomology consistency, Langevin lifecycle. EU AI Act compliant by architecture. MIT. [Paper: arXiv:2603.14588](https://arxiv.org/abs/2603.14588)
 
 ### Knowledge Management with AI
 - [Notion AI](https://notion.so/) - AI over your Notion workspace
