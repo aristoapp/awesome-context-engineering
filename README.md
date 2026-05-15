@@ -171,6 +171,7 @@ Your Context (what makes AI understand YOU)
 - [Memspan](https://memspan.ai/) - File-first personal memory, portable
 
 ### Self-Hosted Personal Memory
+- [Akephalos](https://github.com/sunnja69/akephalos) - Local-first, markdown-first `.akephalos` passport and MCP stdio server for portable preferences, tool notes, rules, project context, and durable memories across agents/tools via plain files and Git.
 - [Jean Memory](https://www.reddit.com/r/ClaudeAI/comments/1l17qf6) - Remote personal memory for Claude
 - [Sem-Mem](https://www.reddit.com/r/AIMemory/comments/1pg5fro) - Local semantic memory system
 - [MemLayer](https://www.reddit.com/r/LocalLLaMA/comments/1ozbzpx) - Persistent memory for local LLMs
