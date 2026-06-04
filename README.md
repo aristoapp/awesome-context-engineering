@@ -30,7 +30,7 @@ Use this repo to decide how you want your second brain to work end to end:
 | Organize | Does raw context become structured knowledge instead of a pile of embeddings? | Entities, facts, links, summaries, timelines, tags, Wiki/pages |
 | Evolve | Does memory improve as new context arrives and old context gets stale? | Consolidation, deduping, correction, refresh, dream/maintenance loops |
 | Use | Can the right context show up when a person or AI tool is doing real work? | Search, grounding, filters, citations, AI-tool access, write-back |
-| Govern | Can users and teams inspect, correct, delete, export, scope, and trust the brain? | UI, provenance, permissions, personal/team boundaries, local/cloud control |
+| Govern | Can users and teams inspect, correct, delete, export, scope, and trust the brain? | UI, provenance, activation evidence, permissions, personal/team boundaries, local/cloud control |
 
 ## Choose by Starting Point
 
@@ -76,6 +76,7 @@ These entry points are a chooser, not a taxonomy. Pick the row that matches the 
 | [Chooser](comparisons/chooser.md) | Pick a starting solution by goal and tradeoff. |
 | [Capability Matrix](comparisons/capability-matrix.md) | Compare support labels, operating burden, and setup time. |
 | [Capability Definitions](capabilities/README.md) | Understand the evaluation dimensions behind the matrix. |
+| [Activation Evidence](capabilities/activation-evidence.md) | Evaluate whether retrieved memory was loaded, cited, refused, written back, or actually used. |
 | [Setup Burden](comparisons/setup-burden.md) | See what you actually have to operate. |
 | [Agent Activation](comparisons/agent-access.md) | Compare MCP, API, SDK, CLI, and plugin access as second-brain activation channels. |
 | [Local vs Cloud](comparisons/local-vs-cloud.md) | Decide where memory should live. |
