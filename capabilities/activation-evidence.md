@@ -33,6 +33,7 @@ Passing this test does not require exposing private memory text in logs. A syste
 |---|---|---|---|
 | Membase | Partial | Memory/Wiki retrieval and connected AI workflows create a place to inspect what context can be used. | Verify whether a specific workflow exposes per-session retrieved-vs-used evidence. |
 | GBrain | Partial | CLI/MCP workflows with citations, conflicts, and gap analysis can support activation checks. | Needs hands-on verification for per-session acted-on evidence. |
+| taOSmd | Partial | The append-only, read-only transcript records messages, tool calls/results, decisions, and errors, giving a provenance/audit trail behind retrieved memory. | Per-session loaded-vs-acted-on evidence still needs workflow-level verification. |
 | Hermes Agent + LLM Wiki | Integration | Local Markdown wiki files make source inspection and handoff artifacts easy to audit. | Activation evidence depends on skill behavior and user discipline. |
 | Supermemory | Partial | MCP/API retrieval can expose source-backed memory to agents. | App owners need to record which retrieved items were actually used. |
 | Hyperspell | Partial | MCP search/get tools and metadata filters can provide context activation inputs. | Verify whether the host workflow records usage beyond retrieval. |
