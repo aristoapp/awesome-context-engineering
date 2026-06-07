@@ -33,7 +33,7 @@ Start with [Membase](../solutions/membase.md), [Hyperspell](../solutions/hypersp
 - Zep is purpose-built around temporal knowledge graph memory for applications.
 - Cognee exposes knowledge graph memory and can run in standalone or shared API mode.
 - GBrain gives a deterministic Markdown/page/link/timeline model plus a documented source-scoped OAuth path for self-hosted second brains, but you operate the stack.
-- taOSmd derives a typed temporal knowledge graph (entities, triples, closed predicate vocabulary) and a vector store from an append-only transcript, with contradiction-driven supersede so recall returns only the active fact, but it runs locally and has no GUI.
+- taOSmd derives a typed temporal knowledge graph (entities, triples, closed predicate vocabulary) and a vector store from an append-only transcript, with contradiction-driven supersede across both layers so recall returns only the active fact, and it runs locally with a minimal read-only web inspection UI rather than a full visual knowledge GUI.
 - Hermes Agent + LLM Wiki gives a readable Markdown wiki with schema, index, log, wikilinks, provenance, and lint rules, but you operate the wiki discipline.
 
 Choose this path when relationships, entities, facts, and time are first-class requirements.

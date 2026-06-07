@@ -21,7 +21,7 @@
 | [Cognee](../solutions/cognee.md) | Python package/SDK setup, optional MCP client config, optional Docker or API/Cloud mode, graph processing. | Separate standalone instances vs shared API mode can fragment memory. |
 | [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md) | Hermes install/config, `WIKI_PATH`, source curation, Markdown review, lint/maintenance cadence. | Easy to start, but quality depends on agent discipline and user review. |
 | [Khoj](../solutions/khoj.md) | Cloud or self-host install, source configuration, indexing. | Self-hosting and source freshness need active management. |
-| [taOSmd](../solutions/taosmd.md) | `pip install taosmd`, a local ONNX embedder, and a small local LLM via Ollama/rkllama; run CLI, `taosmd serve`, or `taosmd mcp`. | The pip package and CLI are verified on a clean env, but the one-line bootstrap (Ollama plus model downloads) is still being validated on clean machines; you operate the local models. |
+| [taOSmd](../solutions/taosmd.md) | `pip install taosmd`, a local ONNX embedder, and a small local LLM via Ollama/rkllama; run CLI, `taosmd serve`, or `taosmd mcp`. | The pip package, CLI, and one-line bootstrap (Ollama plus model downloads) all complete a clean-machine run end-to-end on x86 Linux and the aarch64 Orange Pi NPU; you operate the local models. |
 
 ## High Burden
 

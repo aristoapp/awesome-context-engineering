@@ -18,7 +18,7 @@ taOSmd is a fully local, SQLite-backed agent memory system that records an appen
 
 ## Second-Brain Fit
 
-taOSmd is best understood as a local/offline memory engine for AI agents rather than a no-code notes app or a hosted memory service. It targets readers who want benchmarked memory that runs on small local models and low-end hardware, owns its data on local disk, and treats an immutable transcript as ground truth. It is not a polished knowledge GUI and has no hosted/managed option by design.
+taOSmd is best understood as a local/offline memory engine for AI agents rather than a no-code notes app or a hosted memory service. It targets readers who want benchmarked memory that runs on small local models and low-end hardware, owns its data on local disk, and treats an immutable transcript as ground truth. It ships a minimal read-only local inspection UI (`taosmd serve`) for searching memory, viewing the pending-review queue, and checking health, but it is not a full visual knowledge UI and has no hosted/managed option by design.
 
 ## Capabilities
 
@@ -27,21 +27,21 @@ taOSmd is best understood as a local/offline memory engine for AI agents rather 
 | Deployment / ownership | Fully local/offline, SQLite-backed. Embeddings run on ONNX MiniLM (CPU) or RK3588 NPU, with optional GPU. No cloud dependency and no API keys. |
 | Context capture | Append-only, read-only Archive of both sides of a session: user and agent messages, tool calls and results, decisions, and errors. Optional opt-in user activity/browsing capture, a Python `ingest()` path, and typed loaders. |
 | Knowledge organization | A Librarian derives memory from the archive into a typed temporal knowledge graph (entities, triples, a closed predicate vocabulary) plus a vector store, with EDU/event extraction. |
-| Memory evolution | Contradiction detection and invalidation (a corrected singular fact supersedes the old one; recall returns only the active fact), near-duplicate detection (Jaccard), retention scoring with promotion gates, reflect/consolidation, and a human review queue. |
+| Memory evolution | Contradiction detection and invalidation (a corrected singular fact supersedes the old one across both the typed knowledge graph and the vector store, so superseded entries are excluded from recall; recall returns only the active fact), near-duplicate detection (Jaccard), retention scoring with promotion gates, reflect/consolidation, and a human review queue. The raw row and an append-only archive entry are retained, so supersede is zero-loss. |
 | Retrieval / use | Hybrid retrieval via RRF over BM25 and vector search plus conversational adjacency, with an optional cross-encoder rerank stage. |
-| Agent activation / write-back | Built-in CLI (`taosmd`), Python API/SDK, a local HTTP/REST API (`taosmd serve`, stdlib server bound to 127.0.0.1), and an MCP server (`taosmd mcp`, stdio; `mcp` optional extra). |
+| Agent activation / write-back | Built-in CLI (`taosmd`), Python API/SDK, a local HTTP/REST API plus a minimal read-only web inspection UI (`taosmd serve`, stdlib server bound to 127.0.0.1, serving search/review-queue/health at the root URL), and an MCP server (`taosmd mcp`, stdio; `mcp` optional extra). |
 | Personal / team scope | Per-agent isolated indexes via an agent registry. No enforced multi-user RBAC; team scoping is per-agent isolation, not enforced roles. |
-| Feedback / correction | Human review/correction queue; contradiction-driven supersede on the typed-KG layer; the immutable transcript provides provenance and audit. |
+| Feedback / correction | Human review/correction queue (inspectable via CLI, SDK, API, and the minimal read-only web UI); contradiction-driven supersede across both the typed-KG and vector layers; the immutable transcript provides provenance and audit. |
 | Privacy / control | Fully local data ownership on disk; user-activity capture is opt-in; the append-only transcript gives a verifiable audit trail. No cloud egress by default. |
-| Setup / operations | `pip install taosmd`, plus a local ONNX embedder and a small local LLM via Ollama or rkllama. The pip package install and CLI (`taosmd`/`serve`/`mcp`) are verified on a clean environment; the one-line bootstrap that pulls Ollama and downloads models is still being validated on clean machines. |
+| Setup / operations | `pip install taosmd`, plus a local ONNX embedder and a small local LLM via Ollama or rkllama. The pip package install and CLI (`taosmd`/`serve`/`mcp`) are verified on a clean environment, and the one-line bootstrap that pulls Ollama and downloads models now completes a clean-machine run end-to-end (clone, pip, model download, self-test) on x86 Linux and the aarch64 Orange Pi NPU. |
 
 ## Strengths
 
 - Fully local and offline by design, with no cloud dependency and no API keys.
 - Runs on small local models and low-end hardware, including RK3588 NPU embeddings.
 - Append-only, read-only transcript of both sides of a session acts as ground-truth provenance and audit.
-- Corrections supersede stale facts on the typed-KG layer, so recall returns only the active fact.
-- Multiple shipped activation surfaces: CLI, Python SDK, local REST API, and MCP server.
+- Corrections supersede stale facts across both the typed-KG and vector layers, so recall returns only the active fact while the raw row and archive entry are retained (zero-loss).
+- Multiple shipped activation surfaces: CLI, Python SDK, local REST API with a minimal read-only web inspection UI, and MCP server.
 - Hybrid retrieval (RRF + BM25 + vector + conversational adjacency) with optional cross-encoder rerank.
 - Maintainer-published benchmarks are pinned to commit, judge, and dataset for reproducibility.
 
@@ -49,10 +49,8 @@ taOSmd is best understood as a local/offline memory engine for AI agents rather 
 
 - Heavier dependency footprint than zero-dependency options (local embedder and a local LLM are needed).
 - No hosted or managed option by design.
-- No GUI; inspection and correction happen through the CLI, SDK, API, and the review queue.
+- The local web UI is a minimal read-only inspection surface (search, review queue, health); it is not a full visual knowledge UI and exposes no destructive actions, so correction still happens through the CLI, SDK, API, and review queue.
 - Team scoping is per-agent isolation, not enforced multi-user RBAC.
-- Correction-supersede applies to the typed-KG layer; raw vector chunks are not invalidated.
-- The full bootstrap-script clean-machine run (Ollama plus model downloads) is still being validated.
 
 ## Best For
 
