@@ -24,7 +24,7 @@
 | Honcho | self-hosting 기준 내장 | managed service 또는 self-hosted FastAPI server. workspace와 peer는 범위 지정 primitive를 제공합니다. | self-hosting은 더 많은 통제를 주지만 service, storage, provider key, update 운영을 추가합니다. |
 | Mem0/OpenMemory | 내장 | hosted 또는 self-hosted. | self-hosting이 가장 강한 통제권을 제공합니다. |
 | Zep/Graphiti | 부분 지원 | 호스팅형 Zep 또는 Graphiti library. | 플랫폼 보존 정책과 그래프 데이터 처리를 확인하세요. |
-| Cognee | 로컬 모드에서 내장 | standalone local/Docker 또는 API 모드. | 공유 API 모드는 통제 경계를 바꿉니다. |
+| Cognee | 로컬 모드에서 내장 | SDK/local mode, 선택적 Docker MCP 설정, 또는 API/Cloud mode. | 공유 API 모드는 통제 경계를 바꿉니다. |
 | Khoj | self-hosting 시 내장 | cloud 또는 self-hosted. | cloud 편의성은 통제 경계를 바꿉니다. |
 | Obsidian/Logseq + AI bridge | 내장 | 로컬 vault/graph와 백업. | 플러그인 권한이 위험을 키울 수 있습니다. |
 | ChatGPT Memory | 부분 지원 | ChatGPT memory 설정, 삭제 제어, Temporary Chat, 연결된 앱/정보원 관리. | 플랫폼에 묶여 있고 기본적으로 portable하지 않습니다. 개인화 맥락을 완전히 제거하려면 관련 chat, file, connected-app data 삭제가 필요할 수 있습니다. |

@@ -23,7 +23,7 @@ Deployment and ownership define where memory lives, who operates storage and ind
 | Hyperspell | Hosted + API | Hosted dashboard, memory/context platform, SDKs, API, MCP server, and public plugin/SDK repos. | Core memory platform is managed; private beta availability and data residency/retention details should be verified. |
 | Mem0/OpenMemory | Hosted/self-hosted | Hosted Mem0 Platform or open-source server/library path. | Self-hosting still requires memory infrastructure decisions. |
 | Zep/Graphiti | Hosted + OSS library | Zep managed platform or Graphiti library integration. | Platform and library are related but not identical surfaces. |
-| Cognee | Local/API mode | Standalone local/Docker setup or shared API mode. | Mode choice affects memory isolation and sharing. |
+| Cognee | SDK/local/API mode | Python package/SDK with local databases, optional local/Docker MCP setup, or shared API/Cloud mode. | Mode choice affects memory isolation and sharing. |
 | Khoj | Cloud/self-hosted | Khoj Cloud or self-hosted personal AI. | Self-hosting requires model/source setup. |
 | Obsidian/Logseq + AI bridge | Local-first | Local vault/graph plus optional sync, plugins, or bridges. | Agent memory requires an extra bridge or import path. |
 | ChatGPT Memory | Hosted platform | ChatGPT settings and platform memory. | No local or portable deployment for ordinary users. |

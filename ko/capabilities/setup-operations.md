@@ -24,7 +24,7 @@
 | Honcho | 연동 | hosted MCP/API key 또는 self-hosted FastAPI server, SDK/MCP 연동, peer/session 설계, self-hosting용 provider key. | hosted agent 설정은 빠르지만 production integration과 self-hosting은 backend 운영을 추가합니다. |
 | Mem0/OpenMemory | 연동 | hosted MCP/API 또는 self-hosted stack. | memory 설계는 애플리케이션 작업입니다. |
 | Zep/Graphiti | API | 앱 연동, 그래프 수집, 그래프 backend, LLM/embedding provider 설정. | 빌더 중심입니다. 공식 quickstart는 있지만 backend 선택에 따라 실제 소요 시간이 달라집니다. |
-| Cognee | 내장 | Docker/local/API 모드와 MCP 설정. | 모드를 신중히 선택해야 합니다. |
+| Cognee | 내장 | Python package/SDK 설정, 선택적 MCP config, 선택적 Docker 또는 API/Cloud mode. | Docker는 필수가 아니며, 모드를 신중히 선택해야 합니다. |
 | Khoj | 내장 | cloud 또는 self-host와 정보원. | 정보원 최신성 검증이 필요합니다. |
 | Obsidian/Logseq + AI bridge | 연동 | 노트 앱과 플러그인/가져오기/MCP bridge. | 소유권은 강하지만 설정 선택지가 더 많습니다. |
 | ChatGPT Memory | 내장 | ChatGPT memory 설정 켜기/관리. | 즉시 쓸 수 있지만 플랫폼에 묶입니다. |
@@ -40,3 +40,4 @@
 - [Supermemory MCP setup](https://supermemory.ai/docs/supermemory-mcp/setup)
 - [Honcho MCP integration](https://honcho.dev/docs/v3/guides/integrations/mcp)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
+- [Cognee installation](https://docs.cognee.ai/getting-started/installation)

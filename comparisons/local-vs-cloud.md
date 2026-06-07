@@ -11,7 +11,7 @@
 | [Honcho](../solutions/honcho.md) | Yes, self-hosted FastAPI server | Yes, managed service and hosted MCP | Stateful agent memory with hosted or owned deployment paths | Self-hosting adds service, provider-key, storage, and update operations. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | Yes through OSS/self-hosted setup | Yes through Mem0 Platform | Developer memory layer with hosted or owned stack | Requires memory scope and governance design. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | Graphiti is open source; Zep is managed | Yes | Temporal graph memory for apps | Product engineering and backend/provider choices required. |
-| [Cognee](../solutions/cognee.md) | Yes, standalone/Docker/local setup | Yes, API mode/shared backend | Knowledge graph memory with MCP | Mode choice affects sharing and isolation. |
+| [Cognee](../solutions/cognee.md) | Yes, SDK/local setup and optional Docker MCP | Yes, API/Cloud mode/shared backend | Knowledge graph memory SDK with MCP/plugins | Mode choice affects sharing and isolation. |
 | [Khoj](../solutions/khoj.md) | Yes | Yes | Personal AI over files with privacy option | Self-hosting still requires source and model setup. |
 | [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md) | Yes | Optional sync/services | Human-owned local notes | AI memory requires plugins or custom bridges. |
 | [ChatGPT Memory](../solutions/chatgpt-memory.md) | No | Yes | Native ChatGPT personalization | Platform-bound and not portable. |

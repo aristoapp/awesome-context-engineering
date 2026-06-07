@@ -11,7 +11,7 @@
 | [Honcho](../solutions/honcho.md) | 예, self-hosted FastAPI server | 예, managed service와 hosted MCP | hosted 또는 직접 소유 배포 경로가 있는 stateful agent memory | self-hosting에는 service, provider key, storage, update 운영이 추가됨. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | OSS/self-hosted 설정으로 가능 | Mem0 Platform으로 가능 | hosted 또는 직접 소유 stack을 가진 개발자용 memory 계층 | memory 범위와 거버넌스 설계 필요. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | Graphiti는 open source, Zep은 managed | 예 | 앱을 위한 temporal graph memory | 제품 엔지니어링과 backend/provider 선택 필요. |
-| [Cognee](../solutions/cognee.md) | 예, standalone/Docker/local 설정 | 예, API mode/shared backend | MCP가 있는 knowledge graph memory | 모드 선택이 공유와 격리에 영향. |
+| [Cognee](../solutions/cognee.md) | 예, SDK/local 설정과 선택적 Docker MCP | 예, API/Cloud mode/shared backend | MCP/plugin이 있는 knowledge graph memory SDK | 모드 선택이 공유와 격리에 영향. |
 | [Khoj](../solutions/khoj.md) | 예 | 예 | 프라이버시 선택지가 있는 파일 기반 개인 AI | self-hosting에도 정보원/모델 설정 필요. |
 | [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md) | 예 | 선택적 sync/service | 사람이 소유하는 로컬 노트 | AI memory에는 plugin 또는 custom bridge 필요. |
 | [ChatGPT Memory](../solutions/chatgpt-memory.md) | 아니오 | 예 | ChatGPT 내장 개인화 | 플랫폼에 묶이고 portable하지 않음. |

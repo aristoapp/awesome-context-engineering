@@ -23,7 +23,7 @@
 | Hyperspell | Hosted + API | hosted dashboard, memory/context platform, SDK, API, MCP server, 공개 plugin/SDK repo. | 핵심 memory platform은 managed입니다. private beta 사용 가능 여부와 data residency/retention 세부 사항을 확인해야 합니다. |
 | Mem0/OpenMemory | Hosted/self-hosted | hosted Mem0 Platform 또는 open-source server/library 경로. | self-hosting에도 memory 인프라 결정이 필요합니다. |
 | Zep/Graphiti | Hosted + OSS library | Zep managed platform 또는 Graphiti library 연동. | 플랫폼과 library는 관련되어 있지만 같은 표면은 아닙니다. |
-| Cognee | Local/API mode | standalone local/Docker 설정 또는 공유 API 모드. | 모드 선택이 memory 격리와 공유에 영향을 줍니다. |
+| Cognee | SDK/local/API mode | local database를 쓰는 Python package/SDK, 선택적 local/Docker MCP 설정, 또는 공유 API/Cloud mode. | 모드 선택이 memory 격리와 공유에 영향을 줍니다. |
 | Khoj | Cloud/self-hosted | Khoj Cloud 또는 self-hosted 개인 AI. | self-hosting에는 모델/정보원 설정이 필요합니다. |
 | Obsidian/Logseq + AI bridge | Local-first | local vault/graph와 선택적 sync, 플러그인, bridge. | agent memory에는 추가 bridge 또는 가져오기 경로가 필요합니다. |
 | ChatGPT Memory | Hosted platform | ChatGPT 설정과 플랫폼 memory. | 일반 사용자에게 로컬 또는 portable deployment는 없습니다. |

@@ -24,7 +24,7 @@ Privacy, portability, and control cover where memory is stored, whether users ca
 | Honcho | Built-in for self-hosting | Managed service or self-hosted FastAPI server; workspaces and peers provide scoping primitives. | Self-hosting gives more control but adds service, storage, provider-key, and update operations. |
 | Mem0/OpenMemory | Built-in | Hosted or self-hosted. | Self-hosting provides strongest control. |
 | Zep/Graphiti | Partial | Hosted Zep or Graphiti library. | Verify platform retention and graph data handling. |
-| Cognee | Built-in in local mode | Standalone local/Docker or API mode. | Shared API mode changes control boundary. |
+| Cognee | Built-in in local mode | SDK/local mode, optional Docker MCP setup, or API/Cloud mode. | Shared API mode changes control boundary. |
 | Khoj | Built-in with self-hosting | Cloud or self-hosted. | Cloud convenience changes control boundary. |
 | Obsidian/Logseq + AI bridge | Built-in | Local vault/graph and backups. | Plugin permissions can expand risk. |
 | ChatGPT Memory | Partial | ChatGPT memory settings, deletion controls, Temporary Chat, and connected-app/source management. | Platform-bound and not portable by default; fully removing personalization context may require deleting related chats, files, or connected-app data. |

@@ -11,9 +11,10 @@
 | [Supermemory](supermemory.md) | 호스팅형 memory API와 커넥터 계층 | 핵심 |
 | [Hyperspell](hyperspell.md) | AI agent용 호스팅 company/user context 계층 | 핵심, private beta 주의 |
 | [Honcho](honcho.md) | Stateful agent memory와 user-modeling 계층 | 핵심, 출처 기반 |
+| [Hindsight](hindsight.md) | memory bank가 있는 agent memory API | 핵심, 출처 기반 |
 | [Mem0/OpenMemory](mem0-openmemory.md) | hosted/self-hosted 경로가 있는 개발자용 memory 계층 | 핵심 |
 | [Zep/Graphiti](zep-graphiti.md) | 애플리케이션을 위한 temporal knowledge graph memory | 핵심 |
-| [Cognee](cognee.md) | MCP가 있는 knowledge graph memory | 핵심 |
+| [Cognee](cognee.md) | MCP/plugin이 있는 knowledge graph memory SDK | 핵심 |
 | [Khoj](khoj.md) | 로컬 파일과 노트 위의 개인 AI | 핵심 |
 | [Obsidian/Logseq + AI bridge](obsidian-logseq.md) | 로컬 우선 PKM 원본 지식 저장소 | 핵심 |
 | [ChatGPT Memory](chatgpt-memory.md) | ChatGPT 내 개인화 기준선 | 기준선 |

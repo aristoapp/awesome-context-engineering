@@ -52,21 +52,22 @@
 
 | 솔루션 | 세컨드 브레인에서 가장 잘 맞는 역할 | 수집 | 정리 | 발전 | 활용 | 설정 시간 |
 |---|---|---|---|---|---|---|
-| [Membase](ko/solutions/membase.md) | 가장 빠른 end-to-end 호스팅형 세컨드 브레인 | 내장 + 연동 | 내장 Memory + Wiki | 내장 | 대시보드 채팅 + AI workflow | 공식: 5분 이내 |
-| [OpenHuman](ko/solutions/openhuman.md) | memory가 있는 로컬 우선 개인 AI assistant | 내장 + 연동 | 내장 Memory Tree + vault | 부분 지원 | 데스크톱 assistant | 공식: 몇 분 |
-| [GBrain](ko/solutions/gbrain.md) | 로컬/self-hosted 브레인 운영 계층 | 내장 + 커스텀 수집기 | 내장 page/graph/timeline | 내장 | CLI + MCP | 공식: 개인용 약 30분 |
-| [Hermes Agent + LLM Wiki](ko/solutions/hermes-llm-wiki.md) | 에이전트가 운영하는 로컬 Markdown wiki | 내장 자료 수집 흐름 | 내장 Markdown wiki | 부분 지원 | Hermes skill + 로컬 파일 | 공식 quickstart 있음, 실제 소요 시간은 달라짐 |
-| [Supermemory](ko/solutions/supermemory.md) | 호스팅형 memory API와 커넥터 계층 | 내장 + 연동 | 내장 graph memory | 내장 | MCP + API + SDK | 공식: 몇 분 |
-| [Hyperspell](ko/solutions/hyperspell.md) | AI agent용 호스팅 company/user context 계층 | 내장 + 연동 | 내장 context graph + metadata | 내장 + procedural memory | MCP + API + SDK | 공식: 5분 이내 주장, beta 여부에 따라 달라짐 |
-| [Honcho](ko/solutions/honcho.md) | Stateful agent memory와 user-modeling 계층 | API + 연동 | 내장 peer representation + conclusion | 내장 background reasoning | MCP + API + SDK | 공식 quickstart 있음, self-hosting은 달라짐 |
-| [Mem0/OpenMemory](ko/solutions/mem0-openmemory.md) | 개발자용 memory engine | API + 연동 | 내장 memory 범위 | 부분 지원 | MCP + API + SDK | 공식: 몇 분 |
-| [Zep/Graphiti](ko/solutions/zep-graphiti.md) | 앱을 위한 temporal graph memory | API | 내장 temporal graph | 내장 | API + SDK | 공식 quickstart 있음, 실제 소요 시간은 달라짐 |
-| [Cognee](ko/solutions/cognee.md) | MCP가 있는 knowledge graph memory | 내장 + API | 내장 knowledge graph | 내장 | MCP + API | 공식: Docker 기준 몇 분 |
-| [Khoj](ko/solutions/khoj.md) | 파일과 노트 위의 개인 AI | 내장 | 내장 인덱싱/검색 | 부분 지원 | 앱 + 클라이언트 | 공식: 몇 분 |
-| [Obsidian/Logseq + AI bridge](ko/solutions/obsidian-logseq.md) | 사람이 관리하는 로컬 지식 베이스 | 내장 노트 + 연동 | 사람이 관리하는 PKM 구조에 부분 의존 | 커스텀 수집기 | 플러그인/MCP bridge | 직접 설정: 30-90분 |
-| [ChatGPT Memory](ko/solutions/chatgpt-memory.md) | ChatGPT 내 개인화 기준선 | 내장 | 내장 | 내장 | ChatGPT 전용 | 공식: 즉시 |
-| [Claude Projects/Claude Code](ko/solutions/claude-projects-code.md) | Claude 범위의 프로젝트 지식 | 내장 | 내장 프로젝트 지식 | 프로젝트용 내장 RAG | Claude + 커넥터 | 공식: 몇 분 |
-| [NotebookLM](ko/solutions/notebooklm.md) | 출처 기반 연구 notebook | 내장 | 내장 출처 요약 | 부분 지원 | NotebookLM 전용 | 공식: 몇 분 |
+| [Membase](ko/solutions/membase.md) | 가장 빠른 end-to-end 호스팅형 세컨드 브레인 | 내장 + 연동 | 내장 Memory + Wiki | 내장 | 대시보드 채팅 + MCP/plugin 에이전트 | 공식: 5분 이내 |
+| [OpenHuman](ko/solutions/openhuman.md) | memory가 있는 로컬 우선 개인 AI assistant | 내장 + 연동 | 내장 Memory Tree + vault | 부분 지원 | 데스크톱 agent + 연결 도구 | 공식: 몇 분 |
+| [GBrain](ko/solutions/gbrain.md) | 로컬/self-hosted 브레인 운영 계층 | 내장 + 커스텀 수집기 | 내장 page/graph/timeline | 내장 | CLI + stdio/HTTP MCP + skillpack | 공식: 개인용 약 30분 |
+| [Hermes Agent + LLM Wiki](ko/solutions/hermes-llm-wiki.md) | 에이전트가 운영하는 로컬 Markdown wiki | 내장 자료 수집 흐름 | 내장 Markdown wiki | 부분 지원 | Hermes skill/runtime + Markdown wiki | 공식 quickstart 있음, 실제 소요 시간은 달라짐 |
+| [Supermemory](ko/solutions/supermemory.md) | 호스팅형 memory API와 커넥터 계층 | 내장 + 연동 | 내장 graph memory | 내장 | MCP + API + SDK + plugin | 공식: 몇 분 |
+| [Hyperspell](ko/solutions/hyperspell.md) | AI agent용 호스팅 company/user context 계층 | 내장 + 연동 | 내장 context graph + metadata | 내장 + procedural memory | MCP + API/SDK + agent plugin | 공식: 5분 이내 주장, beta 여부에 따라 달라짐 |
+| [Honcho](ko/solutions/honcho.md) | Stateful agent memory와 user-modeling 계층 | API + 연동 | 내장 peer representation + conclusion | 내장 background reasoning | MCP + API/SDK + CLI/plugin | 공식 quickstart 있음, self-hosting은 달라짐 |
+| [Hindsight](ko/solutions/hindsight.md) | memory bank가 있는 agent memory API | API + 연동 | 내장 memory bank + observation | 내장 consolidation | MCP + REST API + SDK + CLI | 공식 quickstart 있음, 실제 소요 시간은 달라짐 |
+| [Mem0/OpenMemory](ko/solutions/mem0-openmemory.md) | 개발자용 memory engine | API + 연동 | 내장 memory 범위 | 부분 지원 | MCP + plugin/hook + CLI + API/SDK | 공식: 몇 분 |
+| [Zep/Graphiti](ko/solutions/zep-graphiti.md) | 앱을 위한 temporal graph memory | API | 내장 temporal graph | 내장 | API + SDK + MCP(읽기 중심) | 공식 quickstart 있음, 실제 소요 시간은 달라짐 |
+| [Cognee](ko/solutions/cognee.md) | MCP/plugin이 있는 knowledge graph memory SDK | 내장 + API/SDK | 내장 knowledge graph | 내장 | Python SDK/Cloud + MCP/API + plugin/CLI | 공식: package install 기준 몇 분, Docker는 선택 사항 |
+| [Khoj](ko/solutions/khoj.md) | 파일과 노트 위의 개인 AI | 내장 | 내장 인덱싱/검색 | 부분 지원 | 채팅/검색 앱 + 클라이언트 + 자동화 | 공식: 몇 분 |
+| [Obsidian/Logseq + AI bridge](ko/solutions/obsidian-logseq.md) | 사람이 관리하는 로컬 지식 베이스 | 내장 노트 + 연동 | 사람이 관리하는 PKM 구조에 부분 의존 | 커스텀 수집기 | 로컬 파일 + plugin/API/MCP bridge | 직접 설정: 30-90분 |
+| [ChatGPT Memory](ko/solutions/chatgpt-memory.md) | ChatGPT 내 개인화 기준선 | 내장 | 내장 | 내장 | ChatGPT 개인화 + memory source | 공식: 즉시 |
+| [Claude Projects/Claude Code](ko/solutions/claude-projects-code.md) | Claude 범위의 프로젝트 지식 | 내장 | 내장 프로젝트 지식 | 프로젝트용 내장 RAG | Claude + Claude Code + 커넥터 | 공식: 몇 분 |
+| [NotebookLM](ko/solutions/notebooklm.md) | 출처 기반 연구 notebook | 내장 | 내장 출처 요약 | 부분 지원 | NotebookLM + Gemini notebook 화면 | 공식: 몇 분 |
 
 ## Deep Dives
 

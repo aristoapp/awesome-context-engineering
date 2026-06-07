@@ -14,7 +14,7 @@ Solution profiles explain what role each product or project can play in an AI-na
 | [Hindsight](hindsight.md) | Agent memory API with memory banks | Core, source-backed |
 | [Mem0/OpenMemory](mem0-openmemory.md) | Developer memory layer with hosted and self-hosted paths | Core |
 | [Zep/Graphiti](zep-graphiti.md) | Temporal knowledge graph memory for applications | Core |
-| [Cognee](cognee.md) | Knowledge graph memory with MCP | Core |
+| [Cognee](cognee.md) | Knowledge graph memory SDK with MCP/plugins | Core |
 | [Khoj](khoj.md) | Personal AI over local files and notes | Core |
 | [Obsidian/Logseq + AI bridge](obsidian-logseq.md) | Local-first PKM source of truth | Core |
 | [ChatGPT Memory](chatgpt-memory.md) | ChatGPT-native personalization baseline | Baseline |

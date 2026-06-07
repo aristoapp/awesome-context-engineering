@@ -24,7 +24,7 @@ Setup and operations cover first install, authentication, source sync, indexing,
 | Honcho | Integration | Hosted MCP/API key or self-hosted FastAPI server, SDK/MCP integration, peer/session design, and provider keys for self-hosting. | Hosted agent setup is quick; production integration and self-hosting add backend operations. |
 | Mem0/OpenMemory | Integration | Hosted MCP/API or self-hosted stack. | Memory design is application work. |
 | Zep/Graphiti | API | App integration, graph ingestion, graph backend, and LLM/embedding provider setup. | Builder-focused; official quickstarts exist, but hands-on time varies with backend choices. |
-| Cognee | Built-in | Docker/local/API mode and MCP config. | Choose mode carefully. |
+| Cognee | Built-in | Python package/SDK setup, optional MCP config, optional Docker or API/Cloud mode. | Docker is not required; choose mode carefully. |
 | Khoj | Built-in | Cloud or self-host plus sources. | Source freshness needs verification. |
 | Obsidian/Logseq + AI bridge | Integration | Notes app plus plugin/import/MCP bridge. | Strong ownership, more setup choices. |
 | ChatGPT Memory | Built-in | Enable or manage ChatGPT memory settings. | Instant, but platform-bound. |
@@ -40,3 +40,4 @@ Setup and operations cover first install, authentication, source sync, indexing,
 - [Supermemory MCP setup](https://supermemory.ai/docs/supermemory-mcp/setup)
 - [Honcho MCP integration](https://honcho.dev/docs/v3/guides/integrations/mcp)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
+- [Cognee installation](https://docs.cognee.ai/getting-started/installation)

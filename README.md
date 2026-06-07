@@ -52,22 +52,22 @@ These entry points are a chooser, not a taxonomy. Pick the row that matches the 
 
 | Solution | Best second-brain role | Collect | Organize | Evolve | Use | Setup time |
 |---|---|---|---|---|---|---|
-| [Membase](solutions/membase.md) | Fastest end-to-end hosted second brain | Built-in + Integration | Built-in Memory + Wiki | Built-in | Dashboard chat + AI workflows | Official: under 5 min |
-| [OpenHuman](solutions/openhuman.md) | Local-first personal AI assistant with memory | Built-in + Integration | Built-in Memory Tree + vault | Partial | Desktop assistant | Official: minutes |
-| [GBrain](solutions/gbrain.md) | Local/self-hosted brain operations layer | Built-in + Custom collector | Built-in pages/graph/timeline | Built-in | CLI + MCP | Official: ~30 min personal |
-| [Hermes Agent + LLM Wiki](solutions/hermes-llm-wiki.md) | Agent-operated local Markdown wiki | Built-in source workflow | Built-in Markdown wiki | Partial | Hermes skill + local files | Official quickstart; hands-on varies |
-| [Supermemory](solutions/supermemory.md) | Hosted memory API and connector layer | Built-in + Integration | Built-in graph memory | Built-in | MCP + API + SDK | Official: minutes |
-| [Hyperspell](solutions/hyperspell.md) | Hosted company/user context layer for AI agents | Built-in + Integration | Built-in context graph + metadata | Built-in + procedural memory | MCP + API + SDK | Official: under 5 min claim; beta varies |
-| [Honcho](solutions/honcho.md) | Stateful agent memory and user-modeling layer | API + Integration | Built-in peer representations + conclusions | Built-in background reasoning | MCP + API + SDK | Official quickstart; self-hosting varies |
-| [Hindsight](solutions/hindsight.md) | Agent memory API with memory banks | API + Integration | Built-in memory banks + observations | Built-in consolidation | MCP + API + SDK | Official quickstart; hands-on varies |
-| [Mem0/OpenMemory](solutions/mem0-openmemory.md) | Developer memory engine | API + Integration | Built-in memory scopes | Partial | MCP + API + SDK | Official: minutes |
-| [Zep/Graphiti](solutions/zep-graphiti.md) | Temporal graph memory for apps | API | Built-in temporal graph | Built-in | API + SDK | Official quickstart; hands-on varies |
-| [Cognee](solutions/cognee.md) | Knowledge graph memory with MCP | Built-in + API | Built-in knowledge graph | Built-in | MCP + API | Official: minutes with Docker |
-| [Khoj](solutions/khoj.md) | Personal AI over files and notes | Built-in | Built-in indexing/search | Partial | App + clients | Official: minutes |
-| [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) | Human-owned local knowledge base | Built-in notes + Integration | Partial human/PKM structure | Custom collector | Plugin/MCP bridge | Hands-on: 30-90 min |
-| [ChatGPT Memory](solutions/chatgpt-memory.md) | ChatGPT-native personalization baseline | Built-in | Built-in | Built-in | ChatGPT only | Official: instant |
-| [Claude Projects/Claude Code](solutions/claude-projects-code.md) | Claude-scoped project knowledge | Built-in | Built-in project knowledge | Built-in RAG for projects | Claude + connectors | Official: minutes |
-| [NotebookLM](solutions/notebooklm.md) | Source-grounded research notebook | Built-in | Built-in source summaries | Partial | NotebookLM only | Official: minutes |
+| [Membase](solutions/membase.md) | Fastest end-to-end hosted second brain | Built-in + Integration | Built-in Memory + Wiki | Built-in | Dashboard chat + MCP/plugin agents | Official: under 5 min |
+| [OpenHuman](solutions/openhuman.md) | Local-first personal AI assistant with memory | Built-in + Integration | Built-in Memory Tree + vault | Partial | Desktop agent + connected tools | Official: minutes |
+| [GBrain](solutions/gbrain.md) | Local/self-hosted brain operations layer | Built-in + Custom collector | Built-in pages/graph/timeline | Built-in | CLI + stdio/HTTP MCP + skillpack | Official: ~30 min personal |
+| [Hermes Agent + LLM Wiki](solutions/hermes-llm-wiki.md) | Agent-operated local Markdown wiki | Built-in source workflow | Built-in Markdown wiki | Partial | Hermes skill/runtime + Markdown wiki | Official quickstart; hands-on varies |
+| [Supermemory](solutions/supermemory.md) | Hosted memory API and connector layer | Built-in + Integration | Built-in graph memory | Built-in | MCP + API + SDK + plugins | Official: minutes |
+| [Hyperspell](solutions/hyperspell.md) | Hosted company/user context layer for AI agents | Built-in + Integration | Built-in context graph + metadata | Built-in + procedural memory | MCP + API/SDK + agent plugins | Official: under 5 min claim; beta varies |
+| [Honcho](solutions/honcho.md) | Stateful agent memory and user-modeling layer | API + Integration | Built-in peer representations + conclusions | Built-in background reasoning | MCP + API/SDK + CLI/plugins | Official quickstart; self-hosting varies |
+| [Hindsight](solutions/hindsight.md) | Agent memory API with memory banks | API + Integration | Built-in memory banks + observations | Built-in consolidation | MCP + REST API + SDK + CLI | Official quickstart; hands-on varies |
+| [Mem0/OpenMemory](solutions/mem0-openmemory.md) | Developer memory engine | API + Integration | Built-in memory scopes | Partial | MCP + plugins/hooks + CLI + API/SDK | Official: minutes |
+| [Zep/Graphiti](solutions/zep-graphiti.md) | Temporal graph memory for apps | API | Built-in temporal graph | Built-in | API + SDK + MCP (read-focused) | Official quickstart; hands-on varies |
+| [Cognee](solutions/cognee.md) | Knowledge graph memory SDK with MCP/plugins | Built-in + API/SDK | Built-in knowledge graph | Built-in | Python SDK/Cloud + MCP/API + plugins/CLI | Official: minutes via package install; Docker optional |
+| [Khoj](solutions/khoj.md) | Personal AI over files and notes | Built-in | Built-in indexing/search | Partial | Chat/search app + clients + automations | Official: minutes |
+| [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) | Human-owned local knowledge base | Built-in notes + Integration | Partial human/PKM structure | Custom collector | Local files + plugin/API/MCP bridge | Hands-on: 30-90 min |
+| [ChatGPT Memory](solutions/chatgpt-memory.md) | ChatGPT-native personalization baseline | Built-in | Built-in | Built-in | ChatGPT personalization + sources | Official: instant |
+| [Claude Projects/Claude Code](solutions/claude-projects-code.md) | Claude-scoped project knowledge | Built-in | Built-in project knowledge | Built-in RAG for projects | Claude + Claude Code + connectors | Official: minutes |
+| [NotebookLM](solutions/notebooklm.md) | Source-grounded research notebook | Built-in | Built-in source summaries | Partial | NotebookLM + Gemini notebook surfaces | Official: minutes |
 
 ## Deep Dives
 
