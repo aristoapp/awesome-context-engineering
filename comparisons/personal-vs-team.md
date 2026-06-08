@@ -10,6 +10,7 @@
 | [Hyperspell](../solutions/hyperspell.md) | Strong | Strong | Strong for app builders | Multi-tenant user model, user tokens, metadata, collections, source selection, and folder policies help, but app teams own governance UX. |
 | [Honcho](../solutions/honcho.md) | Strong | Strong | Strong for app builders | Workspaces isolate apps/environments; peers and sessions can model users, agents, groups, and other entities, but end-user governance UX is app-owned. |
 | [Mnemosyne](../solutions/mnemosyne.md) | Strong | Strong | Partial / operational | Memory banks and global/session scope can separate contexts, but team permissions and review flows are external to the memory layer. |
+| [taOSmd](../solutions/taosmd.md) | Strong | Strong | Partial / operational | Per-agent shelves with cross-agent reads separate contexts, but team permissions and review flows are not part of the memory layer. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | Strong | Strong | Strong | User, session, and organizational memory make it product-friendly. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | Possible | Strong | Strong | Best as app infrastructure for users, sessions, groups, and business data. |
 | [Cognee](../solutions/cognee.md) | Strong | Strong | Strong in API mode | Standalone mode isolates clients; API mode centralizes sharing. |

@@ -38,6 +38,7 @@ Passing this test does not require exposing private memory text in logs. A syste
 | Hyperspell | Partial | MCP search/get tools and metadata filters can provide context activation inputs. | Verify whether the host workflow records usage beyond retrieval. |
 | Honcho | Partial | Session and peer context APIs can help explain what context was available to an agent. | Application integration determines whether acted-on evidence is captured. |
 | Mnemosyne | Partial | MCP, CLI, and Hermes tool calls can show that recall or memory tools ran for a workflow. | Agent logs must still connect retrieved memories to decisions, citations, or write-back. |
+| taOSmd | Partial | The append-only archive, the pending-review list, and the local dashboard show which turns and facts are stored and retrievable. | Agent logs must still connect retrieved memories to decisions, citations, or write-back. |
 | Mem0/OpenMemory | Partial | User/run-scoped memory search can support activation traces. | Grounding and acted-on proof are usually app-level responsibilities. |
 | Zep/Graphiti | Partial | Temporal graph facts and episodes provide source structure for task evidence. | The application must connect graph retrieval to action logs. |
 | Cognee | Partial | Knowledge graph recall tools can return structured context for agents. | Verify host-level usage evidence per workflow. |
@@ -59,4 +60,6 @@ Activation evidence is not the same as perfect observability. A practical second
 - [GBrain solution profile](../solutions/gbrain.md)
 - [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
 - [Mnemosyne Hermes integration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md)
+- [taOSmd repository](https://github.com/jaylfc/taosmd)
+- [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)

@@ -23,6 +23,7 @@ Knowledge organization is the system's ability to turn raw context into durable,
 | Hyperspell | Built-in | Memories, connected data sources, metadata filters, collections, structured resource data, LLM-ready summaries, context graph claims, and procedural memories from traces. | App owners still design taxonomy, metadata, review UI, and safe recall boundaries. |
 | Honcho | Built-in | Workspaces, peers, sessions, messages, conclusions, representations, peer cards, and session context. | End-user organization and review UI depend on the integration. |
 | Mnemosyne | Built-in | Working memory, episodic memory, scratchpad, memory banks, and a TripleStore for temporal graph-style facts. | Organization quality depends on memory scope design, embedding configuration, and agent write behavior. |
+| taOSmd | Built-in | An append-only archive, a vector index, a temporal knowledge graph, and a librarian layer turn raw turns into retrievable structure. | Organization quality depends on the local extraction model, embedding configuration, and agent write behavior. |
 | Mem0/OpenMemory | Built-in | Layered memory types and search/promotion model. | App must choose scope and metadata carefully. |
 | Zep/Graphiti | Built-in | Entity nodes, entity edges, episodic nodes, facts, summaries. | Strong for temporal graph apps, not no-code PKM. |
 | Cognee | Built-in | Knowledge graph memory tools and processing. | Graph quality depends on ingestion and processing. |
@@ -42,5 +43,7 @@ Knowledge organization is the system's ability to turn raw context into durable,
 - [Honcho overview](https://honcho.dev/docs/v3/documentation/introduction/overview)
 - [Mnemosyne docs](https://docs.mnemosyne.site/)
 - [Mnemosyne repository](https://github.com/AxDSan/Mnemosyne)
+- [taOSmd repository](https://github.com/jaylfc/taosmd)
+- [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

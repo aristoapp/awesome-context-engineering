@@ -23,6 +23,7 @@ Retrieval and use cover how the system finds relevant memory, whether it can pre
 | Hyperspell | Built-in | Indexed search, live search, multi-source query, metadata/date/resource filters, source weighting, LLM-ready summaries, optional answer generation, and MCP search/get tools. | Indexed/live availability depends on source; beta integrations and query behavior should be verified per account. |
 | Honcho | Built-in | Hybrid search, context retrieval, peer/session representations, peer cards, conclusions, and natural-language context queries. | Source metadata and citation UX depend on how the app or agent writes data into Honcho. |
 | Mnemosyne | Built-in | Hybrid recall combines vector similarity, SQLite FTS5, and importance weighting; MCP, CLI, SDK, and Hermes plugin surfaces can retrieve memory. | Source grounding depends on how memories are written and whether the host agent records retrieved context. |
+| taOSmd | Built-in | Hybrid keyword and vector search with fusion and an optional reranker, plus a temporal knowledge graph and a librarian; results reference the verbatim archived turn. | Grounding quality depends on the local embedding and LLM models and on whether the host agent records retrieved context. |
 | Mem0/OpenMemory | Built-in | Layered memory search with user IDs, run IDs, and metadata. | App owners define grounding and source metadata quality. |
 | Zep/Graphiti | Built-in | Temporal knowledge graph, facts, episodes, and Graph RAG. | Best when application data is modeled explicitly. |
 | Cognee | Built-in | Knowledge graph memory and recall tools. | Retrieval quality depends on ingestion and graph processing mode. |
@@ -41,5 +42,7 @@ Retrieval and use cover how the system finds relevant memory, whether it can pre
 - [Honcho MCP integration](https://honcho.dev/docs/v3/guides/integrations/mcp)
 - [Mnemosyne docs](https://docs.mnemosyne.site/)
 - [Mnemosyne configuration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/configuration.md)
+- [taOSmd repository](https://github.com/jaylfc/taosmd)
+- [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)

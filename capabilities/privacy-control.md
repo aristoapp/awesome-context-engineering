@@ -23,6 +23,7 @@ Privacy, portability, and control cover where memory is stored, whether users ca
 | Hyperspell | Partial | User tokens, source connection controls, metadata filters, folder skip/manual/sync policies, manual review flows, and homepage deletion claims. | Hosted by default; export, retention, deletion, and plan-specific governance should be verified. |
 | Honcho | Built-in for self-hosting | Managed service or self-hosted FastAPI server; workspaces and peers provide scoping primitives. | Self-hosting gives more control but adds service, storage, provider-key, and update operations. |
 | Mnemosyne | Built-in for local storage | Local SQLite database, export/import commands, memory update/delete/invalidate tools, and configurable data directory. | Embedding, LLM, sync, and agent behavior still depend on configured providers and workflow choices. |
+| taOSmd | Built-in for local storage | Offline local SQLite stores, a configurable data directory, correction and supersede tools, and an append-only archive that retains the raw turn; secrets are redacted on the A2A bus. | Embedding and LLM behavior depend on the local models you configure. |
 | Mem0/OpenMemory | Built-in | Hosted or self-hosted. | Self-hosting provides strongest control. |
 | Zep/Graphiti | Partial | Hosted Zep or Graphiti library. | Verify platform retention and graph data handling. |
 | Cognee | Built-in in local mode | SDK/local mode, optional Docker MCP setup, or API/Cloud mode. | Shared API mode changes control boundary. |
@@ -41,5 +42,7 @@ Privacy, portability, and control cover where memory is stored, whether users ca
 - [Honcho repository](https://github.com/plastic-labs/honcho)
 - [Mnemosyne configuration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/configuration.md)
 - [Mnemosyne Hermes integration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md)
+- [taOSmd repository](https://github.com/jaylfc/taosmd)
+- [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Mem0 open-source overview](https://docs.mem0.ai/open-source/overview)
 - [Khoj docs](https://docs.khoj.dev/)

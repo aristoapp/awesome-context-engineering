@@ -23,6 +23,7 @@ Feedback and correction cover whether users can see what the system knows, filte
 | Hyperspell | Partial | Dashboard, list/get/update memory APIs, metadata filtering, indexing status, query errors, webhooks, evaluation API, and folder manual-review states. | End-user second-brain UI is mostly app-owned; verify dashboard visibility for target account. |
 | Honcho | Partial | Developer-facing workspace, peer, session, conclusion, queue, and metadata tools through API/MCP. | Polished end-user review and correction UI is integration-owned. |
 | Mnemosyne | Partial | CLI, export/import, update/delete/invalidate tools, diagnostics, scratchpad tools, and local SQLite files provide operator inspection paths. | No hosted human-facing review dashboard is documented as the primary surface. |
+| taOSmd | Partial | A local web dashboard served by taosmd serve provides search, a pending-review list, and health; the CLI and append-only archive give operator inspection paths. | The dashboard is a local inspection surface, not a hosted multi-user review product. |
 | Mem0/OpenMemory | Built-in | Platform dashboard and self-hosted dashboard/server paths. | Application owners still define user-facing review flows. |
 | Zep/Graphiti | Partial | Developer/platform UI and graph APIs. | End-user second-brain UI is not the primary surface. |
 | Cognee | Partial | Developer/admin surfaces and MCP tool references. | End-user inspection should be verified for the target workflow. |
@@ -41,5 +42,7 @@ Feedback and correction cover whether users can see what the system knows, filte
 - [Hyperspell folder sync](https://docs.hyperspell.com/usage/folder-sync)
 - [Honcho MCP integration](https://honcho.dev/docs/v3/guides/integrations/mcp)
 - [Mnemosyne Hermes integration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md)
+- [taOSmd repository](https://github.com/jaylfc/taosmd)
+- [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [ChatGPT Memory FAQ](https://help.openai.com/en/articles/8590148-memory-faq)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)
