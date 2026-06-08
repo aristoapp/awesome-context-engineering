@@ -14,6 +14,7 @@ These projects are relevant to AI second-brain architecture but are not yet full
 | Open Second Brain | Obsidian-native memory layer for agents. | Emerging Obsidian/MCP candidate; separate from OpenHuman. |
 | MAGI | Persistent memory for AI agents. | Emerging AI-memory candidate. |
 | [tracecraft](https://github.com/Arrmlet/tracecraft) | Serverless multi-agent coordination substrate using S3-compatible or Hugging Face storage for shared state, task claims, handoffs, and session traces. | Emerging coordination-substrate candidate; adjacent to agent memory but not a memory layer or second-brain system itself. |
+| [screenpipe](https://github.com/screenpipe/screenpipe) | Local-first 24/7 screen and microphone capture daemon that indexes OCR, accessibility, and audio transcripts into a queryable SQLite store, with MCP, REST, and SDK access for AI tools and agents. | Emerging local-first context-collection candidate; covers the Collect lifecycle stage for second-brain workflows but leaves knowledge organization and memory evolution to layers above it. |
 
 ## Promotion Rule
 
