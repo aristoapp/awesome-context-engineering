@@ -76,6 +76,7 @@ This snapshot compares each system by the lifecycle stages where it is strongest
 | [taOSmd](solutions/taosmd.md) | Organize, Evolve, Use, Govern | You want an offline, local-first agent memory layer on modest or single-board hardware, with a zero-loss verbatim archive and MCP, HTTP, API, and CLI access. | You run a local LLM and embedding model yourself, and there is no PyPI package or hosted option yet. |
 | [Mem0/OpenMemory](solutions/mem0-openmemory.md) | Evolve, Use | You need user/run-scoped memory for apps with hosted or self-hosted paths. | More of an app memory primitive than a complete second-brain workflow. |
 
+- [TWZRD Agent Intel](https://intel.twzrd.xyz) - Persistent on-chain identity memory for AI agents on Solana. Agent wallets accumulate behavioral history as immutable memory — queryable via MCP for trust scoring and identity verification. Free: `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}`
 ### Memory Substrates
 
 | Solution | Strongest lifecycle coverage | Best when | Main tradeoff |
