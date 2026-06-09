@@ -23,6 +23,7 @@ These systems center local files, wiki pages, vaults, or self-hosted brain opera
 | [GBrain](gbrain.md) | Local or self-hosted brain operations layer | Core, hands-on researched |
 | [Hermes Agent + LLM Wiki](hermes-llm-wiki.md) | Agent-operated local Markdown wiki | Core |
 | [Obsidian/Logseq + AI bridge](obsidian-logseq.md) | Local-first PKM source of truth | Core |
+| [Pad](pad.md) | Self-hosted, agent-operated project and context workspace | Core |
 
 ## Agent Memory Layers
 
