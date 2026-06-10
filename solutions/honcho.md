@@ -9,7 +9,8 @@
 - Deployment: Managed Honcho service, local/self-hosted FastAPI server, SDK integration, or MCP server
 - Primary users: Developers building stateful agents with persistent memory and user modeling
 - Best second-brain role: Stateful agent memory and user-modeling layer
-- Last reviewed: 2026-06-04
+- Last reviewed: 2026-06-10
+- Reviewed evidence: Honcho docs, honcho-ai Python SDK v2.0.1, local deployment with PostgreSQL + pgvector + Redis, Hermes Agent integration
 
 ## One-line Summary
 

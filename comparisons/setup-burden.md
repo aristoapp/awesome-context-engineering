@@ -22,6 +22,7 @@
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | App integration, user/session/group model, graph ingestion, graph backend, LLM/embedding provider. | Requires product engineering rather than end-user setup. |
 | [Cognee](../solutions/cognee.md) | Python package/SDK setup, optional MCP client config, optional Docker or API/Cloud mode, graph processing. | Separate standalone instances vs shared API mode can fragment memory. |
 | [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md) | Hermes install/config, `WIKI_PATH`, source curation, Markdown review, lint/maintenance cadence. | Easy to start, but quality depends on agent discipline and user review. |
+| [Hermes Agent + Obsidian + Honcho](../solutions/hermes-obsidian-honcho.md) | PostgreSQL + Redis setup, Honcho init, Hermes config, Obsidian vault creation, AgentMail API key, skill wiring. | Higher setup burden (~60 min), but all components are free/OSS and fully local. |
 | [Khoj](../solutions/khoj.md) | Cloud or self-host install, source configuration, indexing. | Self-hosting and source freshness need active management. |
 
 ## High Burden

@@ -61,3 +61,7 @@ Choose this path when review, correction, deletion, provenance, ownership, permi
 Start with [ChatGPT Memory](../solutions/chatgpt-memory.md), [Claude Projects/Claude Code](../solutions/claude-projects-code.md), or [NotebookLM](../solutions/notebooklm.md).
 
 These are useful baselines, but they are platform-bound. They should not be treated as a complete self-evolving second brain unless paired with a broader capture, organization, and retrieval layer.
+
+## Assembled Stack vs End-to-End App
+
+If you're deciding between adopting a single product vs combining multiple local tools, see [Assembled Stack vs App](assembled-stack-vs-app.md).

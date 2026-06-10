@@ -10,8 +10,8 @@
 - Deployment: Hermes runs on the user's server or machine; the wiki is a local Markdown directory
 - Primary users: Local-first AI operators, researchers, and agent users who want an inspectable Markdown second brain
 - Best second-brain role: Agent-operated local Markdown wiki
-- Last reviewed: 2026-05-31
-- Reviewed evidence: Hermes Agent website, official `hermes-agent` repo, and bundled `skills/research/llm-wiki/SKILL.md`
+- Last reviewed: 2026-06-10
+- Reviewed evidence: Hermes Agent website, official `hermes-agent` repo, bundled `skills/research/llm-wiki/SKILL.md`, local Hermes v0.16.0 deployment
 
 ## One-line Summary
 

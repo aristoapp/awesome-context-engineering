@@ -6,6 +6,7 @@
 | [OpenHuman](../solutions/openhuman.md) | Strong | Possible | Not primary fit | Local-first personal desktop AI with many integrations. |
 | [GBrain](../solutions/gbrain.md) | Strong | Strong | Strong / operational | Company-brain path uses sources, source-scoped OAuth clients, federated reads, HTTP MCP, and usually Postgres/Supabase; directory-only scoping is convention-based. |
 | [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md) | Strong | Strong | Partial / operational | Multiple wiki directories, schemas, vaults, or repos can separate projects, but team permissions are external to the skill. |
+| [Hermes Agent + Obsidian + Honcho](../solutions/hermes-obsidian-honcho.md) | Strong | Strong | Partial / operational | Obsidian vault is single-user; Honcho supports multiple peers. Team use requires shared vault (git/sync) and Honcho workspace configuration. |
 | [Supermemory](../solutions/supermemory.md) | Strong | Strong | Possible | Project scoping and connectors help, but team governance must be checked. |
 | [Hyperspell](../solutions/hyperspell.md) | Strong | Strong | Strong for app builders | Multi-tenant user model, user tokens, metadata, collections, source selection, and folder policies help, but app teams own governance UX. |
 | [Honcho](../solutions/honcho.md) | Strong | Strong | Strong for app builders | Workspaces isolate apps/environments; peers and sessions can model users, agents, groups, and other entities, but end-user governance UX is app-owned. |
