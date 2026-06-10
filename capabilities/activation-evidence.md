@@ -32,7 +32,7 @@ Passing this test does not require exposing private memory text in logs. A syste
 | Solution | Support label | Adoption path | Caveats |
 |---|---|---|---|
 | Membase | Partial | Memory/Wiki retrieval and connected AI workflows create a place to inspect what context can be used. | Verify whether a specific workflow exposes per-session retrieved-vs-used evidence. |
-| Hjarni | Partial | MCP `search`, `notes-get`, `notes-create`, and `notes-update` calls expose which notes were searched, read, created, or updated for a task; results carry note IDs, container paths, timestamps, and a `last_edited_by_agent` label. | Whether the agent actually relied on or cited that context — acted-on proof — still depends on the AI client's own logs. |
+| Hjarni | Partial | MCP `search`, `notes-get`, `notes-create`, and `notes-update` calls expose which notes were searched, read, created, or updated for a task; results carry note IDs, container paths, timestamps, and a `last_edited_by_agent` label. | Whether the agent actually relied on or cited that context (acted-on proof) still depends on the AI client's own logs. |
 | GBrain | Partial | CLI/MCP workflows with citations, conflicts, and gap analysis can support activation checks. | Needs hands-on verification for per-session acted-on evidence. |
 | Hermes Agent + LLM Wiki | Integration | Local Markdown wiki files make source inspection and handoff artifacts easy to audit. | Activation evidence depends on skill behavior and user discipline. |
 | Supermemory | Partial | MCP/API retrieval can expose source-backed memory to agents. | App owners need to record which retrieved items were actually used. |

@@ -53,7 +53,7 @@ Choose this path when the missing piece is MCP, API, SDK, plugin, dashboard chat
 Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [GBrain](../solutions/gbrain.md), [taOSmd](../solutions/taosmd.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md), [ChatGPT Memory](../solutions/chatgpt-memory.md), or [Claude Projects/Claude Code](../solutions/claude-projects-code.md).
 
 - Membase is useful when you want hosted Memory/Wiki controls and a lower-operations path.
-- Hjarni keeps notes, folders, tags, links, and AI instructions directly editable in the app or via MCP, so review, correction, and deletion stay under user control — though storage is hosted-only with no local option.
+- Hjarni keeps notes, folders, tags, links, and AI instructions directly editable in the app or via MCP, so review, correction, and deletion stay under user control. Storage is hosted-only, with no local option.
 - GBrain, Hermes Agent + LLM Wiki, Obsidian/Logseq, and taOSmd are stronger when local files, inspectability, and human review matter more than hosted convenience.
 - ChatGPT Memory and Claude Projects/Claude Code are useful platform baselines, but visibility, export, and retrieval controls are platform-scoped.
 
