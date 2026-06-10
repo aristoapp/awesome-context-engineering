@@ -4,6 +4,7 @@
 |---|---|---|---|---|
 | [Membase](../solutions/membase.md) | Not the primary model | Yes | Fast end-to-end second brain without running the stack | Less local infrastructure control. |
 | [OpenHuman](../solutions/openhuman.md) | Yes, local memory/runtime state and Markdown vault | Yes, managed services for sign-in, model routing, search proxying, OAuth/integrations | Productized local-first personal AI | Local-first does not mean fully offline by default. |
+| [Hjarni](../solutions/hjarni.md) | No | Yes | Agent-readable and writable Markdown notes without running any stack | Hosted-only storage; no self-hosted or local deployment (Markdown export keeps the shape portable). |
 | [GBrain](../solutions/gbrain.md) | Yes, local PGLite and self-hosted Postgres/Supabase paths | HTTP MCP can be deployed remotely | Maximum control over second-brain operations | PGLite fits local personal use; shared/team deployments add Postgres/Supabase, OAuth, sync, embeddings, collectors, and maintenance. |
 | [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md) | Yes, local/server Hermes runtime plus Markdown wiki directory | Optional only through chosen hosting, sync, or model providers | Inspectable agent-maintained wiki | No managed connector/governance layer; user owns wiki hygiene and runtime configuration. |
 | [Supermemory](../solutions/supermemory.md) | API/self-hosting details depend on product path | Yes | Hosted memory API with connectors | Hosted convenience with platform boundaries. |
