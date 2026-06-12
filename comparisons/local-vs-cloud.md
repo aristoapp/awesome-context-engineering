@@ -3,6 +3,7 @@
 | Solution | Local / self-hosted | Hosted / cloud | Best reason to choose it | Main tradeoff |
 |---|---|---|---|---|
 | [Membase](../solutions/membase.md) | Not the primary model | Yes | Fast end-to-end second brain without running the stack | Less local infrastructure control. |
+| [Remio](../solutions/remio.md) | Yes, local-first desktop product with local-file capture and indexing | Some service boundaries are not fully documented publicly | Productized personal knowledge base over files, web pages, recordings, emails, messages, images, and notes | Verify cloud/service boundaries and external agent access before sensitive deployments. |
 | [OpenHuman](../solutions/openhuman.md) | Yes, local memory/runtime state and Markdown vault | Yes, managed services for sign-in, model routing, search proxying, OAuth/integrations | Productized local-first personal AI | Local-first does not mean fully offline by default. |
 | [GBrain](../solutions/gbrain.md) | Yes, local PGLite and self-hosted Postgres/Supabase paths | HTTP MCP can be deployed remotely | Maximum control over second-brain operations | PGLite fits local personal use; shared/team deployments add Postgres/Supabase, OAuth, sync, embeddings, collectors, and maintenance. |
 | [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md) | Yes, local/server Hermes runtime plus Markdown wiki directory | Optional only through chosen hosting, sync, or model providers | Inspectable agent-maintained wiki | No managed connector/governance layer; user owns wiki hygiene and runtime configuration. |

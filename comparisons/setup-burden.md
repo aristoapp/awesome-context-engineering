@@ -5,6 +5,7 @@
 | Solution | What you do | What you do not operate |
 |---|---|---|
 | [Membase](../solutions/membase.md) | Create an account, use dashboard chat, optionally connect an AI tool/plugin, import chat history, Gmail/Google Calendar/Slack, Notion, or Wiki material. | Storage, indexing, hosted retrieval, background organization, MCP server hosting, and connector plumbing; Notion sync, Drive, and GitHub are coming soon unless verified. |
+| [Remio](../solutions/remio.md) | Install the client, add or capture files/web pages/recordings/emails/messages/notes, and use Ask Remio or related AI workflows over the indexed knowledge base. | Custom parsers, vector database setup, manual folder scanning, repeated raw-file reads, and bespoke RAG ingestion pipelines. |
 | [OpenHuman](../solutions/openhuman.md) | Install desktop app, onboard, connect selected apps, choose managed or custom providers. | Local memory plumbing and default integration orchestration. |
 | [ChatGPT Memory](../solutions/chatgpt-memory.md) | Turn memory settings on or off and manage saved memories. | External connectors, MCP, vector DBs, or custom collectors. |
 | [NotebookLM](../solutions/notebooklm.md) | Create a notebook and add sources. | Indexing infrastructure or custom retrieval code. |
