@@ -2,7 +2,7 @@
 
 ## Goal
 
-Get a fully local second brain running with:
+Get a local-first second brain running with:
 - **Obsidian** as the human-owned knowledge vault
 - **Honcho** as the agent memory layer (peer cards, conclusions, semantic search)
 - **Hermes Agent** as the connecting runtime
@@ -10,7 +10,20 @@ Get a fully local second brain running with:
 
 **Target user**: Technical operator comfortable with CLI, Python, and PostgreSQL.
 
-**Tested on**: macOS (Apple M1, 16 GB RAM), Python 3.11 (Hermes venv)
+---
+
+## Architecture: Local vs Hosted Components
+
+This stack combines locally-run components with hosted services. Understand the boundary before starting:
+
+| Component | Runs locally | Requires hosted account/service |
+|-----------|-------------|-------------------------------|
+| Obsidian vault | Yes — local Markdown files | No |
+| Hermes Agent gateway | Yes — local process | No (but requires model API key, e.g. OpenRouter) |
+| Honcho memory layer | Yes — self-hosted FastAPI + PostgreSQL + Redis | Optional — managed Honcho service is an alternative to self-hosting |
+| AgentMail inbox | No — email is received and stored on AgentMail servers | Yes — AgentMail account and API key required |
+
+Core knowledge (Obsidian vault) and agent runtime (Hermes) run on your hardware. Honcho can be self-hosted or used as a managed service. AgentMail is a hosted email API — emails pass through AgentMail infrastructure.
 
 ---
 
@@ -44,12 +57,15 @@ redis-cli ping  # should return PONG
 
 ## Step 2: Install and Configure Honcho
 
+Honcho can be self-hosted (local FastAPI server) or used via the managed service. Both paths require an API key.
+
 ```bash
 # Install Honcho SDK
 pip3 install honcho-ai
 
-# Sign up at https://honcho.dev and create a workspace
-# Get your API key from the dashboard
+# Create a workspace and get your API key:
+#   - Self-hosted: set HONCHO_DATABASE_URL and run the Honcho server locally
+#   - Managed: sign up at https://honcho.dev and get an API key from the dashboard
 
 # Verify the SDK works
 python3 -c "
@@ -59,7 +75,7 @@ print('Honcho client created successfully')
 "
 ```
 
-For production use with persistent storage, configure PostgreSQL:
+For self-hosted use with persistent storage, configure PostgreSQL:
 
 ```bash
 # Create database
@@ -68,6 +84,8 @@ createdb honcho
 # Set connection string
 export HONCHO_DATABASE_URL="postgresql://localhost:5432/honcho"
 ```
+
+See the [Honcho docs](https://honcho.dev/docs/v3/documentation/introduction/overview) for self-hosting instructions.
 
 ---
 
@@ -116,10 +134,14 @@ mkdir -p entities concepts comparisons queries shared/handoffs shared/outputs _a
 
 Create `SCHEMA.md` (vault conventions), `index.md` (content catalog), and `log.md` (action log). See the [Obsidian/Logseq solution profile](../solutions/obsidian-logseq.md) for schema guidance.
 
-## Step 5: Install and Configure AgentMail
+---
+
+## Step 5: Configure AgentMail
+
+AgentMail is a hosted email API. You need an account and API key.
 
 ```bash
-# Install AgentMail SDK (can be in system Python or a separate venv)
+# Install AgentMail SDK
 pip3 install agentmail
 
 # Sign up at https://console.agentmail.to/ and create an inbox
@@ -201,4 +223,3 @@ Hermes should list the test email.
 - Honcho docs: https://honcho.dev/docs/v3/documentation/introduction/overview
 - Obsidian: https://obsidian.md/help
 - AgentMail: https://agentmail.to/
-- Live deployment reference: github.com/SaintChris

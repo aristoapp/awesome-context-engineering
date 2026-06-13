@@ -11,7 +11,7 @@
 - Primary users: Local-first AI operators, researchers, and agent users who want an inspectable Markdown second brain
 - Best second-brain role: Agent-operated local Markdown wiki
 - Last reviewed: 2026-06-10
-- Reviewed evidence: Hermes Agent website, official `hermes-agent` repo, bundled `skills/research/llm-wiki/SKILL.md`, local Hermes v0.16.0 deployment
+- Reviewed evidence: Hermes Agent website, official `hermes-agent` repo, bundled `skills/research/llm-wiki/SKILL.md`
 
 ## One-line Summary
 

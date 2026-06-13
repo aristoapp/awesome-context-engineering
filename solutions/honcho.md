@@ -10,7 +10,7 @@
 - Primary users: Developers building stateful agents with persistent memory and user modeling
 - Best second-brain role: Stateful agent memory and user-modeling layer
 - Last reviewed: 2026-06-10
-- Reviewed evidence: Honcho docs, honcho-ai Python SDK v2.0.1, local deployment with PostgreSQL + pgvector + Redis, Hermes Agent integration
+- Reviewed evidence: Honcho docs, Honcho GitHub repo, Hermes Agent integration guide
 
 ## One-line Summary
 

@@ -63,7 +63,7 @@ This snapshot compares each system by the lifecycle stages where it is strongest
 |---|---|---|---|
 | [GBrain](solutions/gbrain.md) | Organize, Evolve, Use, Govern | You want agents to operate a structured local brain with pages, graph, timeline, CLI/MCP, and maintenance jobs. | More setup and operational ownership. |
 | [Hermes Agent + LLM Wiki](solutions/hermes-llm-wiki.md) | Organize, Use, Govern | You want an inspectable local wiki that an agent can compile, query, lint, and maintain. | You still own the wiki discipline and workflow design. |
-| [Hermes Agent + Obsidian + Honcho](solutions/hermes-obsidian-honcho.md) | Collect, Organize, Evolve, Use, Govern | You want a fully local second brain with agent memory, email integration, and inspectable Markdown — and you're willing to assemble the stack. | Higher setup burden; you own the integration and operations of multiple components. |
+| [Hermes Agent + Obsidian + Honcho](solutions/hermes-obsidian-honcho.md) | Collect, Organize, Evolve, Use, Govern | You want a local-first second brain with agent memory, email integration, and inspectable Markdown — and you're willing to assemble the stack. | Higher setup burden; you own the integration and operations of multiple components. |
 | [Obsidian/Logseq + AI bridge](solutions/obsidian-logseq.md) | Collect, Organize, Govern | You want a local PKM source of truth with optional AI bridges. | AI memory behavior depends on plugins, imports, or custom bridges. |
 | [Pad](solutions/pad.md) | Organize, Use, Govern | You want a self-hosted, agent-operated workspace where typed collections, conventions, and playbooks give agents durable project context through a native skill, MCP, API, and CLI. | Structured/keyword retrieval only — no semantic recall or automatic consolidation. |
 
@@ -106,7 +106,7 @@ This snapshot compares each system by the lifecycle stages where it is strongest
 | [Setup Burden](comparisons/setup-burden.md) | See what you actually have to operate. |
 | [Agent Activation](comparisons/agent-access.md) | Compare MCP, API, SDK, CLI, and plugin access as second-brain activation channels. |
 | [Local vs Cloud](comparisons/local-vs-cloud.md) | Decide where memory should live. |
-| [Personal vs Team](personal-vs-team.md) | Compare solo, project, team, and organization fit. |
+| [Personal vs Team](comparisons/personal-vs-team.md) | Compare solo, project, team, and organization fit. |
 | [Assembled Stack vs App](assembled-stack-vs-app.md) | Decide between a single product and a multi-tool local stack. |
 | [Setup Guides](setup-guides/README.md) | Add hands-on setup notes only after verification. |
 | [Examples](examples/README.md) | Describe concrete second-brain workflows and scenarios. |
