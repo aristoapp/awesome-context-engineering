@@ -156,7 +156,7 @@ pip3 install agentmail
 python3 -c "
 from agentmail import AgentMail
 import yaml
-with open('/Users/saint/.hermes/config.yaml') as f:
+with open('~/.hermes/config.yaml') as f:
     cfg = yaml.safe_load(f)
 client = AgentMail(api_key=cfg['agentmail']['api_key'])
 print(client.inboxes.list())
@@ -169,9 +169,9 @@ print(client.inboxes.list())
 
 ### 6a. Honcho memory works
 
-Ask Hermes: "Remember that my name is Alex and I live in Jamaica."
+Ask Hermes: "Remember that I prefer Python and work in fintech."
 
-Then ask: "What do you know about me?"
+Then ask: "What do you know about my preferences?"
 
 Hermes should query Honcho and return the stored fact.
 

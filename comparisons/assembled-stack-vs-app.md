@@ -1,4 +1,4 @@
-# Assembled Local Stack vs End-to-End App
+# Assembled Stack vs End-to-End App
 
 ## The Core Tradeoff
 

@@ -107,7 +107,7 @@ This snapshot compares each system by the lifecycle stages where it is strongest
 | [Agent Activation](comparisons/agent-access.md) | Compare MCP, API, SDK, CLI, and plugin access as second-brain activation channels. |
 | [Local vs Cloud](comparisons/local-vs-cloud.md) | Decide where memory should live. |
 | [Personal vs Team](comparisons/personal-vs-team.md) | Compare solo, project, team, and organization fit. |
-| [Assembled Stack vs App](assembled-stack-vs-app.md) | Decide between a single product and a multi-tool local stack. |
+| [Assembled Stack vs App](comparisons/assembled-stack-vs-app.md) | Decide between a single product and a multi-tool local stack. |
 | [Setup Guides](setup-guides/README.md) | Add hands-on setup notes only after verification. |
 | [Examples](examples/README.md) | Describe concrete second-brain workflows and scenarios. |
 | [Watchlist](watchlist.md) | Track promising systems that are not yet fully evaluated. |
