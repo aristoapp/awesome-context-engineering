@@ -22,12 +22,12 @@ from agentmail import AgentMail
 client = AgentMail(api_key="your-api-key")
 messages = client.inboxes.messages.list(inbox_id="your-inbox-id", limit=10)
 for msg in messages.messages:
-    print(f"From: {msg.from_} — Subject: {msg.subject}")
+    print(f"From: {msg.from_} - Subject: {msg.subject}")
 ```
 
 Result: 2 unread emails.
-- From: recruiter@company.com — Subject: "Interview request for AI Engineer role"
-- From: alerts@service.com — Subject: "Price alert triggered"
+- From: recruiter@company.com - Subject: "Interview request for AI Engineer role"
+- From: alerts@service.com - Subject: "Price alert triggered"
 
 ### Agent categorizes
 
@@ -42,7 +42,7 @@ Hermes creates/updates the daily log:
 ## 2026-06-10
 
 ### Email Triage
-- 🔴 URGENT: Interview request from recruiter@company.com — AI Engineer role
+- 🔴 URGENT: Interview request from recruiter@company.com - AI Engineer role
 - 🟢 FYI: Price alert triggered (Service)
 ```
 

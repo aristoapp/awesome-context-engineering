@@ -4,7 +4,7 @@
 
 - Website / docs: https://hermes-agent.nousresearch.com/
 - Company / maintainer: Nous Research (Hermes Agent), Plastic Labs (Honcho), Obsidian MD (Obsidian)
-- Status: Mixed — Hermes Agent and Honcho have public repos; Obsidian is proprietary
+- Status: Mixed: Hermes Agent and Honcho have public repos; Obsidian is proprietary
 - Open source: Hermes Agent is open source (MIT); Honcho is AGPL-3.0; Obsidian is proprietary (local files are open Markdown)
 - Deployment: Multi-component stack. Obsidian vault is local Markdown files. Honcho can be self-hosted (FastAPI + PostgreSQL + pgvector + Redis) or used as a managed service. Hermes Agent runs as a local gateway. AgentMail is a hosted email API.
 - Primary users: Local-first AI operators who want an inspectable second brain with agent memory and email integration
@@ -14,7 +14,7 @@
 
 ## One-line Summary
 
-A multi-component, local-first second brain combining Obsidian as the human-owned knowledge vault, Honcho as the agent memory and user-modeling layer, and Hermes Agent as the runtime that connects them — with AgentMail for email context capture.
+A multi-component, local-first second brain combining Obsidian as the human-owned knowledge vault, Honcho as the agent memory and user-modeling layer, and Hermes Agent as the runtime that connects them, with AgentMail for email context capture.
 
 ## Second-Brain Fit
 
@@ -45,7 +45,7 @@ This stack is a good fit when the user wants local ownership of their knowledge 
 
 ## Strengths
 
-- Obsidian vault is fully inspectable local Markdown — no opaque memory records for knowledge
+- Obsidian vault is fully inspectable local Markdown, with no opaque memory records for knowledge
 - Honcho provides structured agent memory (peer cards, conclusions, semantic search) that improves over time ([Honcho docs](https://honcho.dev/docs/v3/documentation/introduction/overview))
 - AgentMail adds email as a first-class context source ([AgentMail docs](https://agentmail.to/))
 - Hermes Agent connects all layers with a unified tool interface ([Hermes Agent docs](https://hermes-agent.nousresearch.com/docs))
@@ -53,7 +53,7 @@ This stack is a good fit when the user wants local ownership of their knowledge 
 
 ## Limitations
 
-- Not a single product — requires assembling and maintaining 3+ components
+- Not a single product; requires assembling and maintaining 3+ components
 - Honcho self-hosting requires PostgreSQL, pgvector, Redis (additional infrastructure)
 - AgentMail is a hosted service; email data passes through AgentMail infrastructure
 - No built-in team permissions or shared workspace controls
@@ -77,7 +77,7 @@ This stack is a good fit when the user wants local ownership of their knowledge 
 
 ## Tradeoffs
 
-This stack trades convenience for control. You get inspectable files, local ownership of your knowledge vault, and a memory layer that reasons about you over time — but you own the integration, updates, and operational health of multiple separate systems. It is a local-first, high-autonomy path: maximum ownership, maximum responsibility.
+This stack trades convenience for control. You get inspectable files, local ownership of your knowledge vault, and a memory layer that reasons about you over time, but you own the integration, updates, and operational health of multiple separate systems. It is a local-first, high-autonomy path: maximum ownership, maximum responsibility.
 
 ## Official Setup / Evaluation Links
 

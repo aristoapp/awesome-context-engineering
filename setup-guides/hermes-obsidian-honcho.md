@@ -18,12 +18,12 @@ This stack combines locally-run components with hosted services. Understand the 
 
 | Component | Runs locally | Requires hosted account/service |
 |-----------|-------------|-------------------------------|
-| Obsidian vault | Yes — local Markdown files | No |
-| Hermes Agent gateway | Yes — local process | No (but requires model API key, e.g. OpenRouter) |
-| Honcho memory layer | Yes — self-hosted FastAPI + PostgreSQL + Redis | Optional — managed Honcho service is an alternative to self-hosting |
-| AgentMail inbox | No — email is received and stored on AgentMail servers | Yes — AgentMail account and API key required |
+| Obsidian vault | Yes: local Markdown files | No |
+| Hermes Agent gateway | Yes: local process | No (but requires model API key, e.g. OpenRouter) |
+| Honcho memory layer | Yes: self-hosted FastAPI + PostgreSQL + Redis | Optional: managed Honcho service is an alternative to self-hosting |
+| AgentMail inbox | No: email is received and stored on AgentMail servers | Yes: AgentMail account and API key required |
 
-Core knowledge (Obsidian vault) and agent runtime (Hermes) run on your hardware. Honcho can be self-hosted or used as a managed service. AgentMail is a hosted email API — emails pass through AgentMail infrastructure.
+Core knowledge (Obsidian vault) and agent runtime (Hermes) run on your hardware. Honcho can be self-hosted or used as a managed service. AgentMail is a hosted email API, and emails pass through AgentMail infrastructure.
 
 ---
 
@@ -31,7 +31,7 @@ Core knowledge (Obsidian vault) and agent runtime (Hermes) run on your hardware.
 
 | Component | Install |
 |-----------|---------|
-| macOS | 15.x (other platforms supported — see [Hermes docs](https://hermes-agent.nousresearch.com/docs/getting-started/installation)) |
+| macOS | 15.x (other platforms supported; see [Hermes docs](https://hermes-agent.nousresearch.com/docs/getting-started/installation)) |
 | Homebrew | `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` |
 | PostgreSQL 16+ | `brew install postgresql@16` (only needed for self-hosted Honcho) |
 | Redis | `brew install redis` (only needed for self-hosted Honcho) |

@@ -6,6 +6,7 @@
 |---|---|---|
 | [Membase](../solutions/membase.md) | Create an account, use dashboard chat, optionally connect an AI tool/plugin, import chat history, Gmail/Google Calendar/Slack, Notion, or Wiki material. | Storage, indexing, hosted retrieval, background organization, MCP server hosting, and connector plumbing; Notion sync, Drive, and GitHub are coming soon unless verified. |
 | [OpenHuman](../solutions/openhuman.md) | Install desktop app, onboard, connect selected apps, choose managed or custom providers. | Local memory plumbing and default integration orchestration. |
+| [Hjarni](../solutions/hjarni.md) | Add Hjarni as a custom connector / remote MCP server in Claude or ChatGPT via OAuth (official: under 2 minutes), then write notes or have your agent write them. | Storage, indexing, search, MCP server hosting, and the REST API. Free plan is capped at 25 notes, containers, and tags; a paid plan removes the cap. |
 | [ChatGPT Memory](../solutions/chatgpt-memory.md) | Turn memory settings on or off and manage saved memories. | External connectors, MCP, vector DBs, or custom collectors. |
 | [NotebookLM](../solutions/notebooklm.md) | Create a notebook and add sources. | Indexing infrastructure or custom retrieval code. |
 

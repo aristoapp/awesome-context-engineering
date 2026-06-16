@@ -16,9 +16,10 @@ Choose this path when the first problem is that useful context is still scattere
 
 ## If Raw Context Needs Durable Structure
 
-Start with [Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Honcho](../solutions/honcho.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
+Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Honcho](../solutions/honcho.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
 
 - Membase is the hosted, lowest-burden option when captured context should become Memory and Wiki with graph + vector retrieval for memory and dashboard chat for use.
+- Hjarni keeps structure deliberate and inspectable: Markdown notes in a hierarchy of folders (containers), with tags, wiki-links, and per-folder AI instructions, authored by you or by an agent through MCP. The structure is hand-built rather than extracted automatically.
 - GBrain gives a deterministic Markdown/page/link/timeline model plus a documented source-scoped OAuth path for self-hosted second brains, but you operate the stack.
 - Hermes Agent + LLM Wiki gives a readable Markdown wiki with schema, index, log, wikilinks, provenance, and lint rules, but you operate the wiki discipline.
 - Mnemosyne gives memory tiers, memory banks, hybrid retrieval, and temporal triples inside a local SQLite-backed agent memory layer.
@@ -38,9 +39,10 @@ Choose this path when stale, duplicated, or disconnected memory is the main prob
 
 ## If Context Needs To Show Up Inside AI Tools
 
-Start with [Membase](../solutions/membase.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Mem0/OpenMemory](../solutions/mem0-openmemory.md), or [Claude Projects/Claude Code](../solutions/claude-projects-code.md).
+Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Mem0/OpenMemory](../solutions/mem0-openmemory.md), or [Claude Projects/Claude Code](../solutions/claude-projects-code.md).
 
 - Membase exposes organized knowledge through dashboard chat and connected AI workflows without asking the user to operate MCP infrastructure first.
+- Hjarni exposes your notes to Claude and ChatGPT through a built-in remote MCP server (OAuth) and a REST API, so agents can search, read, create, and update notes during a task.
 - Supermemory, Hyperspell, Honcho, Hindsight, Mnemosyne, taOSmd, and Mem0/OpenMemory are stronger when memory is part of an agent or application architecture.
 - Claude Projects/Claude Code is useful when the work already lives inside Claude and project-scoped context is enough.
 
@@ -48,9 +50,10 @@ Choose this path when the missing piece is MCP, API, SDK, plugin, dashboard chat
 
 ## If Memory Needs Governance Or Control
 
-Start with [Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [taOSmd](../solutions/taosmd.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md), [ChatGPT Memory](../solutions/chatgpt-memory.md), or [Claude Projects/Claude Code](../solutions/claude-projects-code.md).
+Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [GBrain](../solutions/gbrain.md), [taOSmd](../solutions/taosmd.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md), [ChatGPT Memory](../solutions/chatgpt-memory.md), or [Claude Projects/Claude Code](../solutions/claude-projects-code.md).
 
 - Membase is useful when you want hosted Memory/Wiki controls and a lower-operations path.
+- Hjarni keeps notes, folders, tags, links, and AI instructions directly editable in the app or via MCP, so review, correction, and deletion stay under user control. Storage is hosted-only, with no local option.
 - GBrain, Hermes Agent + LLM Wiki, Obsidian/Logseq, and taOSmd are stronger when local files, inspectability, and human review matter more than hosted convenience.
 - ChatGPT Memory and Claude Projects/Claude Code are useful platform baselines, but visibility, export, and retrieval controls are platform-scoped.
 
