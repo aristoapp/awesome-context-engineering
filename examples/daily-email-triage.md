@@ -12,11 +12,17 @@ A user runs a daily email triage routine. The agent:
 
 ### Morning: Agent checks email
 
-User asks: "Check my agent inbox for new emails."
+User asks: "Check my AgentMail inbox for new emails."
 
-Hermes runs:
-```bash
-python3 ~/.hermes/scripts/agentmail_cli.py triage
+Hermes uses the AgentMail SDK to list recent messages:
+
+```python
+from agentmail import AgentMail
+
+client = AgentMail(api_key="your-api-key")
+messages = client.inboxes.messages.list(inbox_id="your-inbox-id", limit=10)
+for msg in messages.messages:
+    print(f"From: {msg.from_} — Subject: {msg.subject}")
 ```
 
 Result: 2 unread emails.
@@ -50,9 +56,15 @@ honcho_conclude: "Recruiter from company.com reached out about AI Engineer role 
 ### Agent responds to urgent email
 
 Hermes drafts a reply via AgentMail:
-```bash
-python3 ~/.hermes/scripts/agentmail_cli.py reply <inbox_address> "<message_id>" \
-  "Hi, thanks for reaching out. I'm interested in learning more. What's the best time for a call this week?"
+
+```python
+client.inboxes.messages.send(
+    inbox_id="your-inbox-id",
+    to="recruiter@company.com",
+    subject="Re: Interview request for AI Engineer role",
+    text="Hi, thanks for reaching out. I'm interested in learning more. What's the best time for a call this week?",
+    reply_to="message-id-of-original",
+)
 ```
 
 ## Stack Interaction

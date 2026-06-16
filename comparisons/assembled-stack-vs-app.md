@@ -15,12 +15,12 @@ This page compares these two patterns so readers can decide which adoption model
 |-----------|---------------|-----------------|
 | **Setup time** | Minutes (5–30 min) | Varies — depends on number of components; multi-component stacks can take 60+ min |
 | **Setup burden** | Low — one account, one config | Medium-high — each component installs and configures independently |
-| **Ongoing operations** | Minimal — vendor runs infrastructure | You run servers (PostgreSQL, Redis), updates, backups |
-| **Inspectability** | Varies — depends on product UI | High — all data is local files and queryable databases (for locally-run components) |
-| **Portability** | Varies — depends on export options | High for file-based components; hosted-service components depend on that service's export |
-| **Customization** | Bounded by product features | High — swap any component, add skills, modify schema |
-| **Cost model** | Subscription or usage-based | Free/OSS software for core components; pay only for hardware, model APIs, and any hosted services used |
-| **Failure modes** | Vendor downtime, API changes, pricing changes | Component incompatibility, version drift, operational mistakes |
+|| **Ongoing operations** | Minimal — vendor runs infrastructure | Varies — self-hosted components (PostgreSQL, Redis) require server management; managed services reduce this burden |
+|| **Inspectability** | Varies — depends on product UI | Varies by component — locally-run components (Obsidian vault, Honcho DB) are inspectable; hosted-service components depend on that service's audit surfaces |
+|| **Portability** | Varies — depends on export options | Varies by component — file-based components (Obsidian) are portable; hosted-service components depend on that service's export capabilities |
+|| **Customization** | Bounded by product features | High — swap any component, add skills, modify schema |
+|| **Cost model** | Subscription or usage-based | Varies by component — local/OSS components (Obsidian, Honcho self-hosted, Hermes) are free; hosted services (AgentMail, Honcho managed) have separate pricing |
+|| **Failure modes** | Vendor downtime, API changes, pricing changes | Component incompatibility, version drift, operational mistakes |
 | **Best for** | Users who want results fast and don't want to operate infrastructure | Users who want maximum control and are willing to maintain the stack |
 
 ## When to Choose Each
@@ -38,7 +38,7 @@ This page compares these two patterns so readers can decide which adoption model
 - You need inspectable, editable knowledge (not opaque memory records)
 - You're comfortable running local services
 - You want to combine best-of-breed tools for each lifecycle stage
-- You need the stack to work offline or air-gapped (for locally-run components)
+- You need locally-run components to work offline (note: hosted services like AgentMail still require internet)
 
 ## Common Assembled Stack Patterns
 

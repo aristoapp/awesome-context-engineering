@@ -3,9 +3,9 @@
 ## Snapshot
 
 - Website / docs: https://hermes-agent.nousresearch.com/
-- Company / maintainer: Nous Research (Hermes Agent), Plastic Labs (Obsidian MD), Obsidian MD (Obsidian)
-- Status: Active public repos
-- Open source: Hermes Agent is open source (Apache 2.0); Honcho is AGPL-3.0; Obsidian is proprietary (local files are open Markdown)
+- Company / maintainer: Nous Research (Hermes Agent), Plastic Labs (Honcho), Obsidian MD (Obsidian)
+- Status: Mixed — Hermes Agent and Honcho have public repos; Obsidian is proprietary
+- Open source: Hermes Agent is open source (MIT); Honcho is AGPL-3.0; Obsidian is proprietary (local files are open Markdown)
 - Deployment: Multi-component stack. Obsidian vault is local Markdown files. Honcho can be self-hosted (FastAPI + PostgreSQL + pgvector + Redis) or used as a managed service. Hermes Agent runs as a local gateway. AgentMail is a hosted email API.
 - Primary users: Local-first AI operators who want an inspectable second brain with agent memory and email integration
 - Best second-brain role: Local workspace with integrated agent memory layer

@@ -29,15 +29,14 @@ Core knowledge (Obsidian vault) and agent runtime (Hermes) run on your hardware.
 
 ## Prerequisites
 
-| Component | Version tested | Install |
-|-----------|---------------|---------|
-| macOS | 15.x | — |
-| Homebrew | 4.x | `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` |
-| PostgreSQL 16+ | 16.x | `brew install postgresql@16` |
-| Redis | 7.x | `brew install redis` |
-| Python 3.11 | 3.11.x | `brew install python@3.11` |
-| Hermes Agent | 0.16.0 | `pip install hermes-agent` |
-| Obsidian | 1.7+ | Download from obsidian.md |
+| Component | Install |
+|-----------|---------|
+| macOS | 15.x (other platforms supported — see [Hermes docs](https://hermes-agent.nousresearch.com/docs/getting-started/installation)) |
+| Homebrew | `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` |
+| PostgreSQL 16+ | `brew install postgresql@16` (only needed for self-hosted Honcho) |
+| Redis | `brew install redis` (only needed for self-hosted Honcho) |
+| Hermes Agent | `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash` |
+| Obsidian | Download from obsidian.md |
 
 ---
 
@@ -63,16 +62,36 @@ Honcho can be self-hosted (local FastAPI server) or used via the managed service
 # Install Honcho SDK
 pip3 install honcho-ai
 
-# Create a workspace and get your API key:
-#   - Self-hosted: set HONCHO_DATABASE_URL and run the Honcho server locally
-#   - Managed: sign up at https://honcho.dev and get an API key from the dashboard
-
 # Verify the SDK works
 python3 -c "
 from honcho import Honcho
-client = Honcho(api_key='your-api-key', environment='production')
+client = Honcho(api_key='your-api-key')
 print('Honcho client created successfully')
 "
+```
+
+**Get an API key:**
+- Managed service: sign up at https://app.honcho.dev and get an API key from the dashboard
+- Self-hosted: follow the [Honcho self-hosting guide](https://honcho.dev/docs/v3/contributing/self-hosting), then configure Hermes to point at your instance
+
+**Configure Hermes to use Honcho:**
+```bash
+hermes memory setup   # select "honcho", enter your base URL
+```
+
+Or create `~/.hermes/honcho.json`:
+```json
+{
+  "baseUrl": "http://localhost:8000",
+  "hosts": {
+    "hermes": {
+      "enabled": true,
+      "aiPeer": "hermes",
+      "peerName": "your-name",
+      "workspace": "hermes"
+    }
+  }
+}
 ```
 
 For self-hosted use with persistent storage, configure PostgreSQL:
@@ -85,34 +104,32 @@ createdb honcho
 export HONCHO_DATABASE_URL="postgresql://localhost:5432/honcho"
 ```
 
-See the [Honcho docs](https://honcho.dev/docs/v3/documentation/introduction/overview) for self-hosting instructions.
+See the [Honcho docs](https://honcho.dev/docs/v3/documentation/introduction/overview) and [Hermes + Honcho integration guide](https://honcho.dev/docs/v3/guides/integrations/hermes) for details.
 
 ---
 
 ## Step 3: Install and Configure Hermes Agent
 
 ```bash
-# Install
-pip install hermes-agent
+# Install (macOS / Linux / WSL2)
+curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 
-# Initialize config
-hermes setup
-
-# Verify
+# Reload shell, then verify
+source ~/.zshrc
 hermes --version
 ```
 
-Configure Honcho integration in `~/.hermes/config.yaml`:
-
-```yaml
-memory:
-  provider: honcho
-  memory_enabled: true
-  user_profile_enabled: true
-
-honcho:
-  # Uses HONCHO_DATABASE_URL env var or defaults to local storage
+After install, run the setup wizard:
+```bash
+hermes setup   # full setup wizard
 ```
+
+Or use the fastest path with Nous Portal (one OAuth covers model + tool gateway):
+```bash
+hermes setup --portal
+```
+
+See the [Hermes Agent installation docs](https://hermes-agent.nousresearch.com/docs/getting-started/installation) for all platforms and options.
 
 ---
 
@@ -146,22 +163,29 @@ pip3 install agentmail
 
 # Sign up at https://console.agentmail.to/ and create an inbox
 # Generate an API key from the console
-
-# Store key in Hermes config
-# Edit ~/.hermes/config.yaml:
-#   agentmail:
-#     api_key: "am_us_..."
-
-# Verify
-python3 -c "
-from agentmail import AgentMail
-import yaml
-with open('~/.hermes/config.yaml') as f:
-    cfg = yaml.safe_load(f)
-client = AgentMail(api_key=cfg['agentmail']['api_key'])
-print(client.inboxes.list())
-"
 ```
+
+Verify the SDK works using the [AgentMail quickstart](https://docs.agentmail.to/quickstart):
+
+```python
+from agentmail import AgentMail
+
+client = AgentMail(api_key="your-api-key")
+
+# Create an inbox
+inbox = client.inboxes.create(username="hello", domain="agentmail.to")
+print(f"Inbox created: {inbox.inbox_id}")
+
+# Send a test email
+client.inboxes.messages.send(
+    inbox.inbox_id,
+    to="your-email@example.com",
+    subject="Test from setup guide",
+    text="AgentMail is working."
+)
+```
+
+See the [AgentMail docs](https://docs.agentmail.to/) for full API reference, webhooks, and WebSocket setup.
 
 ---
 
@@ -183,11 +207,11 @@ Verify the file exists: `ls ~/Documents/Obsidian\ Vault/`
 
 ### 6c. AgentMail works
 
-Send a test email from your personal email to your agent inbox.
+Send a test email from your personal email to the AgentMail inbox you created in Step 5.
 
-Ask Hermes: "Check my agent inbox for new emails."
+Ask Hermes: "Check my AgentMail inbox for new emails."
 
-Hermes should list the test email.
+Hermes should list the test email. See the [AgentMail quickstart](https://docs.agentmail.to/quickstart) for how to receive and list messages via the SDK.
 
 ---
 
@@ -197,9 +221,9 @@ Hermes should list the test email.
 |---------|-----|
 | Honcho can't connect to PostgreSQL | Verify `HONCHO_DATABASE_URL` is set and `createdb honcho` was run |
 | Redis connection refused | `brew services restart redis` |
-| Hermes can't find Honcho tools | Ensure `memory.provider: honcho` in config.yaml |
+| Hermes can't find Honcho tools | Run `hermes memory setup` and select "honcho" |
 | AgentMail 403 errors | Verify API key has permissions at console.agentmail.to |
-| Obsidian vault not found | Check `WIKI_PATH` env var or vault location in Hermes config |
+| Obsidian vault not found | Open the vault folder in Obsidian via "Open folder as vault" |
 
 ---
 
@@ -220,6 +244,10 @@ Hermes should list the test email.
 ## Sources
 
 - Hermes Agent docs: https://hermes-agent.nousresearch.com/docs
+- Hermes Agent installation: https://hermes-agent.nousresearch.com/docs/getting-started/installation
+- Hermes Agent + Honcho integration: https://honcho.dev/docs/v3/guides/integrations/hermes
 - Honcho docs: https://honcho.dev/docs/v3/documentation/introduction/overview
-- Obsidian: https://obsidian.md/help
+- Honcho quickstart: https://honcho.dev/docs/v3/documentation/introduction/quickstart
+- Obsidian: https://obsidian.md/
 - AgentMail: https://agentmail.to/
+- AgentMail quickstart: https://docs.agentmail.to/quickstart
