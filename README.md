@@ -76,7 +76,7 @@ This snapshot compares each system by the lifecycle stages where it is strongest
 | [Honcho](solutions/honcho.md) | Organize, Evolve, Use | You need peer representations, conclusions, session context, and user or agent modeling over time. | Developer integration and hosting choices matter. |
 | [Hindsight](solutions/hindsight.md) | Organize, Evolve, Use | You need memory banks, observations, consolidation, and multi-mode recall for agents. | Retrieval-to-action evidence depends on the surrounding workflow. |
 | [Mnemosyne](solutions/mnemosyne.md) | Organize, Evolve, Use | You need local SQLite memory with MCP, SDK, CLI, Hermes integration, tiers, and consolidation. | Local operation and agent logging still need owner attention. |
-| [taOSmd](solutions/taosmd.md) | Organize, Evolve, Use, Govern | You want an offline, local-first agent memory layer on modest or single-board hardware, with a zero-loss verbatim archive and MCP, HTTP, API, and CLI access. | You run a local LLM and embedding model yourself, and there is no PyPI package or hosted option yet. |
+| [taOSmd](solutions/taosmd.md) | Organize, Evolve, Use, Govern | You want an offline, local-first agent memory layer on modest or single-board hardware, with a zero-loss verbatim archive, source-linked verifiable recall, and MCP, HTTP, API, and CLI access. | You run a local LLM and embedding model yourself, and there is no PyPI package or hosted option yet. |
 | [Mem0/OpenMemory](solutions/mem0-openmemory.md) | Evolve, Use | You need user/run-scoped memory for apps with hosted or self-hosted paths. | More of an app memory primitive than a complete second-brain workflow. |
 
 ### Memory Substrates
