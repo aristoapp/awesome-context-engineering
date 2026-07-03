@@ -24,6 +24,7 @@ Personal and team scope defines who can read, write, update, delete, and share m
 | Honcho | Built-in for app builders | Workspaces isolate apps/environments; peers and sessions model users, agents, groups, and other entities. | End-user governance UX and permission flows are app-owned. |
 | Mnemosyne | Partial | Memory banks and global/session scope can separate domains or agent contexts. | Team permissions, admin controls, and review workflows are external to the memory backend. |
 | taOSmd | Partial | Per-agent shelves with cross-agent reads separate agent contexts and projects. | Team permissions, admin controls, and review workflows are not part of the memory layer. |
+| Vestige | Partial | Per-project code memory and local scoping separate contexts. | Memory is single-machine and local-only; team permissions, admin controls, and shared-workspace review are not part of the memory layer. |
 | Mem0/OpenMemory | Built-in | User, session, and organizational memory. | Requires careful scope design. |
 | Zep/Graphiti | Built-in | Projects, users, sessions, groups. | Best as app infrastructure. |
 | Cognee | Built-in in API mode | Shared backend/API mode. | Standalone mode isolates clients. |

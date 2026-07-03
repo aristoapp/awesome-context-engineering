@@ -24,6 +24,7 @@ Feedback and correction cover whether users can see what the system knows, filte
 | Honcho | Partial | Developer-facing workspace, peer, session, conclusion, queue, and metadata tools through API/MCP. | Polished end-user review and correction UI is integration-owned. |
 | Mnemosyne | Partial | CLI, export/import, update/delete/invalidate tools, diagnostics, scratchpad tools, and local SQLite files provide operator inspection paths. | No hosted human-facing review dashboard is documented as the primary surface. |
 | taOSmd | Partial | A local web dashboard served by taosmd serve provides search, a pending-review list, and health; the CLI and append-only archive give operator inspection paths. | The dashboard is a local inspection surface, not a hosted multi-user review product. |
+| Vestige | Partial | An embedded local 3D dashboard (localhost:3927) browses the memory graph with live events; the CLI and `memory`/`contradictions`/`memory_status` tools give operator inspection, correction, and health paths. | The dashboard is a local single-user inspection surface, not a hosted multi-user review product. |
 | Mem0/OpenMemory | Built-in | Platform dashboard and self-hosted dashboard/server paths. | Application owners still define user-facing review flows. |
 | Zep/Graphiti | Partial | Developer/platform UI and graph APIs. | End-user second-brain UI is not the primary surface. |
 | Cognee | Partial | Developer/admin surfaces and MCP tool references. | End-user inspection should be verified for the target workflow. |
