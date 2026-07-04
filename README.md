@@ -135,3 +135,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution guidelines.
    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=aristoapp/awesome-second-brain&type=date&legend=top-left" />
  </picture>
 </a>
+- **[Context Kit](https://github.com/JDDavenport/context-kit)** — Personal Context Artifacts: 4 Markdown templates + 5 Claude Code skills for giving AI agents deep context about your second brain. MIT, one-command install.
