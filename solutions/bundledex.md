@@ -1,11 +1,13 @@
 # BundleDex
 
+> **Watchlist companion profile** — This project is on the [watchlist](watchlist.md) and has not been fully evaluated through all decision paths. The profile below is provided for reference.
+
 ## Snapshot
 
 - Website / docs: https://bundledex.net
 - Company / maintainer: McClawdDigital
 - Status: Live
-- Open source: Yes (awesome-okf list at https://github.com/McClawdDigital/awesome-okf)
+- Open source: No (closed-source hosted service; the companion awesome-okf list is open source at https://github.com/McClawdDigital/awesome-okf)
 - Deployment: Cloudflare Workers / GitHub Pages
 - Primary users: AI agents, developers, and knowledge workers who want to discover and use OKF knowledge bundles
 - Best second-brain role: Knowledge discovery and bundle registry (Organize stage)
