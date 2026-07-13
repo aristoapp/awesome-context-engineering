@@ -40,6 +40,7 @@ Passing this test does not require exposing private memory text in logs. A syste
 | Honcho | Partial | Session and peer context APIs can help explain what context was available to an agent. | Application integration determines whether acted-on evidence is captured. |
 | Mnemosyne | Partial | MCP, CLI, and Hermes tool calls can show that recall or memory tools ran for a workflow. | Agent logs must still connect retrieved memories to decisions, citations, or write-back. |
 | taOSmd | Partial | The append-only archive, the pending-review list, and the local dashboard show which turns and facts are stored and retrievable. | Agent logs must still connect retrieved memories to decisions, citations, or write-back. |
+| Vestige | Partial | MCP tool calls and the local 3D dashboard show which memories are stored, retrieved, and changed; `recall` returns the memories it drew on. | Agent logs must still connect retrieved memories to the decision, citation, or write-back in the task. |
 | Mem0/OpenMemory | Partial | User/run-scoped memory search can support activation traces. | Grounding and acted-on proof are usually app-level responsibilities. |
 | Zep/Graphiti | Partial | Temporal graph facts and episodes provide source structure for task evidence. | The application must connect graph retrieval to action logs. |
 | Cognee | Partial | Knowledge graph recall tools can return structured context for agents. | Verify host-level usage evidence per workflow. |

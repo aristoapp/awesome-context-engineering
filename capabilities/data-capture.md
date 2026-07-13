@@ -24,6 +24,7 @@ Context capture is how raw personal, team, and source context enters the second 
 | Honcho | API + Integration | API/SDK/MCP writes add messages, sessions, and uploaded documents. | Broad external source capture depends on the integrating app or agent. |
 | Mnemosyne | API + Integration | MCP/CLI/SDK writes, Python `remember`, memory banks, and Hermes lifecycle hooks can capture agent context. | Not a broad OAuth connector layer; capture is agent, hook, or developer driven. |
 | taOSmd | API + Integration | Python API, HTTP/REST, and MCP writes record each turn verbatim into an append-only archive, with vector and knowledge-graph indexing layered on top. | Capture is agent and developer driven, not a broad OAuth connector layer. |
+| Vestige | MCP + Integration | MCP and CLI writes via `smart_ingest` and an agent-memory protocol; `source_sync` indexes external sources (documented for GitHub Issues) into the local index. | Capture is agent and developer driven, not a broad OAuth connector layer. |
 | Mem0/OpenMemory | API + Integration | SDK/API/MCP writes from app or AI workflow. | Capture design is application-owned. |
 | Zep/Graphiti | API | Chat history, business data, graph endpoints. | Requires app integration. |
 | Cognee | Built-in + API | MCP memory/data tools and graph processing. | Standalone vs shared mode affects where data lands. |
