@@ -24,6 +24,7 @@ Memory 발전은 수집 이후에도 세컨드 브레인을 유용하게 유지�
 | Honcho | 내장 | background reasoning이 peer representation과 conclusion을 업데이트하며, MCP는 `schedule_dream`을 노출합니다. | mechanics는 시스템이 관리합니다. 사용자 검토는 통합 구현에 달려 있습니다. |
 | Mnemosyne | 내장 | `sleep`과 BEAM consolidation이 working memory를 episodic memory로 옮기는 흐름을 제공하고, Hermes integration이 consolidation command를 노출합니다. | 언제 consolidation을 실행하고 durable memory 품질을 어떻게 검증할지는 사용자가 결정해야 합니다. |
 | taOSmd | 부분 지원 | Correction과 supersede가 graph/vector layer에서 superseded fact recall을 막고 retention score가 memory를 aging합니다. | Scheduled dream이나 consolidation cycle은 없고 raw archive는 항상 보존됩니다. |
+| Vestige | 내장 | Prediction-error gating이 중복 write를 merge하고 모순 write를 supersede합니다. FSRS-6 decay가 memory를 aging하고 `maintain` verb가 consolidation, "dream" synthesis pass, dedup, GC를 실행합니다. | maintenance 실행 시점과 durable memory 품질 검증은 사용자가 결정해야 하며 consolidation 품질은 local model에 달려 있습니다. |
 | Mem0/OpenMemory | 부분 지원 | memory 승격/검색 동작과 플랫폼 처리. | 명시적인 통합 정책은 앱이 소유합니다. |
 | Zep/Graphiti | 내장 | temporal graph 업데이트, fact, summary. | 애플리케이션이 업데이트를 정확히 수집해야 합니다. |
 | Cognee | 내장 | `improve`와 graph processing workflow. | 용어는 dreaming과 다릅니다. |
@@ -44,5 +45,7 @@ Memory 발전은 수집 이후에도 세컨드 브레인을 유용하게 유지�
 - [Mnemosyne Hermes integration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md)
 - [taOSmd repository](https://github.com/jaylfc/taosmd)
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
+- [Vestige repository](https://github.com/samvallad33/vestige)
+- [Vestige science doc](https://github.com/samvallad33/vestige/blob/main/docs/SCIENCE.md)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)

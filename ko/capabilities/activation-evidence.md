@@ -39,6 +39,7 @@ vendor의 내부 ranking logic을 몰라도 작은 평가를 할 수 있습니�
 | Honcho | 부분 지원 | session과 peer context API가 agent에게 어떤 context가 있었는지 설명하는 데 도움을 줄 수 있습니다. | acted-on evidence를 남기는지는 application integration에 달려 있습니다. |
 | Mnemosyne | 부분 지원 | MCP, CLI, Hermes tool call을 통해 workflow에서 recall 또는 memory tool이 실행됐음을 보여줄 수 있습니다. | agent log가 retrieved memory를 decision, citation, write-back과 연결해야 합니다. |
 | taOSmd | 부분 지원 | Append-only archive, pending-review list, local dashboard가 어떤 turn과 fact가 저장되고 검색 가능한지 보여줍니다. | agent log가 retrieved memory를 decision, citation, write-back과 연결해야 합니다. |
+| Vestige | 부분 지원 | MCP tool call과 local 3D dashboard가 어떤 memory가 저장, 검색, 변경됐는지 보여주며 `recall`은 활용한 memory를 반환합니다. | agent log가 retrieved memory를 task의 decision, citation, write-back과 연결해야 합니다. |
 | Mem0/OpenMemory | 부분 지원 | user/run-scoped memory search가 activation trace를 도울 수 있습니다. | grounding과 acted-on proof는 보통 app level 책임입니다. |
 | Zep/Graphiti | 부분 지원 | temporal graph fact와 episode가 task evidence를 위한 source structure를 제공합니다. | application이 graph retrieval을 action log와 연결해야 합니다. |
 | Cognee | 부분 지원 | knowledge graph recall tool이 agent에 structured context를 반환할 수 있습니다. | workflow별 host-level usage evidence 검증이 필요합니다. |

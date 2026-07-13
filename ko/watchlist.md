@@ -14,6 +14,7 @@
 | Open Second Brain | agent를 위한 Obsidian-native memory layer. | emerging Obsidian/MCP 후보이며 OpenHuman과 별개. |
 | MAGI | AI agent를 위한 persistent memory. | emerging AI-memory 후보. |
 | [tracecraft](https://github.com/Arrmlet/tracecraft) | S3-compatible 또는 Hugging Face storage를 사용해 shared state, task claim, handoff, session trace를 저장하는 serverless multi-agent coordination substrate. | Agent memory와 인접한 emerging coordination-substrate candidate; memory layer나 second-brain system 자체는 아닙니다. |
+| [BrainTube](https://github.com/lildaddyo/braintube-mcp) | YouTube 저장 항목, article, PDF, Notion, Obsidian을 사용자별 vector + graph store로 수집하고 semantic search, entity/timeline traversal, resurfacing을 포함한 52개 tool을 OAuth 2.0 또는 API key 인증의 Streamable HTTP로 제공하는 hosted personal knowledge-base MCP server. | Emerging Use-layer activation 후보입니다. 현재 hosted-only이며 Chrome capture extension과 Official Registry / Smithery / Glama listing이 있으므로, full profile로 올리기 전에 setup burden과 개인/팀 governance surface를 출처 기반으로 더 평가해야 합니다. |
 
 ## 승격 규칙
 

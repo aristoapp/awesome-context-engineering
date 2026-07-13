@@ -17,8 +17,8 @@
 | 계층 | 솔루션 |
 |---|---|
 | End-to-end app | [Membase](../solutions/membase.md), [OpenHuman](../solutions/openhuman.md), [Khoj](../solutions/khoj.md) |
-| Local workspace | [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md) |
-| Agent memory layer | [Mem0/OpenMemory](../solutions/mem0-openmemory.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [taOSmd](../solutions/taosmd.md) |
+| Local workspace | [GBrain](../solutions/gbrain.md), [obsidian-wiki](../solutions/obsidian-wiki.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md) |
+| Agent memory layer | [Mem0/OpenMemory](../solutions/mem0-openmemory.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [taOSmd](../solutions/taosmd.md), [Vestige](../solutions/vestige.md) |
 | Memory substrate | [Zep/Graphiti](../solutions/zep-graphiti.md), [Cognee](../solutions/cognee.md) |
 | Platform baseline | [ChatGPT Memory](../solutions/chatgpt-memory.md), [Claude Projects/Claude Code](../solutions/claude-projects-code.md), [NotebookLM](../solutions/notebooklm.md) |
 

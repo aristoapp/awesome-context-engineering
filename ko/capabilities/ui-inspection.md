@@ -24,6 +24,7 @@
 | Honcho | 부분 지원 | API/MCP를 통한 developer-facing workspace, peer, session, conclusion, queue, metadata 도구. | polished end-user review와 correction UI는 통합 구현이 책임집니다. |
 | Mnemosyne | 부분 지원 | CLI, export/import, update/delete/invalidate tool, diagnostics, scratchpad tool, local SQLite file이 operator inspection path를 제공합니다. | Hosted human-facing review dashboard는 주요 surface로 문서화되어 있지 않습니다. |
 | taOSmd | 부분 지원 | `taosmd serve`가 제공하는 local web dashboard에서 search, pending-review list, health를 볼 수 있고 CLI와 append-only archive가 operator inspection path를 제공합니다. | Dashboard는 hosted multi-user review product가 아니라 local inspection surface입니다. |
+| Vestige | 부분 지원 | embedded local 3D dashboard(`localhost:3927`)가 live event와 memory graph browsing을 제공하며 CLI와 `memory`/`contradictions`/`memory_status` tool로 inspection, correction, health 확인을 할 수 있습니다. | Dashboard는 hosted multi-user review product가 아니라 local single-user inspection surface입니다. |
 | Mem0/OpenMemory | 내장 | 플랫폼 대시보드와 self-hosted 대시보드/서버 경로. | 애플리케이션 소유자가 사용자용 검토 흐름을 여전히 정의해야 합니다. |
 | Zep/Graphiti | 부분 지원 | 개발자/플랫폼 UI와 그래프 API. | 최종 사용자를 위한 세컨드 브레인 UI가 주 표면은 아닙니다. |
 | Cognee | 부분 지원 | 개발자/관리자 화면과 MCP 도구 레퍼런스. | 최종 사용자 점검은 대상 workflow에서 확인해야 합니다. |

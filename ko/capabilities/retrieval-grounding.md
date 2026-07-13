@@ -24,6 +24,7 @@
 | Honcho | 내장 | hybrid search, context retrieval, peer/session representation, peer card, conclusion, natural-language context query. | source metadata와 citation UX는 app 또는 agent가 Honcho에 데이터를 쓰는 방식에 달려 있습니다. |
 | Mnemosyne | 내장 | Hybrid recall이 vector similarity, SQLite FTS5, importance weighting을 결합하고, MCP, CLI, SDK, Hermes plugin surface가 memory를 검색할 수 있습니다. | Source grounding은 memory write 방식과 host agent가 retrieved context를 기록하는지에 달려 있습니다. |
 | taOSmd | 내장 | Hybrid keyword/vector search, fusion, optional reranker, temporal knowledge graph, librarian을 사용하며 결과는 verbatim archived turn을 참조할 수 있습니다. | Grounding 품질은 local embedding/LLM model과 host agent가 retrieved context를 기록하는지에 달려 있습니다. |
+| Vestige | 내장 | `recall`이 similarity search, cross-memory reasoning, contradiction detection을 Reciprocal Rank Fusion으로 결합하고 `backfill`은 별도의 backward entity-linked causal-recall 경로를 제공합니다. | Grounding 품질은 local embedding model과 host agent가 retrieved context를 기록하는지에 달려 있습니다. causal-recall benchmark는 maintainer가 공개한 결과입니다(profile 참고). |
 | Mem0/OpenMemory | 내장 | user ID, run ID, metadata가 있는 layered memory search. | 앱 소유자가 grounding과 출처 메타데이터 품질을 정의합니다. |
 | Zep/Graphiti | 내장 | temporal knowledge graph, fact, episode, Graph RAG. | 애플리케이션 데이터가 명시적으로 모델링될 때 가장 좋습니다. |
 | Cognee | 내장 | knowledge graph memory와 recall 도구. | 검색 품질은 수집과 그래프 처리 모드에 의존합니다. |

@@ -24,6 +24,7 @@
 | Honcho | app builder 기준 내장 | workspace가 app/environment를 격리하고 peer/session이 user, agent, group 등 entity를 모델링합니다. | 최종 사용자 governance UX와 permission flow는 app이 책임집니다. |
 | Mnemosyne | 부분 지원 | Memory bank와 global/session scope가 domain 또는 agent context를 분리할 수 있습니다. | Team permission, admin control, review workflow는 memory backend 바깥에서 해결해야 합니다. |
 | taOSmd | 부분 지원 | Agent별 shelf와 cross-agent read가 agent context와 project를 나눕니다. | Team permission, admin control, review workflow는 memory layer 일부가 아닙니다. |
+| Vestige | 부분 지원 | Per-project code memory와 local scoping으로 context를 분리합니다. | Memory는 단일 machine의 local-only이며 team permission, admin control, shared-workspace review는 memory layer 일부가 아닙니다. |
 | Mem0/OpenMemory | 내장 | user, session, 조직 memory. | 신중한 범위 설계가 필요합니다. |
 | Zep/Graphiti | 내장 | project, user, session, group. | 앱 인프라로 사용할 때 가장 좋습니다. |
 | Cognee | API 모드에서 내장 | 공유 backend/API 모드. | standalone 모드는 클라이언트를 격리합니다. |

@@ -24,6 +24,7 @@
 | Honcho | 연동 | hosted MCP/API key 또는 self-hosted FastAPI server, SDK/MCP 연동, peer/session 설계, self-hosting용 provider key. | hosted agent 설정은 빠르지만 production integration과 self-hosting은 backend 운영을 추가합니다. |
 | Mnemosyne | 연동 | `mnemosyne-memory`를 설치하고 MCP/SDK 사용을 설정하거나, `mnemosyne-hermes`를 설치한 뒤 Hermes provider를 활성화합니다. | 설정은 빠를 수 있지만 유용한 운영에는 memory scope, embedding, consolidation, verification 선택이 필요합니다. |
 | taOSmd | 연동 | Source install 후 local embedding model과 local LLM을 준비하고, CLI, `taosmd serve` HTTP server, MCP server를 실행합니다. | 아직 PyPI package가 없고 유용한 운영은 local model/configuration에 의존합니다. |
+| Vestige | 연동 | prebuilt binary를 npm으로 한 번 설치하고 MCP config entry를 추가합니다. 첫 실행 때 embedding model을 한 번 download하며 Intel Mac은 Homebrew ONNX Runtime path가 필요합니다. | 유용한 운영은 local model, memory-scope 설계, agent-memory protocol wiring에 달려 있습니다. |
 | Mem0/OpenMemory | 연동 | hosted MCP/API 또는 self-hosted stack. | memory 설계는 애플리케이션 작업입니다. |
 | Zep/Graphiti | API | 앱 연동, 그래프 수집, 그래프 backend, LLM/embedding provider 설정. | 빌더 중심입니다. 공식 quickstart는 있지만 backend 선택에 따라 실제 소요 시간이 달라집니다. |
 | Cognee | 내장 | Python package/SDK 설정, 선택적 MCP config, 선택적 Docker 또는 API/Cloud mode. | Docker는 필수가 아니며, 모드를 신중히 선택해야 합니다. |

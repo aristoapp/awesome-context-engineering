@@ -21,6 +21,7 @@
 | 솔루션 | 세컨드 브레인에서 가장 잘 맞는 역할 | 상태 |
 |---|---|---|
 | [GBrain](gbrain.md) | 로컬 또는 self-hosted 브레인 운영 계층 | 핵심, 직접 검증 |
+| [obsidian-wiki](obsidian-wiki.md) | Obsidian용 agent-agnostic local knowledge-compilation framework | 핵심, 출처 기반 |
 | [Hermes Agent + LLM Wiki](hermes-llm-wiki.md) | 에이전트가 운영하는 로컬 Markdown wiki | 핵심 |
 | [Obsidian/Logseq + AI bridge](obsidian-logseq.md) | 로컬 우선 PKM 원본 지식 저장소 | 핵심 |
 
@@ -36,6 +37,7 @@
 | [Hindsight](hindsight.md) | memory bank가 있는 agent memory API | 핵심, 출처 기반 |
 | [Mnemosyne](mnemosyne.md) | MCP와 Hermes 연동이 있는 local-first agent memory layer | 핵심, 출처 기반 |
 | [taOSmd](taosmd.md) | zero-loss archive가 있는 local-first offline agent memory layer | 핵심, 출처 기반 |
+| [Vestige](vestige.md) | FSRS-6 decay, active forgetting, backward causal recall을 갖춘 local-first agent memory layer | 핵심, 출처 기반 |
 | [Mem0/OpenMemory](mem0-openmemory.md) | hosted/self-hosted 경로가 있는 개발자용 memory 계층 | 핵심 |
 
 ## Memory Substrates

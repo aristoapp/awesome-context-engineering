@@ -24,6 +24,7 @@
 | Honcho | API + 연동 | API/SDK/MCP write로 message, session, uploaded document를 추가합니다. | 넓은 외부 source capture는 통합하는 app 또는 agent에 달려 있습니다. |
 | Mnemosyne | API + 연동 | MCP/CLI/SDK write, Python `remember`, memory bank, Hermes lifecycle hook이 agent context를 수집할 수 있습니다. | 넓은 OAuth connector 계층은 아니며 capture는 agent, hook, developer 주도입니다. |
 | taOSmd | API + 연동 | Python API, HTTP/REST, MCP write가 각 turn을 append-only archive에 verbatim으로 기록하고 vector/knowledge graph indexing을 그 위에 얹습니다. | Capture는 agent/developer 주도이며 넓은 OAuth connector 계층은 아닙니다. |
+| Vestige | MCP + 연동 | `smart_ingest`와 agent-memory protocol을 통한 MCP/CLI write를 지원하며, `source_sync`가 외부 source(문서에는 GitHub Issues)를 local index에 넣습니다. | Capture는 agent/developer 주도이며 넓은 OAuth connector 계층은 아닙니다. |
 | Mem0/OpenMemory | API + 연동 | 앱 또는 AI workflow에서 SDK/API/MCP로 쓰기. | 수집 설계는 애플리케이션이 책임집니다. |
 | Zep/Graphiti | API | 대화 히스토리, 비즈니스 데이터, 그래프 엔드포인트. | 앱 연동이 필요합니다. |
 | Cognee | 내장 + API | MCP memory/data 도구와 그래프 처리. | standalone 모드와 shared 모드에 따라 데이터가 저장되는 위치가 달라집니다. |

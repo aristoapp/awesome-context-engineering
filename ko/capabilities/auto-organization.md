@@ -24,6 +24,7 @@
 | Honcho | 내장 | workspace, peer, session, message, conclusion, representation, peer card, session context. | 최종 사용자용 organization과 review UI는 통합 구현에 달려 있습니다. |
 | Mnemosyne | 내장 | Working memory, episodic memory, scratchpad, memory bank, temporal graph-style fact용 TripleStore. | Organization 품질은 memory scope 설계, embedding 설정, agent write behavior에 달려 있습니다. |
 | taOSmd | 내장 | Append-only archive, vector index, temporal knowledge graph, librarian layer가 raw turn을 retrievable structure로 바꿉니다. | Organization 품질은 local extraction model, embedding 설정, agent write behavior에 달려 있습니다. |
+| Vestige | 내장 | Prediction-error gating이 ingest 때 중복 write를 merge하고 모순 write를 supersede합니다. association, synaptic tagging, per-project code memory를 가진 memory graph가 local SQLite + FTS5 + vector index 위에 구조를 더합니다. | Organization 품질은 local embedding model, tagging, agent write behavior에 달려 있습니다. |
 | Mem0/OpenMemory | 내장 | 계층화된 memory 유형과 검색/승격 모델. | 앱은 범위와 메타데이터를 신중히 선택해야 합니다. |
 | Zep/Graphiti | 내장 | entity node, entity edge, episodic node, fact, summary. | temporal graph 앱에는 강하지만 no-code PKM은 아닙니다. |
 | Cognee | 내장 | knowledge graph memory 도구와 처리. | 그래프 품질은 수집과 처리 방식에 의존합니다. |
