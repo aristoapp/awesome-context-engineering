@@ -16,7 +16,7 @@ Choose this path when the first problem is that useful context is still scattere
 
 ## If Raw Context Needs Durable Structure
 
-Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Honcho](../solutions/honcho.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
+Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [GBrain](../solutions/gbrain.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Vestige](../solutions/vestige.md), [Honcho](../solutions/honcho.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
 
 - Membase is the hosted, lowest-burden option when captured context should become Memory and Wiki with graph + vector retrieval for memory and dashboard chat for use.
 - Hjarni keeps structure deliberate and inspectable: Markdown notes in a hierarchy of folders (containers), with tags, wiki-links, and per-folder AI instructions, authored by you or by an agent through MCP. The structure is hand-built rather than extracted automatically.
@@ -24,6 +24,7 @@ Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md),
 - Hermes Agent + LLM Wiki gives a readable Markdown wiki with schema, index, log, wikilinks, provenance, and lint rules, but you operate the wiki discipline.
 - Mnemosyne gives memory tiers, memory banks, hybrid retrieval, and temporal triples inside a local SQLite-backed agent memory layer.
 - taOSmd keeps every conversation turn verbatim in an append-only archive, then layers vector search, a temporal knowledge graph, and a librarian on top, running offline on low-end hardware.
+- Vestige gates writes with a prediction-error step that merges redundant and supersedes contradictory records, and keeps a memory graph with associations over local SQLite, as one Rust binary for coding agents.
 - Honcho is strongest when stateful agents need peer representations, conclusions, session context, and user or agent modeling.
 - Zep/Graphiti and Cognee are better read as graph or knowledge memory substrates for applications.
 
@@ -31,30 +32,31 @@ Choose this path when relationships, entities, facts, pages, links, and time are
 
 ## If Memory Needs To Evolve Over Time
 
-Start with [Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
+Start with [Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Vestige](../solutions/vestige.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
 
-These options do more than store raw notes. They include product-managed digestion, graph memory updates, background reasoning, procedural memory extraction, automatic forgetting, dream/autopilot jobs, memory-bank consolidation, temporal graph updates, or graph processing workflows that help memory improve after capture.
+These options do more than store raw notes. They include product-managed digestion, graph memory updates, background reasoning, procedural memory extraction, automatic forgetting, dream/autopilot jobs, memory-bank consolidation, temporal graph updates, or graph processing workflows that help memory improve after capture. Vestige is in this group for its FSRS-6 decay, prediction-error gated writes, consolidation/dream maintenance, dedup, and reversible active forgetting.
 
 Choose this path when stale, duplicated, or disconnected memory is the main problem.
 
 ## If Context Needs To Show Up Inside AI Tools
 
-Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Mem0/OpenMemory](../solutions/mem0-openmemory.md), or [Claude Projects/Claude Code](../solutions/claude-projects-code.md).
+Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Vestige](../solutions/vestige.md), [Mem0/OpenMemory](../solutions/mem0-openmemory.md), or [Claude Projects/Claude Code](../solutions/claude-projects-code.md).
 
 - Membase exposes organized knowledge through dashboard chat and connected AI workflows without asking the user to operate MCP infrastructure first.
 - Hjarni exposes your notes to Claude and ChatGPT through a built-in remote MCP server (OAuth) and a REST API, so agents can search, read, create, and update notes during a task.
-- Supermemory, Hyperspell, Honcho, Hindsight, Mnemosyne, taOSmd, and Mem0/OpenMemory are stronger when memory is part of an agent or application architecture.
+- Supermemory, Hyperspell, Honcho, Hindsight, Mnemosyne, taOSmd, Vestige, and Mem0/OpenMemory are stronger when memory is part of an agent or application architecture. Vestige is MCP- and CLI-accessible local memory for coding agents, with a backward causal-recall path alongside similarity search.
 - Claude Projects/Claude Code is useful when the work already lives inside Claude and project-scoped context is enough.
 
 Choose this path when the missing piece is MCP, API, SDK, plugin, dashboard chat, or platform access that activates memory during work.
 
 ## If Memory Needs Governance Or Control
 
-Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [GBrain](../solutions/gbrain.md), [taOSmd](../solutions/taosmd.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md), [ChatGPT Memory](../solutions/chatgpt-memory.md), or [Claude Projects/Claude Code](../solutions/claude-projects-code.md).
+Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [GBrain](../solutions/gbrain.md), [taOSmd](../solutions/taosmd.md), [Vestige](../solutions/vestige.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md), [ChatGPT Memory](../solutions/chatgpt-memory.md), or [Claude Projects/Claude Code](../solutions/claude-projects-code.md).
 
 - Membase is useful when you want hosted Memory/Wiki controls and a lower-operations path.
 - Hjarni keeps notes, folders, tags, links, and AI instructions directly editable in the app or via MCP, so review, correction, and deletion stay under user control. Storage is hosted-only, with no local option.
 - GBrain, Hermes Agent + LLM Wiki, Obsidian/Logseq, and taOSmd are stronger when local files, inspectability, and human review matter more than hosted convenience.
+- Vestige adds explicit memory-governance tools over local SQLite: get/edit, promote/demote, contradiction inspection, reversible active forgetting (`suppress`), and purge of content plus embeddings, with an embedded 3D dashboard for browsing the graph.
 - ChatGPT Memory and Claude Projects/Claude Code are useful platform baselines, but visibility, export, and retrieval controls are platform-scoped.
 
 Choose this path when review, correction, deletion, provenance, ownership, permissions, or local/cloud control is the main decision driver.

@@ -24,6 +24,7 @@ Privacy, portability, and control cover where memory is stored, whether users ca
 | Honcho | Built-in for self-hosting | Managed service or self-hosted FastAPI server; workspaces and peers provide scoping primitives. | Self-hosting gives more control but adds service, storage, provider-key, and update operations. |
 | Mnemosyne | Built-in for local storage | Local SQLite database, export/import commands, memory update/delete/invalidate tools, and configurable data directory. | Embedding, LLM, sync, and agent behavior still depend on configured providers and workflow choices. |
 | taOSmd | Built-in for local storage | Offline local SQLite stores, a configurable data directory, correction and supersede tools, and an append-only archive that retains the raw turn; secrets are redacted on the A2A bus. | Embedding and LLM behavior depend on the local models you configure. |
+| Vestige | Built-in for local storage | Local SQLite with optional SQLCipher encryption, no cloud calls after a one-time model download, reversible suppression, content-plus-embedding purge, and export/backup/restore. | Embedding behavior depends on the local model; cross-machine portability is user-operated. |
 | Mem0/OpenMemory | Built-in | Hosted or self-hosted. | Self-hosting provides strongest control. |
 | Zep/Graphiti | Partial | Hosted Zep or Graphiti library. | Verify platform retention and graph data handling. |
 | Cognee | Built-in in local mode | SDK/local mode, optional Docker MCP setup, or API/Cloud mode. | Shared API mode changes control boundary. |

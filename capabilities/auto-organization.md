@@ -24,6 +24,7 @@ Knowledge organization is the system's ability to turn raw context into durable,
 | Honcho | Built-in | Workspaces, peers, sessions, messages, conclusions, representations, peer cards, and session context. | End-user organization and review UI depend on the integration. |
 | Mnemosyne | Built-in | Working memory, episodic memory, scratchpad, memory banks, and a TripleStore for temporal graph-style facts. | Organization quality depends on memory scope design, embedding configuration, and agent write behavior. |
 | taOSmd | Built-in | An append-only archive, a vector index, a temporal knowledge graph, and a librarian layer turn raw turns into retrievable structure. | Organization quality depends on the local extraction model, embedding configuration, and agent write behavior. |
+| Vestige | Built-in | Prediction-error gating merges redundant and supersedes contradictory writes at ingest; a memory graph with associations, synaptic tagging, and per-project code memory add structure over local SQLite + FTS5 + a vector index. | Organization quality depends on the local embedding model, tagging, and agent write behavior. |
 | Mem0/OpenMemory | Built-in | Layered memory types and search/promotion model. | App must choose scope and metadata carefully. |
 | Zep/Graphiti | Built-in | Entity nodes, entity edges, episodic nodes, facts, summaries. | Strong for temporal graph apps, not no-code PKM. |
 | Cognee | Built-in | Knowledge graph memory tools and processing. | Graph quality depends on ingestion and processing. |
