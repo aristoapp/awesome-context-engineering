@@ -12,6 +12,7 @@
 | [Supermemory](../solutions/supermemory.md) | Strong | Strong | Possible | Project scoping and connectors help, but team governance must be checked. |
 | [Hyperspell](../solutions/hyperspell.md) | Strong | Strong | Strong for app builders | Multi-tenant user model, user tokens, metadata, collections, source selection, and folder policies help, but app teams own governance UX. |
 | [Honcho](../solutions/honcho.md) | Strong | Strong | Strong for app builders | Workspaces isolate apps/environments; peers and sessions can model users, agents, groups, and other entities, but end-user governance UX is app-owned. |
+| [marm-memory](../solutions/marm-memory.md) | Strong | Strong | Partial / operational | Sessions plus project/platform metadata scope one local store; multiple agents can share one HTTP server, but permissions, hosted sync, and team governance are external. |
 | [Mnemosyne](../solutions/mnemosyne.md) | Strong | Strong | Partial / operational | Memory banks and global/session scope can separate contexts, but team permissions and review flows are external to the memory layer. |
 | [taOSmd](../solutions/taosmd.md) | Strong | Strong | Partial / operational | Per-agent shelves with cross-agent reads separate contexts, but team permissions and review flows are not part of the memory layer. |
 | [Vestige](../solutions/vestige.md) | Strong | Strong | Not primary fit | Per-project code memory and local scoping separate contexts, but memory is single-machine and local-only, with no team-permission or shared-workspace product surface. |

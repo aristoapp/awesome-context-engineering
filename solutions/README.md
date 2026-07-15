@@ -38,6 +38,7 @@ These systems expose APIs, SDKs, MCP servers, or managed services that add memor
 | [Hyperspell](hyperspell.md) | Hosted company/user context layer for AI agents | Core, private beta caveat |
 | [Honcho](honcho.md) | Stateful agent memory and user-modeling layer | Core, source-backed |
 | [Hindsight](hindsight.md) | Agent memory API with memory banks | Core, source-backed |
+| [marm-memory](marm-memory.md) | Local-first MCP memory layer with hybrid recall and staged maintenance | Core, source-backed |
 | [Mnemosyne](mnemosyne.md) | Local-first agent memory layer with MCP and Hermes integration | Core, source-backed |
 | [taOSmd](taosmd.md) | Local-first, offline agent memory layer with a zero-loss archive | Core, source-backed |
 | [Vestige](vestige.md) | Local-first agent memory layer with FSRS-6 decay, active forgetting, and backward causal recall | Core, source-backed |
