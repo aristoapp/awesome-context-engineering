@@ -33,7 +33,7 @@ Personal and team scope defines who can read, write, update, delete, and share m
 | ChatGPT Memory | Partial | Workspace/admin behavior depends on ChatGPT plan and settings. | Not designed as portable team memory. |
 | Claude Projects/Claude Code | Built-in on team plans | Team/Enterprise project sharing and permissions. | Scope remains Claude project/workspace oriented. |
 | NotebookLM | Partial | Sharing/collaboration depends on Google account and product tier. | Notebook boundaries are not full second-brain governance. |
-| MemoryPlugin | Partial | Buckets scope personal and project contexts; shared buckets add per-person permissions and attribution. | Sharing a bucket requires the Pro plan (invitees accept on any plan); no org workspace, RBAC, or admin product. |
+| MemoryPlugin | Partial | Buckets scope personal and project contexts; shared buckets add per-person permissions and attribution. | Sharing a bucket requires the Pro plan (invitees accept on any plan); shared buckets are not exposed over MCP; no org workspace, RBAC, or admin product. |
 
 ## Sources
 
