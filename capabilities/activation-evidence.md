@@ -48,6 +48,7 @@ Passing this test does not require exposing private memory text in logs. A syste
 | ChatGPT Memory | Unknown | Platform-native memory can personalize a session. | Per-memory retrieval and acted-on evidence are platform-controlled. |
 | Claude Projects/Claude Code | Partial | Project knowledge, files, skills, and tool logs can show parts of context activation. | Users may still need custom receipts or logs to separate loaded context from acted-on context. |
 | NotebookLM | Built-in | Source-grounded answers and citations make activation evidence visible for bounded notebooks. | Limited to notebook source sets rather than broad live workflow memory. |
+| MemoryPlugin | Partial | Chat-history recall returns per-conversation source citations; extension injection is visible in-page; MCP tool calls expose retrieved context. | Acted-on proof depends on the AI tool's own logs. |
 
 ## Notes
 

@@ -33,6 +33,7 @@ Knowledge organization is the system's ability to turn raw context into durable,
 | ChatGPT Memory | Built-in | Platform-managed saved memories and chat history reference. | Organization is not developer-operable. |
 | Claude Projects/Claude Code | Built-in | Project knowledge, instructions, and platform RAG behavior. | Structure is scoped to Claude project contexts. |
 | NotebookLM | Built-in | Source summaries, labels/categories when enough sources exist, and generated artifacts. | Strong for bounded notebooks, not a live memory graph. |
+| MemoryPlugin | Built-in | Smart Memory organizes a bucket into AI-generated categories with summaries; buckets separate contexts; early-beta knowledge graph. | Structure is product-managed and hosted, not an inspectable local graph. |
 
 ## Sources
 

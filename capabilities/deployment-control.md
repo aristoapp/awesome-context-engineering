@@ -32,6 +32,7 @@ Deployment and ownership define where memory lives, who operates storage and ind
 | ChatGPT Memory | Hosted platform | ChatGPT settings and platform memory. | No local or portable deployment for ordinary users. |
 | Claude Projects/Claude Code | Hosted platform + local agent | Claude projects plus local Claude Code runtime. | Project knowledge is platform-hosted. |
 | NotebookLM | Hosted platform | Google-hosted notebooks and sources. | No local deployment for ordinary users. |
+| MemoryPlugin | Hosted | Browser extension, hosted remote MCP, open-source local MCP client, and REST API, all against the hosted service. | No self-hosted or local-only deployment; memory export is the portability path. |
 
 ## Sources
 

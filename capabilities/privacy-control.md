@@ -33,6 +33,7 @@ Privacy, portability, and control cover where memory is stored, whether users ca
 | ChatGPT Memory | Partial | ChatGPT memory settings, deletion controls, Temporary Chat, and connected-app/source management. | Platform-bound and not portable by default; fully removing personalization context may require deleting related chats, files, or connected-app data. |
 | Claude Projects/Claude Code | Partial | Plan, project, sharing, and workspace controls. | Project knowledge remains Claude-scoped. |
 | NotebookLM | Partial | Hosted notebook controls and source management. | No local deployment for ordinary users. |
+| MemoryPlugin | Hosted controls | Memory export as CSV/JSON/text, bulk delete, conversation deletion, per-chat opt-out, API token rotation. | Hosted-only storage; internal models are not disclosed. |
 
 ## Sources
 

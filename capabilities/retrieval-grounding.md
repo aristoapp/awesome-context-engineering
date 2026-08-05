@@ -33,6 +33,7 @@ Retrieval and use cover how the system finds relevant memory, whether it can pre
 | ChatGPT Memory | Partial | Platform memory, chat history reference, and supported Memory Sources. | Source and retrieval internals are platform-controlled and plan/region dependent. |
 | Claude Projects/Claude Code | Built-in | Project knowledge search/RAG and Claude context surfaces. | Grounding is scoped to Claude contexts and plan behavior. |
 | NotebookLM | Built-in | Source-grounded notebook retrieval and source selection. | Strong for bounded source sets, weak as a live second brain across workflows. |
+| MemoryPlugin | Built-in | Hybrid semantic + keyword memory search, Smart Memory category loading, chat-history recall synthesized with per-conversation citations, Ask interface, and file search. | Recall returns synthesized summaries rather than raw logs by default; retrieval internals are not disclosed. |
 
 ## Sources
 

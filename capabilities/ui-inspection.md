@@ -33,6 +33,7 @@ Feedback and correction cover whether users can see what the system knows, filte
 | ChatGPT Memory | Built-in | Settings, Manage memories, memory search/sort controls, memory history restore, and Memory Sources. | Only covers ChatGPT platform memory and supported platform sources. |
 | Claude Projects/Claude Code | Built-in | Claude project UI, knowledge base, instructions, sharing controls, and RAG indicators. | Project visibility depends on workspace plan and permissions. |
 | NotebookLM | Built-in | Notebook UI, sources panel, source selection, labels/categories, and generated artifacts. | Strong inspection for imported sources, not full second-brain operations. |
+| MemoryPlugin | Built-in | Web dashboard to view, search, edit, and delete memories; bulk operations; Memory Suggestions review; chat-history dashboard. | Hosted UI; no local file inspection. |
 
 ## Sources
 
