@@ -9,7 +9,7 @@ Start with [Membase](../solutions/membase.md), [OpenHuman](../solutions/openhuma
 - Membase is the low-ops hosted path when you want AI chats and connected sources to become usable Memory and Wiki without running local collectors or memory infrastructure.
 - OpenHuman is strongest when the user wants a productized local-first desktop AI assistant with automatic app capture.
 - Supermemory and Hyperspell are useful when collection needs to feed AI workflows, products, or agent-facing APIs.
-- MemoryPlugin is strongest when the scattered context is AI conversations themselves: it imports ChatGPT, Claude, TypingMind, and Grok exports, auto-syncs new chats hourly through its browser extension, and captures memories in-page on the supported web chat platforms.
+- MemoryPlugin is strongest when the scattered context is AI conversations themselves: it imports ChatGPT, Claude, TypingMind, and Grok exports, auto-syncs new chats hourly on ChatGPT, Claude, Grok, DeepSeek, TypingMind, and (experimentally) Gemini through its browser extension, and captures memories in-page on the supported web chat platforms.
 - Khoj is better when the main sources are files, notes, documents, and web pages.
 - obsidian-wiki is stronger when sources include coding-agent histories and the target is a shared, agent-maintained Obsidian vault rather than a hosted connector layer.
 - Obsidian/Logseq is strongest when human-owned local notes are the source of truth, but AI capture depends on plugins, imports, or custom bridges.
