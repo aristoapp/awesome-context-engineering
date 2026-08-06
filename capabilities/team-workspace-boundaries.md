@@ -47,3 +47,5 @@ Personal and team scope defines who can read, write, update, delete, and share m
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Mem0 memory types](https://docs.mem0.ai/core-concepts/memory-types)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
+- [MemoryPlugin shared buckets](https://help.memoryplugin.com/features/shared-buckets)
+- [MemoryPlugin MCP access boundaries](https://www.memoryplugin.com/mcp)

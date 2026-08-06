@@ -68,3 +68,4 @@ Activation evidence is not the same as perfect observability. A practical second
 - [taOSmd repository](https://github.com/jaylfc/taosmd)
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)
+- [MemoryPlugin chat-history recall](https://help.memoryplugin.com/api-reference/endpoint/recall-chat-history)

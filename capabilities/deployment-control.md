@@ -46,3 +46,5 @@ Deployment and ownership define where memory lives, who operates storage and ind
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Mem0 open-source overview](https://docs.mem0.ai/open-source/overview)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
+- [MemoryPlugin remote MCP server](https://help.memoryplugin.com/integrations/remote-mcp-server)
+- [MemoryPlugin Sync desktop app](https://www.memoryplugin.com/download)

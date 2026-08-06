@@ -49,3 +49,4 @@ Setup and operations cover first install, authentication, source sync, indexing,
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
 - [Cognee installation](https://docs.cognee.ai/getting-started/installation)
+- [MemoryPlugin quick setup](https://help.memoryplugin.com/getting-started/introduction)

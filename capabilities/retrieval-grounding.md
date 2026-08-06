@@ -48,3 +48,5 @@ Retrieval and use cover how the system finds relevant memory, whether it can pre
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)
+- [MemoryPlugin chat-history recall](https://help.memoryplugin.com/api-reference/endpoint/recall-chat-history)
+- [MemoryPlugin Ask](https://help.memoryplugin.com/features/ask)

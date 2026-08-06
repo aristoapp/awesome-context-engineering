@@ -48,3 +48,5 @@ Privacy, portability, and control cover where memory is stored, whether users ca
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Mem0 open-source overview](https://docs.mem0.ai/open-source/overview)
 - [Khoj docs](https://docs.khoj.dev/)
+- [MemoryPlugin memory export](https://help.memoryplugin.com/questions/export-my-memories)
+- [MemoryPlugin per-chat opt-out](https://help.memoryplugin.com/questions/keep-a-chat-private)

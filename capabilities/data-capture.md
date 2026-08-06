@@ -33,7 +33,7 @@ Context capture is how raw personal, team, and source context enters the second 
 | ChatGPT Memory | Built-in + platform sources | Saved memories, reference chat history, and supported Memory Sources such as custom instructions, files, and connected Gmail depending on plan, region, and settings. | Not a general external source-ingestion backend. |
 | Claude Projects/Claude Code | Built-in | Project uploads, project instructions, chat context, and enabled connectors. | Capture is Claude-scoped unless external memory is added. |
 | NotebookLM | Built-in | Upload/import/discovery for docs, PDFs, web URLs, YouTube, audio, Gemini Chats, Fast Research, Deep Research, and other supported source types. | Imported sources can be bounded/static depending on source type; supported Drive sources can auto-sync. |
-| MemoryPlugin | Built-in + Integration | Extension capture on web chat platforms (ask, highlight, type), chat-history import from ChatGPT, Claude, TypingMind, and Grok exports, with hourly extension auto-sync of new conversations on ChatGPT, Claude, Grok, DeepSeek, TypingMind, and (experimentally) Gemini, desktop-app sync of finished Claude Code, Codex, and Cursor sessions (macOS, Pro), ChatGPT saved-memory import, image memories, document uploads, API ingestion. | Core plan caps searchable imported chats at 500 from one ChatGPT or Claude account; Pro covers unlimited accounts and platforms. Web chat sync is extension-only; coding-agent sync needs the macOS desktop app (Pro). |
+| MemoryPlugin | Built-in + Integration | Extension capture on web chat platforms (ask, highlight, type), chat-history import from ChatGPT, Claude, TypingMind, and Grok exports, with hourly extension auto-sync of new conversations on ChatGPT, Claude, Grok, DeepSeek, TypingMind, and (experimentally) Gemini, desktop-app sync of finished Claude Code, Codex, and Cursor sessions (macOS, Pro; prompts and assistant replies only), ChatGPT saved-memory import, image memories, document uploads, API ingestion. | Core plan caps searchable imported chats at 500 from one ChatGPT or Claude account; Pro covers unlimited accounts and platforms. Web chat sync is extension-only; coding-agent sync needs the macOS desktop app (Pro). |
 
 ## Sources
 
@@ -50,3 +50,6 @@ Context capture is how raw personal, team, and source context enters the second 
 - [taOSmd repository](https://github.com/jaylfc/taosmd)
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Khoj docs](https://docs.khoj.dev/)
+- [MemoryPlugin chat-history import and quota](https://help.memoryplugin.com/features/chat-history/importing)
+- [MemoryPlugin auto-sync](https://help.memoryplugin.com/questions/enable-auto-sync)
+- [MemoryPlugin Sync desktop app](https://www.memoryplugin.com/download)

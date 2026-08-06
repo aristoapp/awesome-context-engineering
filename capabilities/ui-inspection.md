@@ -48,3 +48,5 @@ Feedback and correction cover whether users can see what the system knows, filte
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [ChatGPT Memory FAQ](https://help.openai.com/en/articles/8590148-memory-faq)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)
+- [MemoryPlugin dashboard](https://help.memoryplugin.com/features/dashboard)
+- [MemoryPlugin bulk operations](https://help.memoryplugin.com/features/bulk-operations)

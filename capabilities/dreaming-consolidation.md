@@ -50,3 +50,5 @@ Memory evolution is the ongoing work that keeps a second brain useful after capt
 - [Vestige science doc](https://github.com/samvallad33/vestige/blob/main/docs/SCIENCE.md)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
+- [MemoryPlugin Memory Suggestions](https://help.memoryplugin.com/features/memory-suggestions)
+- [MemoryPlugin Smart Memory](https://help.memoryplugin.com/features/smart-memory)

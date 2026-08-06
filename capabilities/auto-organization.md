@@ -49,3 +49,5 @@ Knowledge organization is the system's ability to turn raw context into durable,
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
+- [MemoryPlugin Smart Memory](https://help.memoryplugin.com/features/smart-memory)
+- [MemoryPlugin Knowledge Graph](https://help.memoryplugin.com/features/knowledge-graph)
