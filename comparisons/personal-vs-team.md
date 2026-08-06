@@ -16,6 +16,7 @@
 | [taOSmd](../solutions/taosmd.md) | Strong | Strong | Partial / operational | Per-agent shelves with cross-agent reads separate contexts, but team permissions and review flows are not part of the memory layer. |
 | [Vestige](../solutions/vestige.md) | Strong | Strong | Not primary fit | Per-project code memory and local scoping separate contexts, but memory is single-machine and local-only, with no team-permission or shared-workspace product surface. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | Strong | Strong | Strong | User, session, and organizational memory make it product-friendly. |
+| [MemoryPlugin](../solutions/memoryplugin.md) | Strong | Strong | Partial | Buckets scope personal and project contexts; shared buckets add per-person permissions and attribution (sharing requires the Pro plan; invitees accept on any plan), but there is no org workspace or admin product. |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | Possible | Strong | Strong | Best as app infrastructure for users, sessions, groups, and business data. |
 | [Cognee](../solutions/cognee.md) | Strong | Strong | Strong in API mode | Standalone mode isolates clients; API mode centralizes sharing. |
 | [Khoj](../solutions/khoj.md) | Strong | Possible | Partial | Better as a personal AI than a universal team memory layer. |

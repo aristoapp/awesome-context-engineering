@@ -48,6 +48,7 @@ Passing this test does not require exposing private memory text in logs. A syste
 | ChatGPT Memory | Unknown | Platform-native memory can personalize a session. | Per-memory retrieval and acted-on evidence are platform-controlled. |
 | Claude Projects/Claude Code | Partial | Project knowledge, files, skills, and tool logs can show parts of context activation. | Users may still need custom receipts or logs to separate loaded context from acted-on context. |
 | NotebookLM | Built-in | Source-grounded answers and citations make activation evidence visible for bounded notebooks. | Limited to notebook source sets rather than broad live workflow memory. |
+| MemoryPlugin | Partial | Chat-history recall returns per-conversation source citations; extension injection is visible in-page; MCP tool calls expose retrieved context. | Acted-on proof depends on the AI tool's own logs. |
 
 ## Notes
 
@@ -67,3 +68,4 @@ Activation evidence is not the same as perfect observability. A practical second
 - [taOSmd repository](https://github.com/jaylfc/taosmd)
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)
+- [MemoryPlugin chat-history recall](https://help.memoryplugin.com/api-reference/endpoint/recall-chat-history)

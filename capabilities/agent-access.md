@@ -30,3 +30,4 @@ For the per-solution comparison, see [../comparisons/agent-access.md](../compari
 - [Vestige repository](https://github.com/samvallad33/vestige)
 - [Mem0 MCP](https://docs.mem0.ai/platform/mem0-mcp)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
+- [MemoryPlugin remote MCP server](https://help.memoryplugin.com/integrations/remote-mcp-server)

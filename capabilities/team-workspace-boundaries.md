@@ -33,6 +33,7 @@ Personal and team scope defines who can read, write, update, delete, and share m
 | ChatGPT Memory | Partial | Workspace/admin behavior depends on ChatGPT plan and settings. | Not designed as portable team memory. |
 | Claude Projects/Claude Code | Built-in on team plans | Team/Enterprise project sharing and permissions. | Scope remains Claude project/workspace oriented. |
 | NotebookLM | Partial | Sharing/collaboration depends on Google account and product tier. | Notebook boundaries are not full second-brain governance. |
+| MemoryPlugin | Partial | Buckets scope personal and project contexts; shared buckets add per-person permissions and attribution. | Sharing a bucket requires the Pro plan (invitees accept on any plan); shared buckets are not exposed over MCP; no org workspace, RBAC, or admin product. |
 
 ## Sources
 
@@ -46,3 +47,5 @@ Personal and team scope defines who can read, write, update, delete, and share m
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Mem0 memory types](https://docs.mem0.ai/core-concepts/memory-types)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
+- [MemoryPlugin shared buckets](https://help.memoryplugin.com/features/shared-buckets)
+- [MemoryPlugin MCP access boundaries](https://www.memoryplugin.com/mcp)

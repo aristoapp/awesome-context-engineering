@@ -33,6 +33,7 @@ Setup and operations cover first install, authentication, source sync, indexing,
 | ChatGPT Memory | Built-in | Enable or manage ChatGPT memory settings. | Instant, but platform-bound. |
 | Claude Projects/Claude Code | Built-in + Integration | Create a project, add knowledge, configure sharing/connectors, or use Claude Code. | Connector and team behavior depends on plan. |
 | NotebookLM | Built-in | Create a notebook and add supported sources. | Source refresh behavior depends on source type. |
+| MemoryPlugin | Built-in | Install the browser extension or connect an MCP client via OAuth and sign in; no infrastructure to operate. | Paid product; plan quotas apply to chat-history import. |
 
 ## Sources
 
@@ -48,3 +49,4 @@ Setup and operations cover first install, authentication, source sync, indexing,
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
 - [Cognee installation](https://docs.cognee.ai/getting-started/installation)
+- [MemoryPlugin quick setup](https://help.memoryplugin.com/getting-started/introduction)

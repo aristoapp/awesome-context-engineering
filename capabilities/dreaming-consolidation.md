@@ -33,6 +33,7 @@ Memory evolution is the ongoing work that keeps a second brain useful after capt
 | ChatGPT Memory | Built-in | Platform-managed memory behavior. | Not exposed as a user-operated maintenance loop. |
 | Claude Projects/Claude Code | Built-in | Platform RAG/project knowledge behavior. | Not a user-operated dream loop. |
 | NotebookLM | Partial | Summaries and generated artifacts. | Not an ongoing second-brain maintenance loop. |
+| MemoryPlugin | Partial | Memory Suggestions propose deduping, combining related memories, and updating stale ones; Smart Memory categorization can be re-run on demand. | Each suggestion needs user approval; there is no autonomous consolidation or dream loop. |
 
 ## Sources
 
@@ -49,3 +50,5 @@ Memory evolution is the ongoing work that keeps a second brain useful after capt
 - [Vestige science doc](https://github.com/samvallad33/vestige/blob/main/docs/SCIENCE.md)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
+- [MemoryPlugin Memory Suggestions](https://help.memoryplugin.com/features/memory-suggestions)
+- [MemoryPlugin Smart Memory](https://help.memoryplugin.com/features/smart-memory)

@@ -33,6 +33,7 @@ Feedback and correction cover whether users can see what the system knows, filte
 | ChatGPT Memory | Built-in | Settings, Manage memories, memory search/sort controls, memory history restore, and Memory Sources. | Only covers ChatGPT platform memory and supported platform sources. |
 | Claude Projects/Claude Code | Built-in | Claude project UI, knowledge base, instructions, sharing controls, and RAG indicators. | Project visibility depends on workspace plan and permissions. |
 | NotebookLM | Built-in | Notebook UI, sources panel, source selection, labels/categories, and generated artifacts. | Strong inspection for imported sources, not full second-brain operations. |
+| MemoryPlugin | Built-in | Web dashboard to view, search, edit, and delete memories; bulk operations; Memory Suggestions review; chat-history dashboard. | Hosted UI; no local file inspection. |
 
 ## Sources
 
@@ -47,3 +48,5 @@ Feedback and correction cover whether users can see what the system knows, filte
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [ChatGPT Memory FAQ](https://help.openai.com/en/articles/8590148-memory-faq)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)
+- [MemoryPlugin dashboard](https://help.memoryplugin.com/features/dashboard)
+- [MemoryPlugin bulk operations](https://help.memoryplugin.com/features/bulk-operations)
