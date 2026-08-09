@@ -34,6 +34,7 @@ Passing this test does not require exposing private memory text in logs. A syste
 | Membase | Partial | Memory/Wiki retrieval and connected AI workflows create a place to inspect what context can be used. | Verify whether a specific workflow exposes per-session retrieved-vs-used evidence. |
 | Hjarni | Partial | MCP `search`, `notes-get`, `notes-create`, and `notes-update` calls expose which notes were searched, read, created, or updated for a task; results carry note IDs, container paths, timestamps, and a `last_edited_by_agent` label. | Whether the agent actually relied on or cited that context (acted-on proof) still depends on the AI client's own logs. |
 | GBrain | Partial | CLI/MCP workflows with citations, conflicts, and gap analysis can support activation checks. | Needs hands-on verification for per-session acted-on evidence. |
+| Stigmergy | Partial | `ask` gathers evidence under the caller's identity, then a verifier traces every figure back to what the read tools returned in that run; untraceable figures become a stated refusal. | Covers the answering loop itself; with a third-party MCP client, acted-on proof still depends on its logs. Maintainer-evaluated, not independently validated. |
 | Hermes Agent + LLM Wiki | Integration | Local Markdown wiki files make source inspection and handoff artifacts easy to audit. | Activation evidence depends on skill behavior and user discipline. |
 | Supermemory | Partial | MCP/API retrieval can expose source-backed memory to agents. | App owners need to record which retrieved items were actually used. |
 | Hyperspell | Partial | MCP search/get tools and metadata filters can provide context activation inputs. | Verify whether the host workflow records usage beyond retrieval. |
@@ -67,3 +68,5 @@ Activation evidence is not the same as perfect observability. A practical second
 - [taOSmd repository](https://github.com/jaylfc/taosmd)
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)
+- [Stigmergy solution profile](../solutions/stigmergy.md)
+- [Stigmergy MCP server reference (the `ask` loop)](https://github.com/sturlese/stigmergy/blob/main/docs/reference/server.md)

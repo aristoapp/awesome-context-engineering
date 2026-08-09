@@ -14,6 +14,7 @@ These systems package collection, organization, retrieval, and user-facing workf
 | [OpenHuman](openhuman.md) | Local-first personal AI with automatic memory capture | Core, early beta |
 | [Khoj](khoj.md) | Personal AI over local files and notes | Core |
 | [Hjarni](hjarni.md) | AI-native Markdown notes app with built-in MCP | Core, source-backed |
+| [Stigmergy](stigmergy.md) | Self-hosted team brain with gated writes and cited-or-refused reads | Core, source-backed |
 
 ## Local Workspaces
 
