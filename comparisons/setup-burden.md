@@ -33,6 +33,7 @@
 | Solution | What you operate | Main risk |
 |---|---|---|
 | [GBrain](../solutions/gbrain.md) | Local CLI/init, brain repo, import/sync/embed, dream/autopilot, stdio/HTTP MCP, recipes or collectors; company brain adds source/OAuth/database design. | Official personal setup targets about 30 minutes, but broad active-context coverage is still operated by the user. |
+| [Stigmergy](../solutions/stigmergy.md) | The service (Docker or Fly), Postgres + pgvector, an S3-compatible store, a git knowledge repo, provider keys, a Slack app, the identities and stewards config, three crons, and token rotation. | No hosted path, so evaluation starts at deployment; corpus hygiene stays operator-driven because the gardener reports findings without applying fixes. |
 | [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md) | Vault hygiene, plugins or bridges, local model/API choices, sync and backups. | Strong ownership, but AI behavior depends on the bridge you build. |
 
 ## Practical Rule
