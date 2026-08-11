@@ -4,13 +4,12 @@ This page is organized by the second-brain lifecycle, not by mutually exclusive 
 
 ## If Scattered Context Is Not Being Collected
 
-Start with [Membase](../solutions/membase.md), [OpenHuman](../solutions/openhuman.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Khoj](../solutions/khoj.md), [GotSaeng OS](../solutions/gotsaeng-os.md), [obsidian-wiki](../solutions/obsidian-wiki.md), or [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md).
+Start with [Membase](../solutions/membase.md), [OpenHuman](../solutions/openhuman.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Khoj](../solutions/khoj.md), [obsidian-wiki](../solutions/obsidian-wiki.md), or [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md).
 
 - Membase is the low-ops hosted path when you want AI chats and connected sources to become usable Memory and Wiki without running local collectors or memory infrastructure.
 - OpenHuman is strongest when the user wants a productized local-first desktop AI assistant with automatic app capture.
 - Supermemory and Hyperspell are useful when collection needs to feed AI workflows, products, or agent-facing APIs.
 - Khoj is better when the main sources are files, notes, documents, and web pages.
-- GotSaeng OS is strongest when the sources are already local Markdown or Obsidian notes and the desired output is a deterministic, source-aware context pack rather than a search or connector service.
 - obsidian-wiki is stronger when sources include coding-agent histories and the target is a shared, agent-maintained Obsidian vault rather than a hosted connector layer.
 - Obsidian/Logseq is strongest when human-owned local notes are the source of truth, but AI capture depends on plugins, imports, or custom bridges.
 
@@ -18,12 +17,11 @@ Choose this path when the first problem is that useful context is still scattere
 
 ## If Raw Context Needs Durable Structure
 
-Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [GBrain](../solutions/gbrain.md), [GotSaeng OS](../solutions/gotsaeng-os.md), [obsidian-wiki](../solutions/obsidian-wiki.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Vestige](../solutions/vestige.md), [Honcho](../solutions/honcho.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
+Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [GBrain](../solutions/gbrain.md), [obsidian-wiki](../solutions/obsidian-wiki.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Vestige](../solutions/vestige.md), [Honcho](../solutions/honcho.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
 
 - Membase is the hosted, lowest-burden option when captured context should become Memory and Wiki with graph + vector retrieval for memory and dashboard chat for use.
 - Hjarni keeps structure deliberate and inspectable: Markdown notes in a hierarchy of folders (containers), with tags, wiki-links, and per-folder AI instructions, authored by you or by an agent through MCP. The structure is hand-built rather than extracted automatically.
 - GBrain gives a deterministic Markdown/page/link/timeline model plus a documented source-scoped OAuth path for self-hosted second brains, but you operate the stack.
-- GotSaeng OS deterministically classifies and extracts local Markdown into context, decision, action, risk, question, provenance, confidence, contradiction-candidate, and handoff reports without adding semantic retrieval or generation.
 - obsidian-wiki gives multiple coding agents a shared skill-based workflow for compiling sources and conversation history into one Obsidian vault, with provenance, delta tracking, graph-aware query, and maintenance tools.
 - Hermes Agent + LLM Wiki gives a readable Markdown wiki with schema, index, log, wikilinks, provenance, and lint rules, but you operate the wiki discipline.
 - Mnemosyne gives memory tiers, memory banks, hybrid retrieval, and temporal triples inside a local SQLite-backed agent memory layer.
@@ -36,11 +34,9 @@ Choose this path when relationships, entities, facts, pages, links, and time are
 
 ## If Memory Needs To Evolve Over Time
 
-Start with [Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [GotSaeng OS](../solutions/gotsaeng-os.md), [obsidian-wiki](../solutions/obsidian-wiki.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Vestige](../solutions/vestige.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
+Start with [Membase](../solutions/membase.md), [GBrain](../solutions/gbrain.md), [obsidian-wiki](../solutions/obsidian-wiki.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Vestige](../solutions/vestige.md), [Zep/Graphiti](../solutions/zep-graphiti.md), or [Cognee](../solutions/cognee.md).
 
 These options do more than store raw notes. They include product-managed digestion, graph memory updates, background reasoning, procedural memory extraction, automatic forgetting, dream/autopilot jobs, memory-bank consolidation, temporal graph updates, graph processing workflows, or agent-operated deduplication and maintenance that help memory improve after capture. Vestige is in this group for its FSRS-6 decay, prediction-error gated writes, consolidation/dream maintenance, dedup, and reversible active forgetting.
-
-GotSaeng OS is the narrower deterministic option in this group: it tracks added, changed, stale, and resolved context through manifests and diffs, but it does not semantically consolidate or autonomously rewrite memory.
 
 Choose this path when stale, duplicated, or disconnected memory is the main problem.
 
@@ -58,11 +54,11 @@ Choose this path when the missing piece is MCP, API, SDK, plugin, dashboard chat
 
 ## If Memory Needs Governance Or Control
 
-Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [GBrain](../solutions/gbrain.md), [GotSaeng OS](../solutions/gotsaeng-os.md), [obsidian-wiki](../solutions/obsidian-wiki.md), [taOSmd](../solutions/taosmd.md), [Vestige](../solutions/vestige.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md), [ChatGPT Memory](../solutions/chatgpt-memory.md), or [Claude Projects/Claude Code](../solutions/claude-projects-code.md).
+Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [GBrain](../solutions/gbrain.md), [obsidian-wiki](../solutions/obsidian-wiki.md), [taOSmd](../solutions/taosmd.md), [Vestige](../solutions/vestige.md), [Hermes Agent + LLM Wiki](../solutions/hermes-llm-wiki.md), [Obsidian/Logseq + AI bridge](../solutions/obsidian-logseq.md), [ChatGPT Memory](../solutions/chatgpt-memory.md), or [Claude Projects/Claude Code](../solutions/claude-projects-code.md).
 
 - Membase is useful when you want hosted Memory/Wiki controls and a lower-operations path.
 - Hjarni keeps notes, folders, tags, links, and AI instructions directly editable in the app or via MCP, so review, correction, and deletion stay under user control. Storage is hosted-only, with no local option.
-- GBrain, GotSaeng OS, obsidian-wiki, Hermes Agent + LLM Wiki, Obsidian/Logseq, and taOSmd are stronger when local files, inspectability, and human review matter more than hosted convenience. GotSaeng OS adds source-linked deterministic reports and review queues, but corrections happen in source notes and team governance is external.
+- GBrain, obsidian-wiki, Hermes Agent + LLM Wiki, Obsidian/Logseq, and taOSmd are stronger when local files, inspectability, and human review matter more than hosted convenience.
 - Vestige adds explicit memory-governance tools over local SQLite: get/edit, promote/demote, contradiction inspection, reversible active forgetting (`suppress`), and purge of content plus embeddings, with an embedded 3D dashboard for browsing the graph.
 - ChatGPT Memory and Claude Projects/Claude Code are useful platform baselines, but visibility, export, and retrieval controls are platform-scoped.
 
