@@ -10,7 +10,7 @@ Start with [Membase](../solutions/membase.md), [OpenHuman](../solutions/openhuma
 - OpenHuman is strongest when the user wants a productized local-first desktop AI assistant with automatic app capture.
 - Supermemory and Hyperspell are useful when collection needs to feed AI workflows, products, or agent-facing APIs.
 - Khoj is better when the main sources are files, notes, documents, and web pages.
-- GotSaeng OS is strongest when the sources are already local Markdown or Obsidian notes and the desired output is a deterministic, source-aware context pack rather than a search or connector service.
+- GotSaeng OS is strongest when the sources are already local Markdown or Obsidian notes and the desired output is a deterministic, source-aware context pack — reachable by hand, by CLI, or by an MCP client — rather than a search or connector service.
 - obsidian-wiki is stronger when sources include coding-agent histories and the target is a shared, agent-maintained Obsidian vault rather than a hosted connector layer.
 - Obsidian/Logseq is strongest when human-owned local notes are the source of truth, but AI capture depends on plugins, imports, or custom bridges.
 
@@ -46,11 +46,12 @@ Choose this path when stale, duplicated, or disconnected memory is the main prob
 
 ## If Context Needs To Show Up Inside AI Tools
 
-Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Vestige](../solutions/vestige.md), [obsidian-wiki](../solutions/obsidian-wiki.md), [Mem0/OpenMemory](../solutions/mem0-openmemory.md), or [Claude Projects/Claude Code](../solutions/claude-projects-code.md).
+Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md), [Supermemory](../solutions/supermemory.md), [Hyperspell](../solutions/hyperspell.md), [Honcho](../solutions/honcho.md), [Hindsight](../solutions/hindsight.md), [Mnemosyne](../solutions/mnemosyne.md), [taOSmd](../solutions/taosmd.md), [Vestige](../solutions/vestige.md), [GotSaeng OS](../solutions/gotsaeng-os.md), [obsidian-wiki](../solutions/obsidian-wiki.md), [Mem0/OpenMemory](../solutions/mem0-openmemory.md), or [Claude Projects/Claude Code](../solutions/claude-projects-code.md).
 
 - Membase exposes organized knowledge through dashboard chat and connected AI workflows without asking the user to operate MCP infrastructure first.
 - Hjarni exposes your notes to Claude and ChatGPT through a built-in remote MCP server (OAuth) and a REST API, so agents can search, read, create, and update notes during a task.
 - Supermemory, Hyperspell, Honcho, Hindsight, Mnemosyne, taOSmd, Vestige, and Mem0/OpenMemory are stronger when memory is part of an agent or application architecture. Vestige is MCP- and CLI-accessible local memory for coding agents, with a backward causal-recall path alongside similarity search.
+- GotSaeng OS exposes a local Markdown/Obsidian compile pipeline to Claude Code, Codex, and Cursor through a local stdio MCP server (5 read/compile-only tools), so an agent can compile and read a vault's context pack as a tool call instead of a manual file copy.
 - obsidian-wiki is stronger when several coding agents should read and write the same local compiled knowledge through portable skill instructions.
 - Claude Projects/Claude Code is useful when the work already lives inside Claude and project-scoped context is enough.
 
@@ -62,7 +63,7 @@ Start with [Membase](../solutions/membase.md), [Hjarni](../solutions/hjarni.md),
 
 - Membase is useful when you want hosted Memory/Wiki controls and a lower-operations path.
 - Hjarni keeps notes, folders, tags, links, and AI instructions directly editable in the app or via MCP, so review, correction, and deletion stay under user control. Storage is hosted-only, with no local option.
-- GBrain, GotSaeng OS, obsidian-wiki, Hermes Agent + LLM Wiki, Obsidian/Logseq, and taOSmd are stronger when local files, inspectability, and human review matter more than hosted convenience. GotSaeng OS adds source-linked deterministic reports and review queues, but corrections happen in source notes and team governance is external.
+- GBrain, GotSaeng OS, obsidian-wiki, Hermes Agent + LLM Wiki, Obsidian/Logseq, and taOSmd are stronger when local files, inspectability, and human review matter more than hosted convenience. GotSaeng OS adds source-linked deterministic reports and review queues, and its MCP tools are read/compile-only by design (no vault write-back), but corrections still happen in source notes and team governance is external.
 - Vestige adds explicit memory-governance tools over local SQLite: get/edit, promote/demote, contradiction inspection, reversible active forgetting (`suppress`), and purge of content plus embeddings, with an embedded 3D dashboard for browsing the graph.
 - ChatGPT Memory and Claude Projects/Claude Code are useful platform baselines, but visibility, export, and retrieval controls are platform-scoped.
 
