@@ -18,6 +18,7 @@ Personal and team scope defines who can read, write, update, delete, and share m
 | Membase | Partial | Memory project tags and Wiki collections for scoped search/filtering. | Full team/workspace separation is coming soon; verify governance details for the target plan. |
 | OpenHuman | Not primary fit | Personal local app and connected sources. | Team/workspace governance is not the core fit. |
 | GBrain | Built-in but operational | Brains, sources, source-scoped OAuth clients, federated reads, mounts, Postgres/Supabase, and HTTP MCP. | Directory-only scoping is convention-based; enforced team isolation needs explicit source/OAuth design. |
+| GotSaeng OS | Partial / handoff only | A selected vault and project name scope each compile; `TEAM_MEMORY.md` is a team-facing handoff report. | Shared storage, permissions, concurrent editing, sync, and approvals are all external to the project. |
 | Hermes Agent + LLM Wiki | Partial | Separate wiki directories, schemas, vaults, or repos can create project boundaries. | Permissions, shared review, and team governance are external filesystem/sync/process concerns. |
 | Supermemory | Integration | Project scoping and connector metadata. | Team governance should be verified. |
 | Hyperspell | Built-in for app builders | Multi-tenant app user IDs, user tokens, source selection, metadata, collections, resource filters, and folder policies. | Team/workspace governance UX is app-owned; account/plan behavior should be verified. |

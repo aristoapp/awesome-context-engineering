@@ -18,6 +18,7 @@ Memory evolution is the ongoing work that keeps a second brain useful after capt
 | Membase | Built-in | Smart digesting and managed product updates. | Schedule/internal mechanics are product-managed. |
 | OpenHuman | Partial | Auto-fetch every 20 minutes, memory collapse, background thinking. | Not yet verified as a durable curated-knowledge loop. |
 | GBrain | Built-in | `gbrain dream` maintenance cycle, `gbrain autopilot`, sync/embed jobs. | User operates jobs and verifies quality. |
+| GotSaeng OS | Partial | `CONTEXT_MANIFEST.json` and `MEMORY_DIFF.md` deterministically diff the current compile against the previous one, surfacing added, changed, newly stale, and resolved context. | No semantic consolidation, embedding, or autonomous rewrite — purely a deterministic manifest diff the user reviews. |
 | Hermes Agent + LLM Wiki | Partial | The bundled skill defines re-ingest, source drift checks, query filing, lint, archive, page splitting, and log rotation. | Not an autonomous maintenance loop by default; user or Hermes automation must trigger upkeep. |
 | Supermemory | Built-in | Product-managed graph memory updates, relationship tracking, and automatic forgetting. | Not exposed as a user-operated dream loop. |
 | Hyperspell | Built-in + Partial | Connected memories update when source data changes; procedural memory extracts reusable steps from agent traces; homepage claims query/conversation reinforcement. | Exact consolidation and reinforcement mechanics are product-managed and should be verified for the target account. |
