@@ -16,6 +16,7 @@
 | [taOSmd](../solutions/taosmd.md) | Strong | Strong | Partial / operational | Per-agent shelves with cross-agent reads separate contexts, but team permissions and review flows are not part of the memory layer. |
 | [Vestige](../solutions/vestige.md) | Strong | Strong | Not primary fit | Per-project code memory and local scoping separate contexts, but memory is single-machine and local-only, with no team-permission or shared-workspace product surface. |
 | [Mem0/OpenMemory](../solutions/mem0-openmemory.md) | Strong | Strong | Strong | User, session, and organizational memory make it product-friendly. |
+| [Orbismo](../solutions/orbismo.md) | Strong | Strong | Possible | Per-world API keys scoped read-only or read-write support sharing one world with collaborators, and a separate per-app grant step controls which worlds are usable through a given connection (confirmed in hands-on testing). |
 | [Zep/Graphiti](../solutions/zep-graphiti.md) | Possible | Strong | Strong | Best as app infrastructure for users, sessions, groups, and business data. |
 | [Cognee](../solutions/cognee.md) | Strong | Strong | Strong in API mode | Standalone mode isolates clients; API mode centralizes sharing. |
 | [Khoj](../solutions/khoj.md) | Strong | Possible | Partial | Better as a personal AI than a universal team memory layer. |
