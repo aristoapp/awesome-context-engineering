@@ -8,7 +8,7 @@
 - Open source: No, closed-source hosted platform. The companion starter-kit repo, [orbismo-playbook](https://github.com/orbismo/orbismo-playbook), is MIT licensed
 - Deployment: Hosted MCP connector, API, and web admin UI
 - Primary users: People and small teams who work mainly through Claude or ChatGPT chat and want a shared, structured knowledge graph as their memory layer
-- Best second-brain role: Hosted knowledge-graph memory layer, reached primarily through chat via MCP
+- Best second-brain role: Hosted, collaborative knowledge-graph memory layer, reached primarily through chat via MCP
 - Last reviewed: 2026-08-11
 
 ## One-line Summary
