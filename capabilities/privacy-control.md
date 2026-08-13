@@ -33,6 +33,7 @@ Privacy, portability, and control cover where memory is stored, whether users ca
 | ChatGPT Memory | Partial | ChatGPT memory settings, deletion controls, Temporary Chat, and connected-app/source management. | Platform-bound and not portable by default; fully removing personalization context may require deleting related chats, files, or connected-app data. |
 | Claude Projects/Claude Code | Partial | Plan, project, sharing, and workspace controls. | Project knowledge remains Claude-scoped. |
 | NotebookLM | Partial | Hosted notebook controls and source management. | No local deployment for ordinary users. |
+| Orbismo | Partial | Hosted controls: API key and MCP connection scope (read-only/read-write) plus per-app world grants, per official docs; world instructions are editable by the owner in the web portal and MCP. | Hosted only, no self-hosted or local option; data export/deletion policy is not verified from official sources. |
 
 ## Sources
 
@@ -47,3 +48,5 @@ Privacy, portability, and control cover where memory is stored, whether users ca
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Mem0 open-source overview](https://docs.mem0.ai/open-source/overview)
 - [Khoj docs](https://docs.khoj.dev/)
+- [Orbismo: connect an AI tool](https://help.orbismo.com/connect-ai/)
+- [Orbismo: using the portal](https://help.orbismo.com/portal/worlds/)

@@ -29,8 +29,8 @@ Orbismo fits when the goal is a structured, multi-person knowledge graph that a 
 | Memory evolution | Partial. `rule` entities (types include tracker, workflow, guidance, law, canon, policy) are trust-stamped, addressable conventions that a world's base instructions route the agent to, which helps limit drift when many sessions write to the same graph over time. This is explicitly best-effort: a rule does not activate itself, precedence is applied by the agent rather than enforced by Orbismo, and a missed rule is recoverable, not blocked. There is no automatic consolidation, dedup, or dream/decay loop. |
 | Retrieval / use | Built-in full-text, tag, and property-predicate entity search; semantic search over lore (embedding-based, returns similarity-ranked chunks, confirmed in hands-on testing); relationship queries; and a timeline query. |
 | Agent activation / write-back | Built-in hosted MCP connector (`app.orbismo.com/api/v1/mcp`); confirmed working as a Claude connector via hands-on testing for this review, and has a ChatGPT app listing per the maintainer. Create, update, and delete tools cover entities, relationships, and lore; a `set_active_world`/`list_my_worlds` pair handles switching between worlds inside the same connection. |
-| Personal / team scope | Built-in. The "world" is the sharing unit: per-world API keys are scoped read-only or read-write, and a separate per-connected-app grant step controls which of a user's worlds are usable through a given app/connection (confirmed in hands-on testing: a second world was listed but not yet granted to the test connection). |
-| Feedback / correction | Partial. The web UI is admin/browsing only; entities are read-only there, so correction goes through a connected AI or the API/MCP write tools. World instructions (the base per-world prompt) are directly editable in the web UI. An `audit_world` tool surfaces data-quality gaps such as property gaps and orphaned entities (confirmed in hands-on testing against a working world) but does not auto-fix them. |
+| Personal / team scope | Built-in. The "world" is the sharing unit: API keys and MCP connections are scoped read-only or read-write per official docs, and a separate per-connected-app grant step means "only worlds in the app's grant are reachable at all" (confirmed in hands-on testing: a second world was listed but not yet granted to the test connection). |
+| Feedback / correction | Partial. Per official docs, creating and editing entities, lore, and relationships happens by connecting an AI tool, not in the web portal; correction goes through a connected AI or the API/MCP write tools. World instructions (the base per-world prompt) are directly editable by the owner in the web UI, and owners can grant editors that permission too. An `audit_world` tool surfaces data-quality gaps such as property gaps and orphaned entities (confirmed in hands-on testing against a working world) but does not auto-fix them. |
 | Privacy / control | Hosted by default; no self-hosted or local path. Access is controlled through per-world API key scope and per-app world grants. Data export/deletion policy: Unknown, not verified from official sources at time of review. |
 | Setup / operations | Low to get started: add the connector in Claude or ChatGPT and log in. Medium if authoring a custom world schema, a rule pack, or world instructions for a specific workflow. |
 
@@ -73,13 +73,15 @@ Orbismo's bet is a fully typed, addressable graph plus a separate addressable ru
 - [Data model reference](https://help.orbismo.com/reference/data-model/)
 - [Rules reference](https://help.orbismo.com/reference/rules/)
 - [MCP tools reference](https://help.orbismo.com/reference/mcp-tools/)
+- [Connect an AI tool](https://help.orbismo.com/connect-ai/) (read-only/read-write scoping, per-app world grants)
+- [Using the portal](https://help.orbismo.com/portal/worlds/) (world instructions, world settings)
 - [orbismo-playbook starter-kit repo](https://github.com/orbismo/orbismo-playbook)
 - [Claude connector directory listing](https://claude.ai/directory/connectors/orbismo) (requires a signed-in Claude session to view)
 - [ChatGPT app listing](https://chatgpt.com/plugins/plugin_asdk_app_6a3afee66ea481919b2a45ae6e623b3a) (requires a signed-in ChatGPT session to view)
 
 ## Sources
 
-- [Orbismo help site](https://help.orbismo.com/) (data model, rules, MCP tools reference pages)
+- [Orbismo help site](https://help.orbismo.com/) (data model, rules, MCP tools, connect-an-AI-tool, and portal reference pages)
 - [orbismo-playbook repo](https://github.com/orbismo/orbismo-playbook) (README, world-templates, mini-apps)
 - Hands-on test against a live Orbismo world via the MCP connector (2026-08-11): schema inspection (`get_world_context`), semantic lore search (`search_lore`), and a world audit (`audit_world`) against a working world with 182 entities across 7 entity types.
 - Maintainer-provided Claude connector directory and ChatGPT app listing URLs.

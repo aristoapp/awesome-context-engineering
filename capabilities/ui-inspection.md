@@ -33,6 +33,7 @@ Feedback and correction cover whether users can see what the system knows, filte
 | ChatGPT Memory | Built-in | Settings, Manage memories, memory search/sort controls, memory history restore, and Memory Sources. | Only covers ChatGPT platform memory and supported platform sources. |
 | Claude Projects/Claude Code | Built-in | Claude project UI, knowledge base, instructions, sharing controls, and RAG indicators. | Project visibility depends on workspace plan and permissions. |
 | NotebookLM | Built-in | Notebook UI, sources panel, source selection, labels/categories, and generated artifacts. | Strong inspection for imported sources, not full second-brain operations. |
+| Orbismo | Partial | World instructions are directly editable by the owner in the web portal, and owners can grant editors that permission too; an `audit_world` tool surfaces data-quality gaps such as property gaps and orphaned entities (confirmed in hands-on testing). | Per official docs, creating and editing entities, lore, and relationships is done by connecting an AI tool, not in the web portal; `audit_world` surfaces gaps but does not auto-fix them. |
 
 ## Sources
 
@@ -47,3 +48,5 @@ Feedback and correction cover whether users can see what the system knows, filte
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [ChatGPT Memory FAQ](https://help.openai.com/en/articles/8590148-memory-faq)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)
+- [Orbismo: using the portal](https://help.orbismo.com/portal/worlds/)
+- [Orbismo: MCP tools reference](https://help.orbismo.com/reference/mcp-tools/)
