@@ -48,6 +48,7 @@ Passing this test does not require exposing private memory text in logs. A syste
 | ChatGPT Memory | Unknown | Platform-native memory can personalize a session. | Per-memory retrieval and acted-on evidence are platform-controlled. |
 | Claude Projects/Claude Code | Partial | Project knowledge, files, skills, and tool logs can show parts of context activation. | Users may still need custom receipts or logs to separate loaded context from acted-on context. |
 | NotebookLM | Built-in | Source-grounded answers and citations make activation evidence visible for bounded notebooks. | Limited to notebook source sets rather than broad live workflow memory. |
+| Orbismo | Partial | MCP tool calls (`search_entities`, `search_lore`, `query_relationships`) return ID-addressable, similarity-scored results that make retrieval inspectable; confirmed in hands-on testing for this review. | Orbismo does not itself provide a retrieved-vs-used receipt; whether the connected AI actually cited or acted on retrieved context depends on the client's own logs. |
 
 ## Notes
 
@@ -67,3 +68,5 @@ Activation evidence is not the same as perfect observability. A practical second
 - [taOSmd repository](https://github.com/jaylfc/taosmd)
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)
+- [Orbismo solution profile](../solutions/orbismo.md)
+- [Orbismo: MCP tools reference](https://help.orbismo.com/reference/mcp-tools/)

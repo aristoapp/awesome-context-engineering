@@ -26,6 +26,7 @@ Knowledge organization is the system's ability to turn raw context into durable,
 | taOSmd | Built-in | An append-only archive, a vector index, a temporal knowledge graph, and a librarian layer turn raw turns into retrievable structure. | Organization quality depends on the local extraction model, embedding configuration, and agent write behavior. |
 | Vestige | Built-in | Prediction-error gating merges redundant and supersedes contradictory writes at ingest; a memory graph with associations, synaptic tagging, and per-project code memory add structure over local SQLite + FTS5 + a vector index. | Organization quality depends on the local embedding model, tagging, and agent write behavior. |
 | Mem0/OpenMemory | Built-in | Layered memory types and search/promotion model. | App must choose scope and metadata carefully. |
+| Orbismo | Built-in | A typed graph with 9 entity types, 40+ relationships, a separate semantic-predicate layer, free-text lore per entity, and tags; confirmed via a live schema call. | Organization happens at write time as a connected AI or API call creates records; there is no automatic re-organization pass over existing data. |
 | Zep/Graphiti | Built-in | Entity nodes, entity edges, episodic nodes, facts, summaries. | Strong for temporal graph apps, not no-code PKM. |
 | Cognee | Built-in | Knowledge graph memory tools and processing. | Graph quality depends on ingestion and processing. |
 | Khoj | Built-in | Indexing/search over personal files and notes. | Less schema-heavy than graph memory systems. |
@@ -48,3 +49,4 @@ Knowledge organization is the system's ability to turn raw context into durable,
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
+- [Orbismo: data model reference](https://help.orbismo.com/reference/data-model/)

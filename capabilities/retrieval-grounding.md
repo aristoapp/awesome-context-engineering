@@ -33,6 +33,7 @@ Retrieval and use cover how the system finds relevant memory, whether it can pre
 | ChatGPT Memory | Partial | Platform memory, chat history reference, and supported Memory Sources. | Source and retrieval internals are platform-controlled and plan/region dependent. |
 | Claude Projects/Claude Code | Built-in | Project knowledge search/RAG and Claude context surfaces. | Grounding is scoped to Claude contexts and plan behavior. |
 | NotebookLM | Built-in | Source-grounded notebook retrieval and source selection. | Strong for bounded source sets, weak as a live second brain across workflows. |
+| Orbismo | Built-in | Full-text, tag, and property-predicate entity search; semantic (embedding-based) search over lore returning similarity-ranked chunks; relationship queries; and a timeline query. Confirmed working in hands-on testing. | Grounding is at the entity/relationship/lore level, not per-chunk citations; whether the connected AI surfaces sources depends on the client. |
 
 ## Sources
 
@@ -47,3 +48,5 @@ Retrieval and use cover how the system finds relevant memory, whether it can pre
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [NotebookLM source docs](https://support.google.com/notebooklm/answer/16215270?hl=en)
+- [Orbismo: MCP tools reference](https://help.orbismo.com/reference/mcp-tools/)
+- Hands-on test against a live Orbismo world via the MCP connector (2026-08-11): semantic lore search (`search_lore`) returned similarity-ranked results.

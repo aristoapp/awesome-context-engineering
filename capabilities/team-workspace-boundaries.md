@@ -33,6 +33,7 @@ Personal and team scope defines who can read, write, update, delete, and share m
 | ChatGPT Memory | Partial | Workspace/admin behavior depends on ChatGPT plan and settings. | Not designed as portable team memory. |
 | Claude Projects/Claude Code | Built-in on team plans | Team/Enterprise project sharing and permissions. | Scope remains Claude project/workspace oriented. |
 | NotebookLM | Partial | Sharing/collaboration depends on Google account and product tier. | Notebook boundaries are not full second-brain governance. |
+| Orbismo | Partial | The "world" is the sharing unit: API keys and MCP connections are scoped read-only or read-write per official docs, and a separate per-connected-app grant means only worlds in an app's grant are reachable at all (confirmed in hands-on testing). | Team-scale governance beyond read/write roles, such as admin controls or an audit trail, is not verified from official sources. |
 
 ## Sources
 
@@ -46,3 +47,4 @@ Personal and team scope defines who can read, write, update, delete, and share m
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Mem0 memory types](https://docs.mem0.ai/core-concepts/memory-types)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
+- [Orbismo: connect an AI tool](https://help.orbismo.com/connect-ai/)

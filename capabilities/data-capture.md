@@ -26,6 +26,7 @@ Context capture is how raw personal, team, and source context enters the second 
 | taOSmd | API + Integration | Python API, HTTP/REST, and MCP writes record each turn verbatim into an append-only archive, with vector and knowledge-graph indexing layered on top. | Capture is agent and developer driven, not a broad OAuth connector layer. |
 | Vestige | MCP + Integration | MCP and CLI writes via `smart_ingest` and an agent-memory protocol; `source_sync` indexes external sources (documented for GitHub Issues) into the local index. | Capture is agent and developer driven, not a broad OAuth connector layer. |
 | Mem0/OpenMemory | API + Integration | SDK/API/MCP writes from app or AI workflow. | Capture design is application-owned. |
+| Orbismo | Custom collector | A connected AI or the API/MCP write tools create entities, relationships, and lore; per official docs, creating and editing content is done by connecting an AI tool, not through the web portal. | No OAuth connector layer for email, calendar, Notion, or similar sources; broad source coverage requires custom integration work. |
 | Zep/Graphiti | API | Chat history, business data, graph endpoints. | Requires app integration. |
 | Cognee | Built-in + API | MCP memory/data tools and graph processing. | Standalone vs shared mode affects where data lands. |
 | Khoj | Built-in | Files, notes, PDFs, Markdown, org-mode, Notion pages. | Better for personal source Q&A than broad cross-tool capture. |
@@ -49,3 +50,5 @@ Context capture is how raw personal, team, and source context enters the second 
 - [taOSmd repository](https://github.com/jaylfc/taosmd)
 - [taOSmd v0.2.0 release](https://github.com/jaylfc/taosmd/releases/tag/v0.2.0)
 - [Khoj docs](https://docs.khoj.dev/)
+- [Orbismo: connect an AI tool](https://help.orbismo.com/connect-ai/)
+- [orbismo-playbook repository](https://github.com/orbismo/orbismo-playbook)

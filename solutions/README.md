@@ -42,6 +42,7 @@ These systems expose APIs, SDKs, MCP servers, or managed services that add memor
 | [taOSmd](taosmd.md) | Local-first, offline agent memory layer with a zero-loss archive | Core, source-backed |
 | [Vestige](vestige.md) | Local-first agent memory layer with FSRS-6 decay, active forgetting, and backward causal recall | Core, source-backed |
 | [Mem0/OpenMemory](mem0-openmemory.md) | Developer memory layer with hosted and self-hosted paths | Core |
+| [Orbismo](orbismo.md) | Hosted, collaborative knowledge-graph memory layer reached mainly through Claude/ChatGPT chat | Core, new |
 
 ## Memory Substrates
 

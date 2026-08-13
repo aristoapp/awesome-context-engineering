@@ -26,6 +26,7 @@ Memory evolution is the ongoing work that keeps a second brain useful after capt
 | taOSmd | Partial | Correction and supersede stop superseded facts from being recalled across the graph and vector layers, and a retention score ages memory. | There is no scheduled dream or consolidation cycle, and the raw archive is always retained. |
 | Vestige | Built-in | Prediction-error gating merges redundant and supersedes contradictory writes; FSRS-6 decay ages memory; a `maintain` verb runs consolidation, a "dream" synthesis pass, dedup, and GC. | Users still decide when to run maintenance and how to validate durable memory quality; consolidation quality depends on the local model. |
 | Mem0/OpenMemory | Partial | Memory promotion/search behavior and platform processing. | Explicit consolidation policy is app-owned. |
+| Orbismo | Partial | Trust-stamped `rule` entities (tracker, workflow, guidance, law, canon, policy) that a world's base instructions route the agent to, reducing drift when many sessions write to the same graph over time. | Explicitly best-effort: rules do not activate themselves, precedence is applied by the agent rather than enforced by Orbismo, and a missed rule is recoverable, not blocked. No automatic consolidation, dedup, or dream/decay loop. |
 | Zep/Graphiti | Built-in | Temporal graph updates, facts, summaries. | Application must ingest updates correctly. |
 | Cognee | Built-in | `improve` and graph processing workflows. | Terminology differs from dreaming. |
 | Khoj | Partial | Indexing and assistant workflows. | No central dream loop in this repo's current evaluation. |
@@ -49,3 +50,5 @@ Memory evolution is the ongoing work that keeps a second brain useful after capt
 - [Vestige science doc](https://github.com/samvallad33/vestige/blob/main/docs/SCIENCE.md)
 - [Zep graph documentation](https://help.getzep.com/v2/understanding-the-graph)
 - [Cognee MCP overview](https://docs.cognee.ai/cognee-mcp/mcp-overview)
+- [Orbismo: rules reference](https://help.orbismo.com/reference/rules/)
+- [Orbismo: rule example](https://help.orbismo.com/reference/rule-example/)
