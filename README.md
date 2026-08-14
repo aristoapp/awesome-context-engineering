@@ -59,6 +59,8 @@ This snapshot compares each system by the lifecycle stages where it is strongest
 
 ### Local Workspaces
 
+- [Persona](https://github.com/jayamitkatariya/personacli) - Local-first personal workspace: notes, tasks and AI chat. Plain markdown files, no accounts, no cloud. MIT.
+
 | Solution | Strongest lifecycle coverage | Best when | Main tradeoff |
 |---|---|---|---|
 | [GBrain](solutions/gbrain.md) | Organize, Evolve, Use, Govern | You want agents to operate a structured local brain with pages, graph, timeline, CLI/MCP, and maintenance jobs. | More setup and operational ownership. |
