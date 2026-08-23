@@ -62,6 +62,7 @@ This snapshot compares each system by the lifecycle stages where it is strongest
 | Solution | Strongest lifecycle coverage | Best when | Main tradeoff |
 |---|---|---|---|
 | [GBrain](solutions/gbrain.md) | Organize, Evolve, Use, Govern | You want agents to operate a structured local brain with pages, graph, timeline, CLI/MCP, and maintenance jobs. | More setup and operational ownership. |
+| [Persona](solutions/persona.md) | Collect, Organize, Use | You want a low-setup local workspace where Markdown notes, tasks, and grounded AI chat live together and stay portable. | macOS-only today; no automatic collectors or graph/timeline tooling. |
 | [obsidian-wiki](solutions/obsidian-wiki.md) | Collect, Organize, Evolve, Use, Govern | You want one inspectable Obsidian knowledge base maintained across multiple coding agents through portable skills. | Agent quality, review, sync, and maintenance cadence remain user-operated. |
 | [Hermes Agent + LLM Wiki](solutions/hermes-llm-wiki.md) | Organize, Use, Govern | You want an inspectable local wiki that an agent can compile, query, lint, and maintain. | You still own the wiki discipline and workflow design. |
 | [Hermes Agent + Obsidian + Honcho](solutions/hermes-obsidian-honcho.md) | Collect, Organize, Evolve, Use, Govern | You want a local-first second brain with agent memory, email integration, and inspectable Markdown, and you're willing to assemble the stack. | Higher setup burden; you own the integration and operations of multiple components. |
