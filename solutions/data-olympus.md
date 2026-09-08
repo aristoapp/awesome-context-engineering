@@ -5,13 +5,13 @@
 - Website / docs: https://github.com/knaisoma/data-olympus
 - Package: https://pypi.org/project/data-olympus/
 - Company / maintainer: Knaisoma / Data Olympus maintainers
-- Status: Pre-1.0 beta. Profile evaluated against v0.5.0; the latest release is v0.7.2 and has not been re-evaluated here
+- Status: Pre-1.0 beta, current release v0.7.3 (2026-09-08)
 - Open source: Yes, Apache-2.0
 - Deployment: Local or self-hosted. The source of truth is a git-backed Markdown knowledge directory; the CLI, streamable HTTP MCP server, and REST endpoints are activation surfaces.
 - Primary users: Engineering teams and agent operators who need reviewed standards, decisions, runbooks, and project knowledge to govern later agent work
 - Best second-brain role: Governed local workspace for authoritative project and engineering knowledge
-- Last reviewed: 2026-07-14
-- Reviewed evidence: Data Olympus main at `a55f4b2` (v0.5.0 release batch), README, quickstart, benchmark guide, specification, and PyPI 0.5.0
+- Last reviewed: 2026-09-08
+- Reviewed evidence: Data Olympus main at `dd8bce6` (v0.7.3), README, quickstart, adoption, enforcement and benchmark guides, specification, OKF profile, release notes 0.6.0 through 0.7.3, and PyPI 0.7.3
 
 ## One-line Summary
 
@@ -33,11 +33,11 @@ This is not a general personal-memory product, conversational memory extractor, 
 | Context capture | Partial and deliberate. Users can author Markdown, import existing `CLAUDE.md`, `AGENTS.md`, `GEMINI.md`, `.cursorrules`, ADR, and OKF corpora into draft records, or let agents submit proposed memories and edits. It does not passively collect chats, email, calendars, or application data. |
 | Knowledge organization | Built-in typed Markdown/frontmatter with stable ids, controlled `type`, `status`, and `tier` fields, hierarchical project/stack/component placement, links, indexed outlines, and lifecycle relationships such as `supersedes` and `superseded_by`. |
 | Memory evolution | Governed rather than automatic. Proposed writes enter a pending path, accepted records can be superseded, validity windows distinguish upcoming and expired guidance, and git history plus audit events preserve change provenance. There is no autonomous dream or consolidation cycle. |
-| Retrieval / use | Full-text retrieval with filters for status, type, tier, category, validity, and currently in-force guidance. An abstention mode returns no result when a query has no discriminating knowledge signal. Optional local embeddings improve semantic retrieval, but the default stack remains lexical. |
-| Agent activation / write-back | Built-in streamable HTTP MCP server, CLI, and REST endpoints. MCP tools cover search, get, list, outline, consultation, proposals, pending review, resolution, audit, and health. Setup and enforcement tooling supports Claude Code, Codex, Gemini, OpenCode, and advisory Copilot paths with different documented enforcement tiers. |
+| Retrieval / use | Full-text retrieval with filters for status, type, tier, category, validity, and currently in-force guidance. An abstention mode returns no result when a query has no discriminating knowledge signal. The optional `embeddings` extra adds local hybrid ranking with a bundled ONNX model and no external API; it is off by default and the default stack remains lexical. |
+| Agent activation / write-back | Built-in streamable HTTP MCP server, CLI, and REST endpoints. MCP tools cover search, get, list, outline, consultation, proposals, pending review, resolution, audit, and health; since 0.6.0 the default catalog exposes seven core tools plus `tool_search` and `call_tool` so discovery does not consume agent context. Explicit consultations (`kb_consult`), gate checks (`kb_gate_check`) and enforcement events (`kb_record_event`, `/api/v1/compliance`) are recorded as audit events, which is the activation evidence the service can provide; whether an agent acted on the guidance still depends on the agent's own logs. Setup and enforcement tooling supports Claude Code, Codex, Gemini, OpenCode, and advisory Copilot paths with different documented enforcement tiers. |
 | Personal / team scope | Best suited to project, engineering-team, and organization knowledge. Tiers and workspace/component paths provide scope, while git and server deployment provide sharing. It does not ship a user-facing team-membership or per-document RBAC product. |
 | Feedback / correction | Humans can edit and review Markdown through normal git workflows or resolve agent proposals through the pending queue. Status changes, validity metadata, and supersession preserve retired guidance instead of erasing it. |
-| Privacy / control | Strong local ownership. The knowledge graph is plain Markdown in git, the index is derived, and the service is self-hosted. Network exposure, repository access, authentication, and backup policy remain operator responsibilities. |
+| Privacy / control | Strong local ownership. The knowledge graph is plain Markdown in git, the index is derived, and the service is self-hosted. The proposal write gate scans proposed content for secrets, including private keys, cloud and GitHub tokens and, since 0.7.2, LLM provider API keys. Network exposure, repository access, authentication, and backup policy remain operator responsibilities. |
 | Setup / operations | Medium. The package is available through `uvx` or `uv tool install`, and a setup wizard can wire supported agents, but Python 3.13+, `uv`, a git-initialized bundle, an MCP server process, and ongoing repository/service operations are still required. |
 
 ## Strengths
@@ -49,15 +49,16 @@ This is not a general personal-memory product, conversational memory extractor, 
 - Uses a single-writer proposal pipeline with pending review, advisory locks, isolated worktrees, and a durable push queue for concurrent agent writes.
 - Provides MCP, CLI, and REST activation surfaces plus optional consultation enforcement for several coding-agent environments.
 - Includes reproducible maintainer-published retrieval benchmarks with synthetic and small committed real-corpus runs, documented caveats, generated result tables, and CI drift checks.
+- Tested against pinned official Google Open Knowledge Format reference tooling in CI, in both consumption directions, over committed fixtures.
 
 ## Limitations
 
 - Pre-1.0 beta. Format, runtime, and operational surfaces can still change.
-- The project is designed to be readable by Google Open Knowledge Format consumers, but executable conformance testing against OKF reference tooling is not complete and remains tracked in [issue #82](https://github.com/knaisoma/data-olympus/issues/82).
-- Python 3.13+ and `uv` are required for the packaged setup. Users still operate the git repository, service, agent wiring, and backups.
+- The OKF profile marks some governance extensions as experimental candidates rather than stable fields, so OKF consumers should not rely on those fields yet (see the OKF profile document).
+- Python 3.13+ (3.14 is tested since 0.7.2) and `uv` are required for the packaged setup. Users still operate the git repository, service, agent wiring, and backups.
 - No passive connector layer for chats, email, calendars, SaaS applications, or broad document ingestion. Imports and agent proposals are deliberate workflows.
 - No end-user web knowledge editor, hosted service, or built-in team administration and document-level permissions.
-- Default retrieval is lexical. The project documents weak performance on token-disjoint paraphrases; local embeddings are optional and off by default.
+- Default retrieval is lexical. The project's own benchmarks document weak performance on token-disjoint paraphrases; the local-embedding extra is optional and off by default.
 - Published benchmark results are produced by the project maintainers. The recipes and artifacts are reproducible, but the results should not be treated as independently reproduced third-party evaluation.
 - The governed scope is intentionally narrower than a general second brain: it focuses on standards, decisions, runbooks, and project knowledge rather than personal conversational memory.
 
@@ -85,11 +86,12 @@ Data Olympus gives teams an inspectable and enforceable boundary between useful 
 
 - [Repository and README](https://github.com/knaisoma/data-olympus)
 - [PyPI package](https://pypi.org/project/data-olympus/)
-- [v0.5.0 release](https://github.com/knaisoma/data-olympus/releases/tag/v0.5.0)
+- [v0.7.3 release](https://github.com/knaisoma/data-olympus/releases/tag/v0.7.3)
 - [Quickstart](https://github.com/knaisoma/data-olympus/blob/main/docs/quickstart.md)
 - [Adoption and import guide](https://github.com/knaisoma/data-olympus/blob/main/docs/adoption.md)
 - [Enforcement guide](https://github.com/knaisoma/data-olympus/blob/main/docs/enforcement.md)
 - [Format specification](https://github.com/knaisoma/data-olympus/blob/main/SPEC.md)
+- [OKF profile](https://github.com/knaisoma/data-olympus/blob/main/docs/okf-profile.md)
 - [Benchmark methodology and reproduction](https://github.com/knaisoma/data-olympus/blob/main/benchmarks/README.md)
 - [Comparison and benchmark results](https://github.com/knaisoma/data-olympus/blob/main/docs/comparison.md)
 
@@ -97,10 +99,12 @@ Data Olympus gives teams an inspectable and enforceable boundary between useful 
 
 - https://github.com/knaisoma/data-olympus
 - https://pypi.org/project/data-olympus/
-- https://github.com/knaisoma/data-olympus/releases/tag/v0.5.0
+- https://github.com/knaisoma/data-olympus/releases/tag/v0.7.3
+- https://github.com/knaisoma/data-olympus/releases
 - https://github.com/knaisoma/data-olympus/blob/main/docs/quickstart.md
 - https://github.com/knaisoma/data-olympus/blob/main/docs/adoption.md
 - https://github.com/knaisoma/data-olympus/blob/main/docs/enforcement.md
 - https://github.com/knaisoma/data-olympus/blob/main/SPEC.md
+- https://github.com/knaisoma/data-olympus/blob/main/docs/okf-profile.md
 - https://github.com/knaisoma/data-olympus/blob/main/benchmarks/README.md
 - https://github.com/knaisoma/data-olympus/blob/main/docs/comparison.md
