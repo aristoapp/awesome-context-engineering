@@ -18,6 +18,7 @@ Privacy, portability, and control cover where memory is stored, whether users ca
 | Membase | Partial | Hosted controls, dashboard browsing, project assignment, and deletion flows. | Memory manual create/edit is not available from the Memories tab yet; verify export, retention, and deletion requirements. |
 | OpenHuman | Partial | Local Memory Tree, Markdown vault, and runtime state with managed services for default experience. | Local-first does not mean fully offline by default. |
 | GBrain | Built-in | Local/self-hosted files and database. | User owns operations and backups. |
+| Data Olympus | Built-in with self-hosting | Plain Markdown in a git repository the operator owns, a self-hosted service, a derived index, and a write gate that scans proposed content for secrets. | Network exposure, authentication, repository access and backups are operator responsibilities; no per-document permissions. |
 | Hermes Agent + LLM Wiki | Built-in for wiki files | Wiki content is local Markdown that users can inspect, edit, back up, move, or delete. | Privacy still depends on Hermes runtime, model provider, browser/web extraction, and any sync service used. |
 | Supermemory | Partial | Hosted app, API, connector management. | Connector deletion semantics need review. |
 | Hyperspell | Partial | User tokens, source connection controls, metadata filters, folder skip/manual/sync policies, manual review flows, and homepage deletion claims. | Hosted by default; export, retention, deletion, and plan-specific governance should be verified. |

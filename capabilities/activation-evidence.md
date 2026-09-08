@@ -34,6 +34,7 @@ Passing this test does not require exposing private memory text in logs. A syste
 | Membase | Partial | Memory/Wiki retrieval and connected AI workflows create a place to inspect what context can be used. | Verify whether a specific workflow exposes per-session retrieved-vs-used evidence. |
 | Hjarni | Partial | MCP `search`, `notes-get`, `notes-create`, and `notes-update` calls expose which notes were searched, read, created, or updated for a task; results carry note IDs, container paths, timestamps, and a `last_edited_by_agent` label. | Whether the agent actually relied on or cited that context (acted-on proof) still depends on the AI client's own logs. |
 | GBrain | Partial | CLI/MCP workflows with citations, conflicts, and gap analysis can support activation checks. | Needs hands-on verification for per-session acted-on evidence. |
+| Data Olympus | Partial | Explicit consultations (`kb_consult`), gate checks (`kb_gate_check`) and enforcement events (`kb_record_event`, `/api/v1/compliance`) are recorded as audit events, and the enforcement guide installs a mandatory consultation gate for supported agents. | Records that guidance was consulted, not that it changed an action; acted-on proof still depends on the agent and host logs, and gate strength varies by agent tier. |
 | Hermes Agent + LLM Wiki | Integration | Local Markdown wiki files make source inspection and handoff artifacts easy to audit. | Activation evidence depends on skill behavior and user discipline. |
 | Supermemory | Partial | MCP/API retrieval can expose source-backed memory to agents. | App owners need to record which retrieved items were actually used. |
 | Hyperspell | Partial | MCP search/get tools and metadata filters can provide context activation inputs. | Verify whether the host workflow records usage beyond retrieval. |
@@ -62,6 +63,8 @@ Activation evidence is not the same as perfect observability. A practical second
 - [Hjarni MCP server repository](https://github.com/hjarni/hjarni-mcp)
 - [Membase MCP](https://docs.membase.so/features/membase-mcp)
 - [GBrain solution profile](../solutions/gbrain.md)
+- [Data Olympus solution profile](../solutions/data-olympus.md)
+- [Data Olympus enforcement guide](https://github.com/knaisoma/data-olympus/blob/main/docs/enforcement.md)
 - [Hermes LLM Wiki skill](https://github.com/NousResearch/hermes-agent/tree/main/skills/research/llm-wiki)
 - [Mnemosyne Hermes integration](https://github.com/AxDSan/Mnemosyne/blob/main/docs/hermes-integration.md)
 - [taOSmd repository](https://github.com/jaylfc/taosmd)
