@@ -5,7 +5,7 @@
 - Website / docs: https://github.com/knaisoma/data-olympus
 - Package: https://pypi.org/project/data-olympus/
 - Company / maintainer: Knaisoma / Data Olympus maintainers
-- Status: Pre-1.0 beta, current release v0.5.0
+- Status: Pre-1.0 beta, current release v0.7.2
 - Open source: Yes, Apache-2.0
 - Deployment: Local or self-hosted. The source of truth is a git-backed Markdown knowledge directory; the CLI, streamable HTTP MCP server, and REST endpoints are activation surfaces.
 - Primary users: Engineering teams and agent operators who need reviewed standards, decisions, runbooks, and project knowledge to govern later agent work
